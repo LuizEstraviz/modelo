@@ -1,0 +1,2073 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"flexDirection",
+				"flexDirection = 'row'	Style CSS"
+			],
+			[
+				"json",
+				"json_decode〔function〕"
+			],
+			[
+				"var_",
+				"var_dump〔function〕"
+			],
+			[
+				"_PO",
+				"$_POST〔variable〕"
+			],
+			[
+				"PT",
+				"PropTypes"
+			],
+			[
+				"inter",
+				"setInterval(func, delay)	Window"
+			],
+			[
+				"transition",
+				"transition	Style CSS"
+			],
+			[
+				"trans",
+				"transparentBg	(index.js)"
+			],
+			[
+				"UserDe",
+				"UserDetailsWrapper"
+			],
+			[
+				"Results",
+				"ResultsContainer"
+			],
+			[
+				"User",
+				"UserDetailsWrapper"
+			],
+			[
+				"UserD",
+				"UserDetailsWrapper〔function〕"
+			],
+			[
+				"head",
+				"heading	(UserDetails.js)"
+			],
+			[
+				"padding",
+				"paddingBottom	Style CSS"
+			],
+			[
+				"fn",
+				"function with name"
+			],
+			[
+				"f",
+				"f	Anonymous Function"
+			],
+			[
+				"function",
+				"function without name"
+			],
+			[
+				"forEach",
+				"forEach(callback)	Array"
+			],
+			[
+				"set",
+				"setInterval〔function〕"
+			],
+			[
+				"component",
+				"componentDidMount	Life Cycle Method"
+			],
+			[
+				"Confir",
+				"ConfirmBattleContainer"
+			],
+			[
+				"Confi",
+				"ConfirmBattleContainer"
+			],
+			[
+				"Co",
+				"ConfirmBattle	(ConfirmBattle.js)"
+			],
+			[
+				"R",
+				"R	React"
+			],
+			[
+				"onSubmi",
+				"onSubmitUser"
+			],
+			[
+				"user",
+				"username	URLUtils"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"func",
+				"function	React.PropTypes.func"
+			],
+			[
+				"onSub",
+				"onSubmitUser"
+			],
+			[
+				"RR",
+				"RR	ReactRouter"
+			],
+			[
+				"tra",
+				"transparentBg"
+			],
+			[
+				"bl",
+				"bl|ta	(rr2teste.sublime-snippet)"
+			],
+			[
+				"ba",
+				"background	Style CSS"
+			],
+			[
+				"has",
+				"hashHistory"
+			],
+			[
+				"requ",
+				"require〔function〕"
+			],
+			[
+				"Rea",
+				"React.Component	Component Template (ES2015)"
+			],
+			[
+				"this",
+				"this〔keyword〕"
+			],
+			[
+				"Profil",
+				"ProfileLink"
+			],
+			[
+				"prop",
+				"prop	.prop() - single"
+			],
+			[
+				"pro",
+				"props	React: this.props"
+			],
+			[
+				"React",
+				"ReactClass	(app.js)"
+			],
+			[
+				"reac",
+				"react	(package.json)"
+			],
+			[
+				"createCl",
+				"createClass"
+			],
+			[
+				"Reac",
+				"React"
+			],
+			[
+				"HtmlWebpack",
+				"HtmlWebpackPluginConfig"
+			],
+			[
+				"ht",
+				"html	html"
+			],
+			[
+				"variab",
+				"variableId"
+			],
+			[
+				"bi",
+				"bin	(appx.sublime-project)"
+			],
+			[
+				"changed",
+				"changedKey"
+			],
+			[
+				"cas",
+				"case〔keyword〕"
+			],
+			[
+				"check",
+				"checkNeedGrouping"
+			],
+			[
+				"terr",
+				"territoryGroupId"
+			],
+			[
+				"vari",
+				"variableId"
+			],
+			[
+				"territo",
+				"territoryGroupId"
+			],
+			[
+				"terruti",
+				"territoryGroupId"
+			],
+			[
+				"geoSe",
+				"geoServerLayers"
+			],
+			[
+				"GeoLa",
+				"GeoLayers	AngularJS"
+			],
+			[
+				"geoLayers",
+				"GeoLayers	AngularJS"
+			],
+			[
+				"cluste",
+				"clusterStat"
+			],
+			[
+				"sele",
+				"selectedFeatures"
+			],
+			[
+				"var",
+				"varId"
+			],
+			[
+				"territory",
+				"territoryGroupId"
+			],
+			[
+				"sta",
+				"sqlStatistic"
+			],
+			[
+				"view",
+				"viewparams	(controllers.js)"
+			],
+			[
+				"ref",
+				"refreshMap"
+			],
+			[
+				"data",
+				"dataSource"
+			],
+			[
+				"editor",
+				"editorOptions"
+			],
+			[
+				"ter",
+				"territoryGroupId"
+			],
+			[
+				"stat",
+				"stats_type"
+			],
+			[
+				"click",
+				"clickHandler"
+			],
+			[
+				"open",
+				"openDetails"
+			],
+			[
+				"module",
+				"moduleChanging"
+			],
+			[
+				"load",
+				"loadingVisible"
+			],
+			[
+				"terrLeve",
+				"terrLevelId	(PropServ.js)"
+			],
+			[
+				"terrLe",
+				"terrLevelId	(PropServ.js)"
+			],
+			[
+				"parse",
+				"parseFieldsToArray	(UtilServ.js)"
+			],
+			[
+				"terri",
+				"territory_level	(PropCtrl.js)"
+			],
+			[
+				"fields",
+				"fieldsvals"
+			],
+			[
+				"terrGroup",
+				"terrGroupId2"
+			],
+			[
+				"lege",
+				"legendHelper"
+			],
+			[
+				"Varia",
+				"variableId"
+			],
+			[
+				"groupin",
+				"groupingStatId"
+			],
+			[
+				"tranf",
+				"transform"
+			],
+			[
+				"varia",
+				"variableId	(test.csv)"
+			],
+			[
+				"territ",
+				"territoryGroupId"
+			],
+			[
+				"proper",
+				"properties"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"legend",
+				"legendParams"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"legen",
+				"legendParams"
+			],
+			[
+				"be",
+				"beforeSend"
+			],
+			[
+				"terrGrou",
+				"territoryGroupId	(controllers.js)"
+			],
+			[
+				"territory_group",
+				"territory_group_id"
+			],
+			[
+				"funct",
+				"function(){this	(db.js)"
+			],
+			[
+				"geoSer",
+				"geoServerLayers"
+			],
+			[
+				"naviga",
+				"navigationItems"
+			],
+			[
+				"navi",
+				"navigationItems"
+			],
+			[
+				"sidr",
+				"sidrDiv"
+			],
+			[
+				"option",
+				"bindingOptions"
+			],
+			[
+				"bind",
+				"bindingOptions	(toolbar.html)"
+			],
+			[
+				"vi",
+				"viewParams"
+			],
+			[
+				"nf",
+				"ng-if	AngularJS"
+			],
+			[
+				"ser",
+				"service	AngularJS"
+			],
+			[
+				"val",
+				"value	AngularJS"
+			],
+			[
+				"provider",
+				"$routeProvider	AngularJS"
+			],
+			[
+				"facto",
+				"factory	AngularJS"
+			],
+			[
+				"get",
+				"getElementsByTagName〔function〕"
+			],
+			[
+				"nav",
+				"navigationItems〔argument〕"
+			],
+			[
+				"selecte",
+				"selectedIndex〔variable〕"
+			],
+			[
+				"id",
+				"idCombCarroChefePossivel	Table column"
+			],
+			[
+				"v",
+				"vRLCombinacaoCarroChefe	SQL table"
+			],
+			[
+				"MUNIC",
+				"MUNICIPIOMF	SQL table"
+			],
+			[
+				"pyo",
+				"pyodbc〔module〕"
+			],
+			[
+				"schema",
+				"schemaname"
+			],
+			[
+				"rlm",
+				"RLMADEIREIRA	SQL table"
+			],
+			[
+				"RLMUNI",
+				"RLMUNICIPIOFITO	SQL table"
+			],
+			[
+				"RL",
+				"RLFCCOMBINACAO	SQL table"
+			],
+			[
+				"te_get",
+				"te_get_columns"
+			],
+			[
+				"RLCA",
+				"RLCARACTERISTICA	SQL table"
+			],
+			[
+				"vRL",
+				"vRLCombinacaoCarroChefe	SQL table"
+			],
+			[
+				"RLCOM",
+				"RLCOMBINACAOCARROCHEFE"
+			],
+			[
+				"RLMODEL",
+				"RLMODELOPLANTIO	SQL table"
+			],
+			[
+				"te_",
+				"te_get_encodings"
+			],
+			[
+				"sql",
+				"sqlconnection〔variable〕"
+			],
+			[
+				"conne",
+				"connection_string"
+			],
+			[
+				"te_getC",
+				"te_get_connection"
+			],
+			[
+				"conn",
+				"connectionString〔variable〕"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+			"settings":
+			{
+				"buffer_size": 882,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 359.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"JSON",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"Prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"prettr",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Syntax",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"Snippet: rrc",
+				"Snippet: Carrega componente/container"
+			],
+			[
+				"test",
+				"Snippet: This is a test snippet"
+			],
+			[
+				"Snippet: test",
+				"Snippet: This is a test snippet"
+			],
+			[
+				"teste",
+				"Snippet: This is a test snippet"
+			],
+			[
+				"Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Ignore",
+				"Git: Update Project Ignored Files"
+			],
+			[
+				"JSX",
+				"Set Syntax: JSX"
+			],
+			[
+				"HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"React",
+				"Snippet: React: cx({ ... })"
+			],
+			[
+				"ReactAdd",
+				"Snippet: React: var cx = React.addons.classSet;"
+			],
+			[
+				"Snippet: React",
+				"Snippet: React.PropTypes.component"
+			],
+			[
+				"Babel",
+				"Preferences: Babel – Default"
+			],
+			[
+				"Snippetreact",
+				"Snippet: React: render: fn() { return ... }"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"unins",
+				"npm: Remove/Uninstall Package"
+			],
+			[
+				"snippet: rcc",
+				"Snippet: React: component skeleton"
+			],
+			[
+				"Snippet: rc",
+				"Snippet: React: component skeleton"
+			],
+			[
+				"",
+				"AngularJS: Look Up Definition"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"PRETT",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"git commit ",
+				"Git: Commit"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"pre",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"add a",
+				"Git: Add All"
+			],
+			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"git common",
+				"Git: Custom Command"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"Json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"mini",
+				"Minify::Minify File"
+			],
+			[
+				"minify",
+				"Minify::Minify File"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git comm	",
+				"Git: Commit"
+			],
+			[
+				"gitad",
+				"Git: Add All"
+			],
+			[
+				"css",
+				"Format CSS: Expanded"
+			],
+			[
+				"gpush",
+				"Git: Push"
+			],
+			[
+				"gc",
+				"Git: Commit"
+			],
+			[
+				"gia",
+				"Git: Add All"
+			],
+			[
+				"ga",
+				"Git: Add All"
+			],
+			[
+				"git",
+				"Git: Add All"
+			],
+			[
+				"index",
+				"Snippet: .index()"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"angular",
+				"AngularJS: Look Up Definition"
+			],
+			[
+				"git	",
+				"Git: Commit"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"batch",
+				"Set Syntax: Batch File"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Conn",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: add",
+				"Package Control: Add Repository"
+			],
+			[
+				"tsql",
+				"Set Syntax: T-SQL"
+			],
+			[
+				"tssql",
+				"Set Syntax: SQL"
+			],
+			[
+				"open",
+				"TSQL Easy: Open server object"
+			],
+			[
+				"exe",
+				"TSQL Easy: Execute"
+			],
+			[
+				"t",
+				"TSQL Easy: Execute"
+			],
+			[
+				"exec",
+				"TSQL Easy: Execute"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: add rep",
+				"Package Control: Add Repository"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Repository"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Repository"
+			],
+			[
+				"Package Control:ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Contrins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Contrin",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Controlinsta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins	",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"view.run_command('insert_datetime')",
+			"view.run_command",
+			"sel[0].a",
+			"sel[0]",
+			"sel[0][0]",
+			"sel[0]",
+			"[s for s in sel]",
+			"sel=view.sel()",
+			"view.show_at_center(600)",
+			"view.show_at_center(120)",
+			"view.show_at_center(1)",
+			"view.show_at_center()",
+			"view.show_at_center",
+			"dir(view.show_at_center)",
+			"dir(view.selection)",
+			"view.selection",
+			"view.line(4)",
+			"view.line(2)",
+			"view.line(1)",
+			"view.line()",
+			"view.line",
+			"dir(view)",
+			"view.viewport_position()",
+			"view.sel().clear()",
+			"view.sel().add(sublime.Region(int(102)))",
+			"view.viewport_position()",
+			"view.viewport_position",
+			"dir(view)",
+			"view.pos",
+			"view.sel()",
+			"view",
+			"view()",
+			"dir(pos)",
+			"pos.contains(pos)",
+			"pos.contains(42)",
+			"dir(pos)",
+			"dir(pod)",
+			"pos.add()",
+			"dir(pos)",
+			"pos.is_valid()",
+			"pos.is_valid",
+			"dir(pos)",
+			"len(pos)",
+			"length(pos)",
+			"pos.add",
+			"pos.view_id",
+			"dir(pos)",
+			"pos",
+			"pos = view.sel()",
+			"pos = self.view.sel()",
+			" os = self.view.sel()",
+			" pos = self.view.sel()",
+			"tNow.tm_min",
+			"dir(tNow)",
+			"tNow = time.localtime()",
+			"time.strftime('%Hh%M', time.localtime())",
+			"import time",
+			"time.strftime('%d-%m-%YY', time.localtime())",
+			"time.strftime('%d-%M-%YY', time.localtime())",
+			"time.strftime('%d-%MM-%YY', time.localtime())",
+			"time.strftime('%DD-%MM-%YY', time.localtime())",
+			"time.strftime('%YYYY', time.localtime())",
+			"time.strftime('%yyyy', time.localtime())",
+			"time.strftime('yyyy', time.localtime())",
+			"time.strftime('yyyy', time.localtime(), str)",
+			"time.strftime('yyyy', time.localtime())",
+			"time.strftime('yyyy', time.localtime)",
+			"time.strftime('yyyy', datetime.datetime.now())",
+			"time.strftime('yyyy', datetime.datetime.now().date())",
+			"time.ctime((datetime.datetime.now().date()))",
+			"dir(datetime.datetime.now().date())",
+			"datetime.datetime.now().date()",
+			"datetime.datetime.now()",
+			"datetime.datetime.now",
+			"datetime.now",
+			"import datetime",
+			"datetime",
+			"time.ctime(0)",
+			"time.ctime()",
+			"time.ctime(23",
+			"time.ctime(2)",
+			"time.ctime(0)",
+			"time.ctime(1)",
+			"time.ctime('yyyy')",
+			"dir(time.ctime())",
+			"time.ctime()",
+			"import time",
+			"time",
+			"asas",
+			"d",
+			"view.run_command('insert_datetime')",
+			"view.run_command",
+			"git",
+			"npm",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev"
+	],
+	"file_history":
+	[
+		"/C/Users/caioh/Desktop/Pessoal/AHK/Escape HTML com tab.ahk",
+		"/C/Users/caioh/Desktop/Temp/file1.xml",
+		"/C/Users/caioh/AppData/Roaming/Skype/My Skype Received Files/file1.xml",
+		"/C/Users/caioh/AppData/Roaming/Skype/My Skype Received Files/files8.xml",
+		"/C/Users/caioh/AppData/Roaming/Skype/My Skype Received Files/SATExemplo.xml",
+		"/C/Users/caioh/Desktop/Temp/SATExemplo.xml",
+		"/D/MESTRADO/Disciplinas/_Semestre II/Regressão/q2.csv",
+		"/C/Users/caioh/Desktop/Temp/files8.xml",
+		"/C/Users/caioh/AppData/Roaming/Skype/My Skype Received Files/files2.xml",
+		"/C/Users/caioh/private",
+		"/C/Users/caioh/Documents/ex8.csv",
+		"/C/Users/caioh/Desktop/Temp/files2.xml",
+		"/C/Windows/System32/drivers/etc/networks",
+		"/C/Users/caioh/Documents/ex4.csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/NUVENS/2013/ORIG/info/CODL0002-C0006_info.txt",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/NUVENS/2013/ORIG/Catalog.csv",
+		"/C/LAStools/bin/lasview_README.txt",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/caioh/Desktop/teste.htm",
+		"/C/Users/caioh/Desktop/Pessoal/Pendentes/Carta apresentação à Raízen.txt",
+		"/C/Users/caioh/Desktop/Pessoal/Pendentes/Carta apresentação à Raízen",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/Projetos/SIGAM/Banco de Dados/pdca.txt",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/insert_datetime.py",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/insert_time.py",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS020_05_EliminaDuplicados.bat",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS030_06.bat",
+		"/C/Users/caioh/Desktop/test.txt",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/insert_datetime.py",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS030_10_CalcMetriUPs.bat",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS020_03_ReduzDensidadeDePontos.bat",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS020_04_ClipaUPs.bat",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS020_01_ConfereUTM_GeraINFO.bat",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS020_02_Clipa_Filtra.bat",
+		"/C/Users/caioh/AppData/Local/Temp/json_newname_prov.tif.aux.xml",
+		"/C/Users/caioh/.qgis2/processing/processing.log",
+		"/C/Users/caioh/Desktop/Temp/output.png.aux.xml",
+		"/C/Users/caioh/Desktop/D_LOTFAC.HTM",
+		"/C/Users/caioh/Downloads/ESRI.ArcGIS.9.3.SLX.(Desktop.Only)DVD-3.5GB/ArcGIS.9x.8x.Crack.SLX/licz/9.xLic.dat",
+		"/C/Users/caioh/Dropbox/bin/python3.bat",
+		"/C/Users/caioh/Downloads/item.pkinfo",
+		"/C/Users/caioh/.qgis2/processing/scripts/Max_distance_from_centroid.py",
+		"/C/Users/caioh/Desktop/Novo(a) AutoHotkey Script.ahk",
+		"/C/lotofacil/D_LOTFAC.HTM",
+		"/C/Users/caioh/Desktop/dlot_fac2.txt",
+		"/C/Users/caioh/Dropbox/Scripts/buffer.py",
+		"/C/Users/caioh/Dropbox/Scripts/centroide.py",
+		"/C/Users/caioh/Dropbox/Scripts/proximidade2.py",
+		"/C/Users/caioh/Dropbox/bin/Python/correios.py",
+		"/C/Users/caioh/Dropbox/bin/correios.bat",
+		"/C/Users/caioh/Dropbox/bin/configure.bat",
+		"/C/Users/caioh/Dropbox/Scripts/proximidade.py",
+		"/C/Users/caioh/.qgis2/processing/scripts/Shortest_segment_to_closest_polygon.py",
+		"/C/Users/caioh/Dropbox/Scripts/numProc.py",
+		"/C/Users/caioh/Dropbox/Scripts/nearestPoint.py",
+		"/C/Users/caioh/Dropbox/Scripts/myscript_cut_by_ughri.py",
+		"/C/Users/caioh/Dropbox/Scripts/difference+script.py",
+		"/C/Users/caioh/Dropbox/Scripts/cut_alternative.py",
+		"/C/Users/caioh/Dropbox/Scripts/criar_linhas.py",
+		"/C/Users/caioh/Downloads/Modelo_APP_Topo_Morro.gpk",
+		"/C/Users/caioh/Downloads/Station Lines/Tool0",
+		"/C/flexlm/license.dat",
+		"/C/Users/caioh/Downloads/ESRI.ArcGIS.9.3.SLX.(Desktop.Only)DVD-3.5GB/crack/arcgis_tbe.lic",
+		"/C/Users/caioh/Desktop/9.3xLic.dat",
+		"/C/Users/caioh/AppData/Local/Temp/7zE45B662DD/9.3xLic.dat",
+		"/C/Program Files (x86)/ESRI/License/arcgis9x/arcgis_tbe.lic",
+		"/C/Program Files (x86)/ESRI/License/arcgis9x/liccrak.reg",
+		"/C/Users/caioh/Desktop/Shapefiles/ST_DNIT_Rodovias_SNV2015_03.prj",
+		"/C/Users/caioh/Desktop/Shapefiles/ST_DNIT_Rodovias_SNV2015_03.shx",
+		"/C/Users/caioh/Desktop/Shapefiles/ST_DNIT_Rodovias_SNV2015_03.qpj",
+		"/C/Users/caioh/Desktop/Shapefiles/ST_DNIT_Rodovias_SNV2015_03.cpg",
+		"/C/Users/caioh/Dropbox/bin/launchAndroid.bat",
+		"/C/Users/caioh/Desktop/python.py",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/026RL.RLNAOMADEIREIRA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/029RL.RLPARAMETRO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/031RL.RLREGRA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/025RL.RLMUNICIPIOFITO_GEO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/021RL.RLMODELO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/015RL.RLFITOECOLOGIA_GEO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/036RL.RLREGRAPLANTIO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/033RL.RLREGRAMODELO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/041RL.RLCOEFICIENTE.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Local/criarTabelasSigam.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/034RL.RLTABELA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/004RL.RLCLASSE.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/predados.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/006RL.RLCUSTOSGERAIS.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/preedata.bat",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/001RL.RLVARIAVEL.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLPRECOTERRA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLPRECMADESPECIE.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/008RL.RLESPECIE.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/019RL.RLMADEIREIRA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLBIOMA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/001RL.RLBIOMA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLCUSTOSGERAIS.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLCLASSECUSTO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLCLASSE.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLCARACTERISTICA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLVALIDARECOMENDACAO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/039RL.RLTABIMAPERC.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLTABIMAPROD.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLTABIMAPERC.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLTABIMA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLTABELA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLREGRAMODELO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/035RL.RLREGRAPLANTIO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLREGRABIO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLREGRA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLRECOMENDACAO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPROJETO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPRECOTERRA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPRODUTOMADEIRA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPRECMADESPECIE.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPARAMETRO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPARAMDESBASTE.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLNAOMADEIREIRA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMUNICIPIOFITO_GEO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMUNICIPIOFITO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMODELOPLANTIO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLCUSTOSILVICULTURA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMODELO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLVARIAVEL.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMENSAGEM.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMADEIREIRA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLINSUMO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLGRUPONIVEL1.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLFONTEINFORMACAO.Table.sql"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\2016\\PortalRL\\Scripts\\Dados",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\2016\\PortalRL\\Scripts\\Data",
+			"C:\\Users\\caioh\\Desktop\\Atrium\\2016\\PortalRL\\Scripts\\Data",
+			"C:\\Users\\caioh\\Desktop\\Dev\\reacts\\github-battle\\app",
+			"C:\\Users\\caioh\\Desktop\\Dev\\respond",
+			"C:\\Users\\caioh\\Desktop\\Dev\\respond\\js",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX\\js	",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX\\js",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX\\js",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX\\js\\bottomMenu",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX\\",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX\\css",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX\\lib",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX\\js",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX\\js",
+			"C:\\Users\\caioh\\Desktop\\ATRIUM\\appx\\AppX"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"infCFe",
+			"inf",
+			"Envelope",
+			"Consulte",
+			"<Signature>.*</Signature>",
+			"ns1",
+			"nse",
+			"NumberOfPages: ",
+			"\\t",
+			"<\\/?span>",
+			"</span>",
+			"<\\/?span>",
+			"é",
+			"igual a",
+			"(\\d+)/?(\\d*)",
+			"\\ +",
+			"\\ *",
+			" *",
+			"all",
+			"<tr",
+			"<tr>",
+			"<tr bgcolor.*\\n\\n<td",
+			"/",
+			"\"",
+			"teste",
+			"  ",
+			"[\"'\\n]",
+			"  ",
+			"[\"'\\n]",
+			"  ",
+			"[\"'\\n]",
+			"\\n",
+			"'",
+			"\"",
+			"-2011",
+			"  \\\\",
+			"EDITOR",
+			"editor",
+			"vendor_info",
+			": ",
+			"Editor",
+			"BAD: *(\\d+)(.*)=\\d+$",
+			"BAD: *(\\d+)(.*)\\d+$",
+			"-2011",
+			"     ",
+			"                    ",
+			"M001 ck=",
+			"arcview",
+			"  ",
+			"\"",
+			"  ",
+			"'",
+			"CAIO",
+			"CAIO HAMAMURA",
+			"(([a-z])([A-Z])|([A-Z])([A-Z][a-z]))",
+			"(([a-z])([A-Z])|([A-Z])([A-Z])([A-Z][a-z]))",
+			"(\\u+|\\u?\\l+)(\\u)",
+			"(\\u+|\\u?\\l+)(\\u",
+			"(\\u+|\\u?\\l+)",
+			"\\u+|\\u?\\l+",
+			"((\\u+|\\u?\\l+)*)",
+			"(\\u?\\l+)((\\u+|\\u\\l+)*)",
+			"(\\u?\\l+)((\\u|\\u\\l)*)",
+			"(\\u?\\l+)(\\u|\\u\\l)*",
+			"(\\u?\\l)+(\\u+|\\u\\l)*",
+			"CAST\\((.*?) AS SmallDateTime\\)",
+			"CAST\\((.*?) AS DateTime\\)",
+			"CAST(N'2015-06-19 19:00:01.033' AS DateTime)",
+			"CAST\\((.*?) AS DateTime\\)",
+			"<td>10<",
+			"<td>10",
+			"h2",
+			"<tr>",
+			"tr>",
+			"tr",
+			"</div>",
+			"<div.*>\\n",
+			"<div.*>$",
+			"<div.*>",
+			"<div\\>.*?</div>",
+			"<div>.*?</div>",
+			"<div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>",
+			"logo",
+			"<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>\n",
+			"<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>",
+			"data:post.bod",
+			"<h3 class='post-title entry-title' itemprop='name'>",
+			"postId",
+			"image_url",
+			"classificação 4,7",
+			"classificação 4,8",
+			"4,8",
+			"classif",
+			"4,9",
+			"4,5",
+			"4,9",
+			"4,8",
+			"classificação",
+			"5,0",
+			"4,9",
+			"4,7",
+			"price",
+			"(.*?(\\(.*?\\).*?)*(\\[.*?\\].*?)*)(, |$|; |\\.$)",
+			"(.*?((\\[.*?)*\\(.*?\\)(.*?\\])*.*?)*)(, |$|; |\\.$)",
+			"(.*?(\\(.*?\\).*?)*)(, |$|; |\\.$)",
+			"(.*?(\\(.*?\\))?.*?)(, |$|; |\\.$)",
+			"(.*?(\\(.*?\\).*?)*)(, |$|; |\\.$)",
+			"(.*?(\\(.*?\\))?.*?)(, |$|; |\\.$)",
+			"Raças Médias",
+			"1734",
+			"(.*?(\\(.*?\\))?)(, |$|; |\\.)",
+			"(.*?(\\(.*?\\))?.*?)(, |$|; |\\.$)",
+			"(.*?(\\(.*?\\))?)(, |$|; |\\.)",
+			"(.*?(\\(.*?\\))?)(, |$|; )",
+			"(.*?(\\(.*?\\))?)(, |$|\\.)",
+			"(.*?(\\(.*?\\))?)(, |$)",
+			".*?(\\(.*?\\))?(, |$)",
+			".*?(\\(.*?\\))?, ",
+			"(.*?(\\(.*?\\))?), ",
+			".*?(\\(.*?\\))?, ",
+			".*?(\\(.*?\\))?,",
+			".*?\\(.*?\\)?,",
+			".*?\\(.*?\\)?.*?,",
+			"= 0",
+			"VALUES\\((\\d+).*,([\\d\\.]+)\\);",
+			"INSERT INTO",
+			"sku_price",
+			"VALUES\\((\\d+).*,([\\d\\.]+)\\);"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"\\r\\n",
+			"",
+			"$1$2",
+			"\\t",
+			"all_arr",
+			"'",
+			"input_features",
+			" ",
+			"",
+			"-2017",
+			" -2017",
+			" \\\\",
+			" \\\\\\n     vendor_info",
+			"",
+			"\\2=\\1",
+			"\\2\\1",
+			"-2017",
+			"\\t",
+			"     ",
+			" ",
+			"$2$4 $3$5",
+			"$2 $3",
+			"$1 $2",
+			"$1 ",
+			"$1 $2 $3 $4",
+			"$1 $2",
+			"$1 $2 $3",
+			"$1 $2",
+			"$1 $2 $3",
+			"CONVERT(SmallDateTime, $1, 20)",
+			"CONVERT(DateTime, $1, 20)",
+			"CONVERT($2, $1, 20)",
+			"span",
+			"",
+			"image",
+			"$1\\n",
+			"SET preco = $2 WHERE id = $1",
+			"UPDATE",
+			"SET preco = $2 WHERE id = $1;",
+			"SET preco = $2 WHERE id = $1",
+			"UPDATE",
+			"<",
+			">",
+			"td",
+			"$1",
+			"$1\\n",
+			"19",
+			"18",
+			"17",
+			"16",
+			"15",
+			"14",
+			"13",
+			"10",
+			"$1$2troca$1",
+			", ",
+			")troca(",
+			"$1$2troca$1",
+			"$1",
+			"$1$2troca$1",
+			"$1$2$1",
+			"$1$2",
+			"$1$2$1",
+			"\\n",
+			"",
+			"(",
+			"$1_$2",
+			"",
+			"INSERT INTO",
+			"",
+			"<NAME>\\L$1</NAME>",
+			"<NAME>\\l$1</NAME>",
+			"$1_$2",
+			"$1_$l2",
+			"\\1_\\l2",
+			"\\\\\"",
+			"\\\"",
+			">",
+			"<",
+			",",
+			" TEXT,",
+			" ",
+			" TEXT,",
+			",",
+			"",
+			"/",
+			"v5.6",
+			"",
+			"\"",
+			"cluster_stats_type",
+			"\"",
+			"filter-menu",
+			"filter-menu-open",
+			"filter-menu",
+			"\"",
+			" + ', ' +",
+			"$1;\\n",
+			"$1$3console.log('factory: $2')$3",
+			"$1$3console.log('controller: $2')$3",
+			"$1$3console.log('$2')$3",
+			"$1$3",
+			"$1$3console.log('$2')$3",
+			"$1$3",
+			"$1$3console.log('$2')$3",
+			"$1\\nconsole.log('$2')",
+			"$1console.log('$2');",
+			"\"",
+			"'\\1',",
+			"\\1\\2\\1transform",
+			"\\1\\)",
+			"formData.data",
+			"\"",
+			"refDesc",
+			"refPropMenu",
+			"refLegend",
+			"refTerrGroup",
+			"refTerrgroup",
+			"",
+			"'FormData'",
+			"'Legend'",
+			"'LegendHelper'",
+			"'Prefs'",
+			"'Properties'",
+			", ",
+			"\"",
+			"\\1clusterStat\\2",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								879,
+								879
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 47.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 213.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 115.0
+	},
+	"output.guh_panel":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"babe",
+				".babelrc"
+			],
+			[
+				"web",
+				"webpack.config.js"
+			],
+			[
+				"webpa",
+				"webpack.config.js"
+			],
+			[
+				"results",
+				"app\\containers\\ResultsContainer.js"
+			],
+			[
+				"result",
+				"app\\components\\Results.js"
+			],
+			[
+				"battleconta",
+				"app\\containers\\ConfirmBattleContainer.js"
+			],
+			[
+				"maincon",
+				"app\\components\\MainContainer.js"
+			],
+			[
+				"routes",
+				"app\\config\\routes.js"
+			],
+			[
+				"route",
+				"app\\config\\routes.js"
+			],
+			[
+				"batt",
+				"app\\components\\Battle.js"
+			],
+			[
+				"styles",
+				"app\\styles\\index.js"
+			],
+			[
+				"prom",
+				"app\\components\\Prompt.js"
+			],
+			[
+				"promp",
+				"app\\containers\\PromptContainer.js"
+			],
+			[
+				"githu",
+				"app\\utils\\gitHubHelpers.js"
+			],
+			[
+				"main",
+				"app\\containers\\PromptContainer.js"
+			],
+			[
+				"userde",
+				"app\\components\\UserDetails.js"
+			],
+			[
+				"helpe",
+				"app\\utils\\gitHubHelpers.js"
+			],
+			[
+				"confi",
+				"app\\containers\\ConfirmBattleContainer.js"
+			],
+			[
+				"battle",
+				"app\\components\\ConfirmBattle.js"
+			],
+			[
+				"user",
+				"app\\components\\UserDetails.js"
+			],
+			[
+				"bttle",
+				"app\\containers\\ConfirmBattleContainer.js"
+			],
+			[
+				"battlc",
+				"app\\containers\\ConfirmBattleContainer.js"
+			],
+			[
+				"co",
+				"app\\components\\ConfirmBattle.js"
+			],
+			[
+				"style",
+				"app\\styles\\index.js"
+			],
+			[
+				"con",
+				"app\\components\\ConfirmBattle.js"
+			],
+			[
+				"config",
+				"webpack.config.js"
+			],
+			[
+				"confir",
+				"app\\containers\\ConfirmBattleContainer.js"
+			],
+			[
+				"confirm",
+				"app\\components\\ConfirmBattle.js"
+			],
+			[
+				"containe",
+				"app\\containers\\ConfirmBattleContainer.js"
+			],
+			[
+				"contain",
+				"app\\containers\\ConfirmBattleContainer.js"
+			],
+			[
+				"prompt",
+				"app\\containers\\PromptContainer.js"
+			],
+			[
+				"pro",
+				"app\\containers\\PromptContainer.js"
+			],
+			[
+				"home",
+				"app\\components\\Home.js"
+			],
+			[
+				"app",
+				"dist\\app.js"
+			],
+			[
+				"index.js",
+				"app\\index.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"module",
+				"js\\module\\ModuleServ.js"
+			],
+			[
+				"db.js",
+				"js\\db.js"
+			],
+			[
+				"modul",
+				"js\\module\\ModuleServ.js"
+			],
+			[
+				"desc",
+				"js\\desc\\DescServ.js"
+			],
+			[
+				"map",
+				"js\\map\\MapServ.js"
+			],
+			[
+				"propser",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"control",
+				"js\\controllers.js"
+			],
+			[
+				"app.css",
+				"css\\app.css"
+			],
+			[
+				"app.",
+				"js\\app.js"
+			],
+			[
+				"controll",
+				"js\\controllers.js"
+			],
+			[
+				"sidr",
+				"css\\jquery.sidr.bare.css"
+			],
+			[
+				"tool",
+				"partials\\toolbar.html"
+			],
+			[
+				"index.",
+				"index.html"
+			],
+			[
+				"dx.",
+				"css\\dx.light.css"
+			],
+			[
+				"propc",
+				"js\\properties\\PropCtrl.js"
+			],
+			[
+				"mapser",
+				"js\\map\\MapServ.js"
+			],
+			[
+				"geo",
+				"js\\geo.js"
+			],
+			[
+				"db.j",
+				"js\\db.js"
+			],
+			[
+				"propse",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"map.ht",
+				"partials\\map.html"
+			],
+			[
+				"direc",
+				"js\\directives.js"
+			],
+			[
+				"propctr",
+				"js\\properties\\PropCtrl.js"
+			],
+			[
+				"map.html",
+				"partials\\map.html"
+			],
+			[
+				"util",
+				"js\\utils\\UtilServ.js"
+			],
+			[
+				"contr",
+				"js\\controllers.js"
+			],
+			[
+				"propctrl",
+				"js\\properties\\PropCtrl.js"
+			],
+			[
+				"unit",
+				"js\\unitTest.js"
+			],
+			[
+				"moduleser",
+				"js\\module\\ModuleServ.js"
+			],
+			[
+				"app.js",
+				"js\\app.js"
+			],
+			[
+				"karmaconf",
+				"karma.conf.js"
+			],
+			[
+				"prop",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"serv",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"maps",
+				"js\\map\\MapServ.js"
+			],
+			[
+				"lege",
+				"js\\legend\\legendCtrl.js"
+			],
+			[
+				"legen",
+				"js\\legend\\legendServ.js"
+			],
+			[
+				"db.",
+				"js\\db.js"
+			],
+			[
+				"legend",
+				"js\\legend\\legendServ.js"
+			],
+			[
+				"modulese",
+				"js\\module\\ModuleServ.js"
+			],
+			[
+				"module.",
+				"js\\module\\ModuleServ.js"
+			],
+			[
+				"geo.js",
+				"js\\geo.js"
+			],
+			[
+				"propserv",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"descse",
+				"js\\desc\\DescServ.js"
+			],
+			[
+				"controlle",
+				"js\\controllers.js"
+			],
+			[
+				"geo.",
+				"js\\geo.js"
+			],
+			[
+				"utils",
+				"js\\utils\\UtilServ.js"
+			],
+			[
+				"map.h",
+				"partials\\map.html"
+			],
+			[
+				"dx",
+				"css\\dx.common.css"
+			],
+			[
+				"descs",
+				"js\\desc\\DescServ.js"
+			],
+			[
+				"descserv",
+				"js\\desc\\DescServ.js"
+			],
+			[
+				"proper",
+				"partials\\properties.html"
+			],
+			[
+				"dx.commo",
+				"css\\dx.common.css"
+			],
+			[
+				"dx.ligh",
+				"css\\dx.light.css"
+			],
+			[
+				"sidrbare",
+				"css\\jquery.sidr.bare.css"
+			],
+			[
+				"toolb",
+				"partials\\toolbar.html"
+			],
+			[
+				"db",
+				"js\\db.js"
+			],
+			[
+				"ol",
+				"css\\ol.css"
+			],
+			[
+				"sidr.css",
+				"css\\jquery.sidr.bare.css"
+			],
+			[
+				"props",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"map.",
+				"partials\\map.html"
+			],
+			[
+				"legense",
+				"js\\legend\\legendServ.js"
+			],
+			[
+				".html",
+				"index.html"
+			],
+			[
+				"propct",
+				"js\\properties\\PropCtrl.js"
+			],
+			[
+				"prose",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"porpser",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"contro",
+				"js\\controllers.js"
+			],
+			[
+				"legs",
+				"js\\legend\\legendServ.js"
+			],
+			[
+				"provs",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"propsev",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"usilser",
+				"js\\utils\\UtilServ.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"too",
+				"partials\\toolbar.html"
+			],
+			[
+				"css",
+				"css\\ol.css"
+			],
+			[
+				"legendse",
+				"js\\legend\\legendServ.js"
+			],
+			[
+				"serv.",
+				"js\\properties\\PropServ.js"
+			],
+			[
+				"legenc",
+				"js\\legend\\legendCtrl.js"
+			],
+			[
+				"legenser",
+				"js\\legend\\legendServ.js"
+			],
+			[
+				"services",
+				"bin\\Debug\\js\\services.js"
+			],
+			[
+				"service",
+				"js\\legend\\services.js"
+			],
+			[
+				"legendser",
+				"js\\legend\\services.js"
+			],
+			[
+				"week",
+				"bin\\Debug\\partials\\week.html"
+			],
+			[
+				"controo",
+				"node_modules\\karma\\node_modules\\chokidar\\node_modules\\readdirp\\test\\bed\\root_file1.ext1"
+			],
+			[
+				"ser",
+				"js\\services.js"
+			],
+			[
+				"contrr",
+				"js\\controllers.js"
+			],
+			[
+				"sidrcss",
+				"css\\jquery.sidr.dark.min.css"
+			],
+			[
+				"se",
+				"js\\services.js"
+			],
+			[
+				"angula",
+				"lib\\angular.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\caioh\\Desktop\\Dev\\reacts\\redux\\examples\\todos\\this.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 326.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
