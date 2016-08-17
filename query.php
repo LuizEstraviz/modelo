@@ -6,7 +6,7 @@ if (isset($_GET['query'])) {
 	} else {
 		$results = pg_query($_GET['query']) or die('Query failed: ' . pg_last_error());
 		$fields = array();
-		for ($j = 0; $j < pg_num_fields($res); $j++) {
+		for ($j = 0; $j < pg_num_fields($results); $j++) {
 			$fields[] = pg_field_name($results, $j);
 		}
 		print json_encode($fields);
