@@ -10,7 +10,7 @@ if (isset($_GET['query'])) {
 			$fields[] = pg_field_name($results, $j);
 		}
 		$myarray = array();
-		$myarray['campos'] = $fields
+		$myarray['campos'] = $fields;
 		while ($row = pg_fetch_row($results)) {
   			$myarray['dados'][] = $row;
 		}
