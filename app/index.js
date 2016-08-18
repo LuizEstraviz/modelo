@@ -10,7 +10,7 @@ class Main extends React.Component {
 
   	@autobind
 	executar() {
-		axios.get('query.php?query=' + this.state.query)
+		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query)
 		  .then(function(response){
 		    console.log(response.data); // ex.: { user: 'Your User'}
 		    console.log(response.status); // ex.: 200

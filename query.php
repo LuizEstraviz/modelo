@@ -9,10 +9,10 @@ if (isset($_GET['query'])) {
 		for ($j = 0; $j < pg_num_fields($results); $j++) {
 			$fields[] = pg_field_name($results, $j);
 		}
-		print json_encode($fields);
 		$myarray = array();
+		$myarray['campos'] = $fields
 		while ($row = pg_fetch_row($results)) {
-  			$myarray[] = $row;
+  			$myarray['dados'][] = $row;
 		}
    		print json_encode($myarray);
 	}

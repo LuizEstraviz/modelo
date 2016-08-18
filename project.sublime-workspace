@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"getElementById〔function〕"
+			],
+			[
+				"HtmlWebpackPluginC",
+				"HtmlWebpackPluginConfig"
+			],
+			[
+				"HtmlWeb",
+				"HtmlWebpackPlugin"
+			],
+			[
 				"flexDirection",
 				"flexDirection = 'row'	Style CSS"
 			],
@@ -432,10 +444,6 @@
 				"factory	AngularJS"
 			],
 			[
-				"get",
-				"getElementsByTagName〔function〕"
-			],
-			[
 				"nav",
 				"navigationItems〔argument〕"
 			],
@@ -506,24 +514,35 @@
 			[
 				"conne",
 				"connection_string"
-			],
-			[
-				"te_getC",
-				"te_get_connection"
-			],
-			[
-				"conn",
-				"connectionString〔variable〕"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+			"file": "app/index.js",
 			"settings":
 			{
-				"buffer_size": 882,
+				"buffer_size": 1192,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "rcc",
+			"file": "app/components/Tabela.js",
+			"file_size": 0,
+			"file_write_time": 131159309387270421,
+			"settings":
+			{
+				"buffer_size": 3,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "webpack.config.js",
+			"settings":
+			{
+				"buffer_size": 734,
 				"line_ending": "Windows"
 			}
 		}
@@ -535,10 +554,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 359.0,
-		"last_filter": "",
+		"height": 392.0,
+		"last_filter": "Snippet: rcc",
 		"selected_items":
 		[
+			[
+				"Snippet: rcc",
+				"Snippet: React: component skeleton"
+			],
 			[
 				"prett",
 				"Pretty JSON: Format (Pretty Print) JSON"
@@ -888,7 +911,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 432.0
+		"width": 528.0
 	},
 	"console":
 	{
@@ -1003,10 +1026,44 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev"
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components"
 	],
 	"file_history":
 	[
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/JSX.sublime-settings",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Installed Packages/ReactJS/snippets/coffee/react_component.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Installed Packages/ReactJS.sublime-package",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Installed Packages/All Autocomplete.sublime-package",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Installed Packages/0_package_control_loader.sublime-package",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Installed Packages/ReactJS/snippets/js/react_component.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/react_component.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/React/RequireContainer.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/React.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/React/ReactLocationQuery.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/React/ReactLocation.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/coffee/react_component.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/rre.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/rr2teste.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/routeParams.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/ReactRouter.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/coffee/render.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/classSet.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/cx.sublime-snippet",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/wrap.sublime-snippet",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.gitignore",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/index.html",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.babelrc",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/query.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
+		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/webpack.config.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
+		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/package.json",
+		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/app/index.html",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/caioh/Desktop/Pessoal/AHK/Escape HTML com tab.ahk",
 		"/C/Users/caioh/Desktop/Temp/file1.xml",
 		"/C/Users/caioh/AppData/Roaming/Skype/My Skype Received Files/file1.xml",
@@ -1034,7 +1091,6 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS020_05_EliminaDuplicados.bat",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS030_06.bat",
 		"/C/Users/caioh/Desktop/test.txt",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/insert_datetime.py",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS030_10_CalcMetriUPs.bat",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/BATCHS/A_ALS020_03_ReduzDensidadeDePontos.bat",
@@ -1103,38 +1159,7 @@
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLBIOMA.Table.sql",
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/001RL.RLBIOMA.Table.sql",
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLCUSTOSGERAIS.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLCLASSECUSTO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLCLASSE.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLCARACTERISTICA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLVALIDARECOMENDACAO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/039RL.RLTABIMAPERC.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLTABIMAPROD.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLTABIMAPERC.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLTABIMA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLTABELA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLREGRAMODELO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/035RL.RLREGRAPLANTIO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLREGRABIO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLREGRA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLRECOMENDACAO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPROJETO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPRECOTERRA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPRODUTOMADEIRA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPRECMADESPECIE.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPARAMETRO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLPARAMDESBASTE.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLNAOMADEIREIRA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMUNICIPIOFITO_GEO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMUNICIPIOFITO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMODELOPLANTIO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLCUSTOSILVICULTURA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMODELO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLVARIAVEL.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMENSAGEM.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLMADEIREIRA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLINSUMO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLGRUPONIVEL1.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Pre-Deployment/RL/2Dados/RL.RLFONTEINFORMACAO.Table.sql"
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLCLASSECUSTO.Table.sql"
 	],
 	"find":
 	{
@@ -1443,30 +1468,89 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+					"file": "app/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 882,
+						"buffer_size": 1192,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								879,
-								879
+								411,
+								411
 							]
 						],
 						"settings":
 						{
-							"auto_complete": true,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"auto_complete": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/components/Tabela.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "",
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "webpack.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								340,
+								340
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1474,7 +1558,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
