@@ -10,26 +10,47 @@ class Main extends React.Component {
 	    this.state = {
 			query: '',
 			dados: [[]],
-			header: []
+			header: [],
+			classe: 'esconde',
+			transicao: false,
 	    };
   	}
 
   	@autobind
 	executar() {
+		if (this.state.classe === 'mostra')
+			this.setState({
+				classe: 'esconde',
+				transicao: true,
+			});
 		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query.replace(/\n/g, ' \n'))
 		  .then(function(response){
-		    this.setState({
-				dados: response.data.dados,
-				header: response.data.campos
-			});
+		  	if (this.state.transicao)
+		  		this.refs.tabela.addEventListener('transitionend', function(){
+		  			this.setState({
+					dados: response.data.dados,
+					header: response.data.campos,
+					classe: 'mostra',
+				});
+		  		}.bind(this)) 	
+		  	else
+			    this.setState({
+					dados: response.data.dados,
+					header: response.data.campos,
+					classe: 'mostra',
+				});
 		  }.bind(this));  
 	}
 
 	@autobind
 	updateQuery(e) {
 		this.setState({
-			query: e.target.value
+			query: e.target.value,
 		})
+	}
+
+	componentDidMount() {
+		this.refs.tabela.addEventListener('transitionend', function(){this.setState({transicao:false})})
 	}
 
 	render() {
@@ -55,7 +76,7 @@ class Main extends React.Component {
 						</div>
 					</form>
 				</div>
-				<div>
+				<div className={'tabela-div ' + this.state.classe} ref="tabela">
 				<Tabela header={this.state.header} data={this.state.dados} />
 				</div>
 			</div>
