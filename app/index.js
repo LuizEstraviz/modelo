@@ -16,11 +16,9 @@ class Main extends React.Component {
 
   	@autobind
 	executar() {
-		var that = this;
-		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query.replace('\n', ' \n'))
+		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query.replace(/\n/g, ' \n'))
 		  .then(function(response){
-		  	console.log(response.data.dados);
-		    that.setState({
+		    this.setState({
 				dados: response.data.dados,
 				header: response.data.campos
 			});
