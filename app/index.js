@@ -12,7 +12,6 @@ class Main extends React.Component {
 			dados: [[]],
 			header: []
 	    };
-	    this.executar = this.executar.bind(this);
   	}
 
   	componentWillMount() {
@@ -29,7 +28,7 @@ class Main extends React.Component {
 				dados: response.data.dados,
 				header: response.data.campos
 			});
-		  }).bind(this);  
+		  }.bind(this));  
 	}
 
 	@autobind
