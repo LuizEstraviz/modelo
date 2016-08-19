@@ -14,14 +14,10 @@ class Main extends React.Component {
 	    };
   	}
 
-  	componentWillMount() {
-  	    window.varA = Counter;  
-  	}
-
   	@autobind
 	executar() {
 		var that = this;
-		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query)
+		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query.replace('\n', ' \n'))
 		  .then(function(response){
 		  	console.log(response.data.dados);
 		    that.setState({
