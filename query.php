@@ -1,5 +1,5 @@
 <?php 
-$limite = 1000;
+$limite = 100;
 
 if (isset($_GET['query'])) {
 	if(!@($conexao=pg_connect ("host=apoema.esalq.usp.br dbname=modelo port=5432 user=getlidar password=***REMOVED***"))) {
