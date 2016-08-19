@@ -17,7 +17,7 @@ class Main extends React.Component {
   	@autobind
 	executar() {
 		var that = this;
-		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query.replace('\n', ' \n'))
+		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query)
 		  .then(function(response){
 		  	console.log(response.data.dados);
 		    that.setState({
@@ -30,7 +30,7 @@ class Main extends React.Component {
 	@autobind
 	updateQuery(e) {
 		this.setState({
-			query: e.target.value
+			query: e.target.value.replace('\n', ' \n')
 		})
 	}
 
