@@ -1,20 +1,35 @@
 import autobind from 'autobind-decorator'
+import {Tabela} from './components/Tabela'
+import {Counter} from './components/Counter'
+
+
 
 class Main extends React.Component {
 	constructor(props) {
 	    super(props);
 	    this.state = {
-			query: ''
+			query: '',
+			dados: [[]],
+			header: []
 	    };
+	    this.executar = this.executar.bind(this);
+  	}
+
+  	componentWillMount() {
+  	    window.varA = Counter;  
   	}
 
   	@autobind
 	executar() {
+		var that = this;
 		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query)
 		  .then(function(response){
-		    console.log(response.data); // ex.: { user: 'Your User'}
-		    console.log(response.status); // ex.: 200
-		  });  
+		  	console.log(response.data.dados);
+		    that.setState({
+				dados: response.data.dados,
+				header: response.data.campos
+			});
+		  }).bind(this);  
 	}
 
 	@autobind
@@ -27,7 +42,7 @@ class Main extends React.Component {
 	render() {
 		return (
 			<div className="jumbotron col-sm-6 col-sm-offset-3 text-center">
-				<h1>Digite o código SQL</h1>
+				<h1>Fazenda modelo</h1>
 				<div className="col-sm-12">
 					<form>
 						<div className="form-group">
@@ -42,10 +57,13 @@ class Main extends React.Component {
 							<div
 							className="btn btn-block btn-success" 
 							onClick={this.executar}>
-								Query
+								Rodar
 							</div>
 						</div>
 					</form>
+				</div>
+				<div>
+				<Tabela header={this.state.header} data={this.state.dados} />
 				</div>
 			</div>
 			);
