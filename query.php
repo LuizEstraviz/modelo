@@ -1,4 +1,5 @@
 <?php 
+$limite = 1000;
 
 if (isset($_GET['query'])) {
 	if(!@($conexao=pg_connect ("host=apoema.esalq.usp.br dbname=modelo port=5432 user=getlidar password=***REMOVED***"))) {
@@ -11,8 +12,10 @@ if (isset($_GET['query'])) {
 		}
 		$myarray = array();
 		$myarray['campos'] = $fields;
-		while ($row = pg_fetch_row($results)) {
+		$i = 0;
+		while ($row = pg_fetch_row($results) and $i < $limite) {
   			$myarray['dados'][] = $row;
+  			$i++;
 		}
    		print json_encode($myarray);
 	}
