@@ -13,6 +13,7 @@ class Main extends React.Component {
 			header: [],
 			classe: 'esconde',
 			transicao: false,
+			height: 0,
 	    };
   	}
 
@@ -22,6 +23,7 @@ class Main extends React.Component {
 			this.setState({
 				classe: 'esconde',
 				transicao: true,
+				height: 0,
 			});
 		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query.replace(/\n/g, ' \n'))
 		  .then(function(response){
@@ -31,6 +33,7 @@ class Main extends React.Component {
 					dados: response.data.dados,
 					header: response.data.campos,
 					classe: 'mostra',
+					height: 40+response.data.dados.length*37
 				});
 		  		}.bind(this)) 	
 		  	else
@@ -38,6 +41,7 @@ class Main extends React.Component {
 					dados: response.data.dados,
 					header: response.data.campos,
 					classe: 'mostra',
+					height: 40+response.data.dados.length*37
 				});
 		  }.bind(this));  
 	}
@@ -55,7 +59,7 @@ class Main extends React.Component {
 
 	render() {
 		return (
-			<div className="jumbotron col-sm-6 col-sm-offset-3 text-center">
+			<div className="jumbotron col-sm-12 text-center">
 				<h1>Fazenda modelo</h1>
 				<div className="col-sm-12">
 					<form>
@@ -75,9 +79,11 @@ class Main extends React.Component {
 							</div>
 						</div>
 					</form>
-				</div>
-				<div className={'tabela-div ' + this.state.classe} ref="tabela">
-				<Tabela header={this.state.header} data={this.state.dados} />
+					<div className="col-sm-12 outer">
+					<div className={'tabela-div ' + this.state.classe} style={{height: this.state.height}} ref="tabela">
+						<Tabela header={this.state.header} data={this.state.dados} />
+					</div>
+					</div>
 				</div>
 			</div>
 			);
