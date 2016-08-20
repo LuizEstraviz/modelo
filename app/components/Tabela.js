@@ -9,8 +9,8 @@ export class Tabela extends Component {
 		var rows = [];
 		this.props.data.map(function(row) {
 					var row_group = [];
-					row.map(function(record) {
-						row_group.push(<td>{record}</td>);
+					row.map(function(record, i) {
+						row_group.push(<td key={i}>{record}</td>);
 					})
 					rows.push(row_group);
 			}
@@ -20,14 +20,14 @@ export class Tabela extends Component {
 			<tbody>
 				<tr>
 					{
-						this.props.header.map(function(head) {
-			          		return (<th>{head}</th>);
+						this.props.header.map(function(head, i) {
+			          		return (<th key={i}>{head}</th>);
 			        	})
 			        }
 				</tr>
 				{
-					rows.map(function(row) {
-						return (<tr>{row}</tr>)
+					rows.map(function(row, i) {
+						return (<tr key={i}>{row}</tr>)
 					})
 				}
 			</tbody>
