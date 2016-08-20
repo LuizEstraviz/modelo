@@ -11,39 +11,44 @@ class Main extends React.Component {
 			query: '',
 			dados: [[]],
 			header: [],
-			classe: 'esconde',
 			transicao: false,
-			height: 0,
+			opacity: 0,
+			erro:''
 	    };
   	}
 
   	@autobind
 	executar() {
-		if (this.state.classe === 'mostra')
+		if (this.state.opacity === 1)
 			this.setState({
-				classe: 'esconde',
 				transicao: true,
-				height: 0,
+				opacity: 0,
 			});
 		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query.replace(/\n/g, ' \n'))
 		  .then(function(response){
-		  	if (this.state.transicao)
-		  		this.refs.tabela.addEventListener('transitionend', function(){
+		  	if(typeof(response.data) === 'string') {
+		  		this.setState({
+		  			erro: response.data,
+		  			header: [],
+		  			dados: [[]]
+		  		});
+		  	}
+		  	else {
+		  		var fn = function(){
 		  			this.setState({
 					dados: response.data.dados,
 					header: response.data.campos,
-					classe: 'mostra',
-					height: 40+response.data.dados.length*37
+					opacity: 1,
+					erro: '',
 				});
-		  		}.bind(this)) 	
-		  	else
-			    this.setState({
-					dados: response.data.dados,
-					header: response.data.campos,
-					classe: 'mostra',
-					height: 40+response.data.dados.length*37
-				});
-		  }.bind(this));  
+		  			this.refs.table.removeEventListener('transitionend', fn);
+		  		}.bind(this);
+			  	if (this.state.transicao)
+			  		this.refs.tabela.addEventListener('transitionend', fn); 	
+			  	else
+				    fn();
+			  } 
+		}.bind(this))
 	}
 
 	@autobind
@@ -51,10 +56,6 @@ class Main extends React.Component {
 		this.setState({
 			query: e.target.value,
 		})
-	}
-
-	componentDidMount() {
-		this.refs.tabela.addEventListener('transitionend', function(){this.setState({transicao:false})})
 	}
 
 	render() {
@@ -80,9 +81,12 @@ class Main extends React.Component {
 						</div>
 					</form>
 					<div className="col-sm-12 outer">
-					<div className={'tabela-div ' + this.state.classe} style={{height: this.state.height}} ref="tabela">
-						<Tabela header={this.state.header} data={this.state.dados} />
-					</div>
+						<div className="tabela-div" style={{opacity: this.state.opacity}} ref="tabela">
+							<Tabela header={this.state.header} data={this.state.dados} />
+						</div>
+						<div className="erro">
+							{this.state.erro}
+						</div>
 					</div>
 				</div>
 			</div>
