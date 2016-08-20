@@ -5,15 +5,18 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<style>
 		th {text-align: center;}
+		.outer {
+			overflow: hidden;
+		}
 		.tabela-div {
-			-webkit-transition: opacity 0.2s;
-    		transition: opacity 0.2s;
-    	}
-    	.esconde {
+			-webkit-transition: opacity .5s;
+    		transition: opacity .5s;
+    		position: relative;
     		opacity: 0;
     	}
-    	.mostra {
-    		opacity: 1;
+    	.erro {
+    		-webkit-transition: opacity .5s;
+    		transition: opacity .5s;
     	}
 	</style>
 </head>
