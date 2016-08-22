@@ -1,6 +1,10 @@
 #
 *.conf.php
 
+#linux
+*.swn
+*.swp
+
 # Logs
 logs
 *.log
