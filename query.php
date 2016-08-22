@@ -21,6 +21,6 @@ if (isset($_GET['query'])) {
    		print json_encode($myarray);
 	}
 } else {
-    print 'Query nao tah definida';
+    print 'A consulta não está definida';
 }
 ?>
