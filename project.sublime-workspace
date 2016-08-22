@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"compo",
+				"componentWillUnmount	Life Cycle Method"
+			],
+			[
+				"transition",
+				"transitionend	Event"
+			],
+			[
 				"rc",
 				"rcc	React: class component"
 			],
@@ -42,10 +50,6 @@
 			[
 				"inter",
 				"setInterval(func, delay)	Window"
-			],
-			[
-				"transition",
-				"transition	Style CSS"
 			],
 			[
 				"trans",
@@ -510,10 +514,6 @@
 			[
 				"te_",
 				"te_get_encodings"
-			],
-			[
-				"sql",
-				"sqlconnection〔variable〕"
 			]
 		]
 	},
@@ -531,8 +531,41 @@
 			"file": "app/index.js",
 			"settings":
 			{
-				"buffer_size": 1448,
+				"buffer_size": 3590,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/Tabela.js",
+			"settings":
+			{
+				"buffer_size": 835,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "query.php",
+			"settings":
+			{
+				"buffer_size": 734,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 517,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "P1013201	1	7	7	12.4000	14.2000	H\nP1013201	1	24	26	10.5000	14.0000	N\nP1013201	1	25	27	9.2000	13.0000	N\nP1013201	1	26	28	9.4000	13.5000	B\nP1013201	1	28	31	10.3000	13.5000	N\nP1013201	1	29	32	10.2000	13.4000	N\nP1013201	1	31	34	12.2000	14.8000	H\nP1013201	1	32	35	10.8000	15.0000	N\nP1013201	1	33	36	11.7000	14.7000	N\nP1013201	1	36	39	10.6000	15.1000	B\nP1013201	1	37	41	13.2000	15.7000	H\nP1013201	1	39	43	12.7000	15.0000	H\nP1013201	2	7	7	18.1000	25.0000	H\nP1013201	2	24	26	15.9000	24.2000	N\nP1013201	2	25	27	13.4000	21.7000	N\nP1013201	2	26	28	14.4000	23.5000	B\nP1013201	2	28	31	15.0000	22.2000	N\nP1013201	2	29	32	15.0000	22.1000	N\nP1013201	2	30	33	5.2000	10.4000	D\nP1013201	2	31	34	18.0000	24.0000	H\nP1013201	2	33	36	17.1000	24.4000	N\nP1013201	2	36	39	15.0000	23.4000	B\nP1013201	2	37	41	18.4000	25.4000	H\nP1013201	2	39	43	18.9000	25.4000	H\nP1013201	3	7	7	20.2000	28.3000	H\nP1013201	2	1	1	17.1000		N",
+			"settings":
+			{
+				"buffer_size": 891,
+				"line_ending": "Windows",
+				"name": "P1013201	1	7	7	12.4000	14.2000	H"
 			}
 		}
 	],
@@ -1025,6 +1058,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/caioh/Desktop/Pessoal/ESALQ/R/Aula 2/desafio.csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/bootstrap.css",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tabela.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
@@ -1151,12 +1185,11 @@
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/predados.sql",
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/006RL.RLCUSTOSGERAIS.Table.sql",
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/preedata.bat",
-		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/001RL.RLVARIAVEL.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/RL.RLPRECOTERRA.Table.sql"
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/001RL.RLVARIAVEL.Table.sql"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 50.0
 	},
 	"find_in_files":
 	{
@@ -1188,6 +1221,12 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			",\n",
+			"  ",
+			"#                   ",
+			"#                   \n",
+			"({\n",
+			"this.set",
 			".less",
 			"table",
 			"center",
@@ -1309,13 +1348,7 @@
 			"(.*?(\\(.*?\\))?)(, |$|\\.)",
 			"(.*?(\\(.*?\\))?)(, |$)",
 			".*?(\\(.*?\\))?(, |$)",
-			".*?(\\(.*?\\))?, ",
-			"(.*?(\\(.*?\\))?), ",
-			".*?(\\(.*?\\))?, ",
-			".*?(\\(.*?\\))?,",
-			".*?\\(.*?\\)?,",
-			".*?\\(.*?\\)?.*?,",
-			"= 0"
+			".*?(\\(.*?\\))?, "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1323,6 +1356,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			";",
 			"",
 			"\\r\\n",
 			"",
@@ -1449,8 +1483,7 @@
 			"'Properties'",
 			", ",
 			"\"",
-			"\\1clusterStat\\2",
-			"\""
+			"\\1clusterStat\\2"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1461,7 +1494,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1492,7 +1525,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1501,15 +1534,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1448,
+						"buffer_size": 3590,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								455,
-								455
+								1238,
+								1238
 							]
 						],
 						"settings":
@@ -1519,10 +1552,126 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 153.0,
+						"translation.y": 442.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/components/Tabela.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								340,
+								340
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "query.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								734,
+								734
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								435
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								877,
+								877
+							]
+						],
+						"settings":
+						{
+							"auto_name": "P1013201	1	7	7	12.4000	14.2000	H",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1579,7 +1728,7 @@
 	"project": "project.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 94.0
 	},
 	"save_all_on_build": true,
 	"select_file":

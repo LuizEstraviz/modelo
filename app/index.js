@@ -1,12 +1,14 @@
 import autobind from 'autobind-decorator'
 import {Tabela} from './components/Tabela'
-import {Counter} from './components/Counter'
 
 
 
 class Main extends React.Component {
 	constructor(props) {
 	    super(props);
+	    this.executar = this.executar.bind(this);
+	    this.updateQuery = this.updateQuery.bind(this);
+	    this.transitionStopped = this.transitionStopped.bind(this);
 	    this.state = {
 			query: '',
 			dados: [[]],
@@ -17,7 +19,6 @@ class Main extends React.Component {
 	    };
   	}
 
-  	@autobind
 	executar() {
 		if (this.state.opacity === 1 || this.state.erroOpacity === 1)
 			this.setState({
@@ -71,14 +72,12 @@ class Main extends React.Component {
 		}.bind(this))
 	}
 
-	@autobind
 	updateQuery(e) {
 		this.setState({
 			query: e.target.value,
 		})
 	}
 
-	@autobind
 	transitionStopped() {
 		console.log('acabou transicao');
 		this.setState({
@@ -98,7 +97,7 @@ class Main extends React.Component {
 
 	render() {
 		return (
-			<div className="jumbotron col-sm-12 text-center">
+                <div className="jumbotron col-sm-12 text-center">
 				<h1>Fazenda modelo</h1>
 				<div className="col-sm-12">
 					<form>
