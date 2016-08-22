@@ -1,9 +1,12 @@
 <?php 
+
+include 'query.conf.php';
+
 $limite = 100;
 error_reporting(E_ERROR | E_PARSE);
 
 if (isset($_GET['query'])) {
-	if(!@($conexao=pg_connect ("host=apoema.esalq.usp.br dbname=modelo port=5432 user=getlidar password=2T!SYAk%F%Us"))) {
+	if(!@($conexao=pg_connect ("host=apoema.esalq.usp.br dbname=modelo port=5432 user=$usr password=$pwd"))) {
 		print "Não foi possível estabelecer uma conexão com o banco de dados.";
 	} else {
 		$results = pg_query($_GET['query']) or die(pg_last_error());
