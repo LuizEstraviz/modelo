@@ -1,6 +1,6 @@
 import { Tabela } from '../components/Tabela';
 import { Imagem } from '../components/Imagem';
-import { Collapse, Well } from 'react-bootstrap';
+import { Collapse, Well, Panel } from 'react-bootstrap';
 //import { Mapa } from './Mapa';
 import $ from 'JQuery';
 
@@ -127,15 +127,15 @@ export class MainContainer extends React.Component {
 		return (
 			// Main div block with gray background
                 <div className="jumbotron col-sm-12 text-center">
-				<div className="col-sm-12">
-					<div className="container col-sm-12" style={{marginBottom: 15}}>
+				<div className="col-sm-12 text-center">
+					<div className="col-sm-12 text-center" style={{marginBottom: 15}}>
 						{/* Imagem recolhível */}
 						<Collapse in={this.state.open}>
-							<div>
+							<Panel className="height200" style={{overflow: "auto", resize: "vertical"}}>
             					<Well>
 									<Imagem />
 								</Well>
-							</div>
+							</Panel>
 						</Collapse>
 						<button type="button" className="btn btn-info" onClick={ () => this.setState({ open: !this.state.open })}>Mostrar esquema</button>
 					</div>
@@ -146,8 +146,19 @@ export class MainContainer extends React.Component {
 							placeholder="Digite a consulta SQL" 
 							type="text" 
 							rows="5" 
+							ref="textArea"
 							onChange={this.updateQuery}
-							value={this.state.query}/> 
+							value={this.state.query}
+							onKeyDown={function(e) {
+								var keyCode = e.keyCode || e.which;
+								if (keyCode == 9) {
+								   e.preventDefault();
+								   var that = this.refs.textArea;
+								   var s = that.selectionStart;
+            					   that.value = that.value.substring(0,that.selectionStart) + "\t" + that.value.substring(that.selectionEnd);
+            					   that.selectionEnd = s+1; 
+								}
+							}.bind(this)}/> 
 						</div>
 						<div className="checkbox">
 						  <label><input type="checkbox" value="" ref="asCsv" /> Resultado em CSV</label>
