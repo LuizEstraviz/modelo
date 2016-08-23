@@ -24,10 +24,10 @@ function returnDataAsCSV($queryResult) {
 	$output = fopen("php://output", "w");
 
 	// Header
-	fputcsv($output, getFieldsAsArray($results));
+	fputcsv($output, getFieldsAsArray($queryResult));
 
 	//Data
-	while ($row = pg_fetch_row($results)) {
+	while ($row = pg_fetch_row($queryResult)) {
 		fputcsv($output, $row);
 	}
 
@@ -39,11 +39,11 @@ function returnDataAsJSON($queryResult) {
 	$dataObject = array();
 
 	//Populate campos
-	$dataObject['campos'] = getFieldsAsArray($results);
+	$dataObject['campos'] = getFieldsAsArray($queryResult);
 	$i = 0;
 
 	// Add $row from $results in $dataObject['dados'] unless limit exceeds
-	while ($row = pg_fetch_row($results) and $i < $limite) {
+	while ($row = pg_fetch_row($queryResult) and $i < $limite) {
 		$dataObject['dados'][] = $row;
 		$i++;
 	}
@@ -59,7 +59,7 @@ if (isset($_GET['query'])) {
 		$results = pg_query($_GET['query']) or die(pg_last_error());
 
 		// Check if output is csv or JSON
-		if (isset($_GET['ascsv']) and $_GET['ascsv'])
+		if (isset($_GET['ascsv']))
 		{
 			returnDataAsCSV($results);
 		} else {
