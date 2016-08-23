@@ -6,9 +6,12 @@ import {Tabela} from './components/Tabela'
 class Main extends React.Component {
 	constructor(props) {
 	    super(props);
+	    // Bind functions to this context
 	    this.executar = this.executar.bind(this);
 	    this.updateQuery = this.updateQuery.bind(this);
 	    this.transitionStopped = this.transitionStopped.bind(this);
+
+	    // Set initial state
 	    this.state = {
 			query: '',
 			dados: [[]],
@@ -20,16 +23,25 @@ class Main extends React.Component {
   	}
 
 	executar() {
+		// If there any error or table is shown hide them and transition
 		if (this.state.opacity === 1 || this.state.erroOpacity === 1)
 			this.setState({
 				transicao: true,
 				opacity: 0,
 				erroOpacity: 0,
 			});
-		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php', {params: {query: this.state.query}})
+
+		// Perform get request for query
+		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php', {
+			params: {
+				query: this.state.query,
+				ascsv: this.refs.asCsv.checked,
+			}
+		})
 		  .then(function(response){
+		  	// If response is simple string then it is an error
 		  	if (typeof(response.data) === 'string') {
-		  		console.log('string');
+		  		// Set error and clean data for table
 		  		var fn = function() {
 			  		this.setState({
 			  			erro: response.data,
@@ -37,69 +49,81 @@ class Main extends React.Component {
 						header: [],
 			  			erroOpacity: 1,
 			  		});
+			  		// Remove listener for tabela and erro
 			  		this.refs.tabela.removeEventListener('transitionend', fn, false);
 		  			this.refs.erro.removeEventListener('transitionend', fn, false);
 		  		}.bind(this);
+
+				// If is in transition wait for transitionend
 		  		if (this.state.transicao) {
 					this.refs.tabela.addEventListener('transitionend', fn, false); 	
 			  		this.refs.erro.addEventListener('transitionend', fn, false);
-		  		} else {
+		  		} 
+				// If not in transition set error and clean data
+		  		else {
 					fn();
 		  		}
 		  	}
-		  	else {
+		  	// If response is object then it is data for table
+		  	if (typeof(response.data === 'object')) {
+		  		// Set data for table
 		  		var fn = function(){
-		  			console.log('rodou fn');
 		  			this.setState({
 					dados: response.data.dados,
 					header: response.data.campos,
 					opacity: 1,
 				});
+		  			// Remove listener for tabela and erro
 		  			this.refs.tabela.removeEventListener('transitionend', fn, false);
 		  			this.refs.erro.removeEventListener('transitionend', fn, false);
-		  			console.log(JSON.stringify(this.state));
 		  		}.bind(this);
+
+		  		// If is in transition wait for transitionend
 			  	if (this.state.transicao) {
-			  		console.log('em transicao');
 			  		this.refs.tabela.addEventListener('transitionend', fn, false); 	
 			  		this.refs.erro.addEventListener('transitionend', fn, false);
 			  	}
+			  	// If not in transition set data for table
 			  	else {
-			  		console.log('já acabou transicao');
 				    fn();
 			  	}
 			  }
 		}.bind(this))
 	}
 
+	// function to run when query textarea is updated
 	updateQuery(e) {
 		this.setState({
 			query: e.target.value,
 		})
 	}
 
+	// When transition ends set transicao state to false
 	transitionStopped() {
-		console.log('acabou transicao');
 		this.setState({
 					transicao: false,
 				});
 	}
 
+	// When component is mount set event listener to broadcast that transition in not in progress
 	componentDidMount() {
 		this.refs.tabela.addEventListener('transitionend', this.transitionStopped);
 		this.refs.erro.addEventListener('transitionend', this.transitionStopped);
 	}
 
+	// When component will unmoun unset previous event listener
 	componentWillUnmount() {
 	 	this.refs.tabela.removeEventListener('transitionend', this.transitionStopped);
 	 	this.refs.erro.removeEventListener('transitionend', this.transitionStopped);
 	}
 
+	// Main render function to output to app div
 	render() {
 		return (
+			// Main div block with gray background
                 <div className="jumbotron col-sm-12 text-center">
-				<h1>Fazenda modelo</h1>
 				<div className="col-sm-12">
+				{ /* Form input with textarea and a button run sql */ }
 					<form>
 						<div className="form-group">
 							<textarea  className="form-control"
@@ -109,6 +133,9 @@ class Main extends React.Component {
 							onChange={this.updateQuery}
 							value={this.state.query}/> 
 						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="" ref="asCsv" /> Resultado em CSV</label>
+						</div>
 						<div className="form-group col-sm-4 col-sm-offset-4">
 							<div
 							className="btn btn-block btn-success" 
@@ -117,11 +144,13 @@ class Main extends React.Component {
 							</div>
 						</div>
 					</form>
+					{ /* Table div */ }
 					<div className="col-sm-12 outer">
 						<div className="tabela-div" style={{opacity: this.state.opacity}} ref="tabela">
 							<Tabela header={this.state.header} data={this.state.dados} />
 						</div>
 					</div>
+					{/* Error div */}
 					<div className="col-sm-12 erro" style={{opacity: this.state.erroOpacity}} ref="erro">
 							{this.state.erro}
 					</div>
