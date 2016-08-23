@@ -32,10 +32,13 @@ class Main extends React.Component {
 			});
 
 		// Perform get request for query
+		if (this.refs.asCsv.checked) {
+			window.location.replace('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.state.query.replace(/\n/g, ' \n') + '&ascsv=true');
+			return;
+		}
 		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php', {
 			params: {
 				query: this.state.query,
-				ascsv: this.refs.asCsv.checked,
 			}
 		})
 		  .then(function(response){
@@ -65,7 +68,7 @@ class Main extends React.Component {
 		  		}
 		  	}
 		  	// If response is object then it is data for table
-		  	if (typeof(response.data === 'object')) {
+		  	if (typeof(response.data) === 'object') {
 		  		// Set data for table
 		  		var fn = function(){
 		  			this.setState({
