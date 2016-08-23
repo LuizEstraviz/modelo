@@ -2,7 +2,6 @@
 
 include 'query.conf.php';
 
-$limite = 100;
 // Remove default messages
 error_reporting(E_ERROR | E_PARSE);
 
@@ -35,6 +34,8 @@ function returnDataAsCSV($queryResult) {
 }
 
 function returnDataAsJSON($queryResult) {
+	$limite = 100;
+
 	// Create $dataArray with campos and dados
 	$dataObject = array();
 
