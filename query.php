@@ -51,7 +51,7 @@ function returnDataAsJSON($queryResult) {
 	print json_encode($dataObject);
 }
 
-if (isset($_GET['query'])) {
+if (isset($_GET['query']) and $_GET['query'] != '') {
 	// Open connection or throw error
 	if(!@($conexao=pg_connect ("host=apoema.esalq.usp.br dbname=modelo port=5432 user=$usr password=$pwd"))) {
 		print 'Não foi possível estabelecer uma conexão com o banco de dados.';
@@ -68,6 +68,6 @@ if (isset($_GET['query'])) {
    		}
 	}
 } else {
-    print 'Erro: Consulta em branco!';
+    print 'Erro: Consulta em branco';
 }
 ?>
