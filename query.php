@@ -60,7 +60,7 @@ if (isset($_GET['query'])) {
 		$results = pg_query($_GET['query']) or die(pg_last_error());
 
 		// Check if output is csv or JSON
-		if (isset($_GET['ascsv']))
+		if (isset($_GET['ascsv']) and $_GET['ascsv'])
 		{
 			returnDataAsCSV($results);
 		} else {
