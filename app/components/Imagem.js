@@ -8,9 +8,7 @@ export class Imagem extends Component {
 
 	render() {
 		return (
-			<div>
-				<img src={this.props.src} style={{margin: 5, width: "100%"}}/>
-			</div>
+				<img className="img-reponsive" src={this.props.src} style={{margin: 5, width: "100%"}}/>
 		);
 	}
 }
