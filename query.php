@@ -23,11 +23,11 @@ function returnDataAsCSV($queryResult) {
 	$output = fopen("php://output", "w");
 
 	// Header
-	fputcsv($output, getFieldsAsArray($queryResult));
+	fputcsv($output, getFieldsAsArray($queryResult), $delimiter = ';');
 
 	//Data
 	while ($row = pg_fetch_row($queryResult)) {
-		fputcsv($output, $row);
+		fputcsv($output, $row, $delimiter = ';');
 	}
 
 	fclose($output);
