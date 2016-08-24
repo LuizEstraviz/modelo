@@ -38,7 +38,7 @@ export class MainContainer extends React.Component {
 			return;
 		}
 		// Perform get request for query
-		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php', {
+		axios.get('query.php', {
 			params: {
 				query: this.state.query,
 			},
