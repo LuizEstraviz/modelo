@@ -41,7 +41,8 @@ export class MainContainer extends React.Component {
 		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php', {
 			params: {
 				query: this.state.query,
-			}
+			},
+			headers: {contentType: "text/plain; charset=utf-8"},
 		})
 		  .then(function(response){
 		  	// If response is simple string then it is an error
