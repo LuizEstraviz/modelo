@@ -1,5 +1,6 @@
 #
 *.conf.php
+.*.php
 
 #linux
 *.swn

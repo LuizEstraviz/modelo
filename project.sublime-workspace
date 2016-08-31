@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"r",
+				"rrc	Carrega componente/container"
+			],
+			[
 				"returnDataA",
 				"returnDataAsJSON"
 			],
@@ -510,10 +514,6 @@
 			[
 				"RLCOM",
 				"RLCOMBINACAOCARROCHEFE"
-			],
-			[
-				"RLMODEL",
-				"RLMODELOPLANTIO	SQL table"
 			]
 		]
 	},
@@ -523,31 +523,7 @@
 			"file": "webpack.config.js",
 			"settings":
 			{
-				"buffer_size": 907,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/index.html",
-			"settings":
-			{
-				"buffer_size": 517,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "query.php",
-			"settings":
-			{
-				"buffer_size": 1815,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/index.js",
-			"settings":
-			{
-				"buffer_size": 4924,
+				"buffer_size": 1181,
 				"line_ending": "Windows"
 			}
 		}
@@ -1037,25 +1013,60 @@
 	[
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components"
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/deps",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/img"
 	],
 	"file_history":
 	[
-		"/C/Users/caioh/Downloads/file (2).csv",
-		"/C/Users/caioh/Downloads/file (1).csv",
-		"/C/Users/caioh/Downloads/file.csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
+		"/C/Users/caioh/Desktop/ESALQ/R/Aula 3/desafio.R",
+		"/C/Users/caioh/Desktop/ESALQ/SIG2016/Aula3/q5.txt",
+		"/C/Users/caioh/Desktop/ESALQ/R/Aula 3/styles.css",
+		"/C/Users/caioh/Desktop/ESALQ/R/Aula 3/demonstracao.html",
+		"/C/Users/caioh/Desktop/ESALQ/R/Aula 3/q1.txt",
+		"/C/Users/caioh/Desktop/ESALQ/SIG2016/Aula3/q1.txt",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/query.conf",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/query.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/AHK/custom.ahk",
+		"/C/Users/caioh/Desktop/ESALQ/SIG2016/Aula2/Tupi_2002.aux",
+		"/C/Users/caioh/Desktop/ESALQ/SIG2016/Aula2/Tupi_2002.JGw",
+		"/C/Users/caioh/Desktop/ESALQ/SIG2016/Aula2/Tupi_2002.JPG.aux.xml",
+		"/C/Users/caioh/Desktop/ESALQ/SIG2016/Aula2/Tupi_2002.JPG.xml",
+		"/C/Users/caioh/Downloads/file (4).csv",
+		"/C/Users/caioh/Downloads/file (3).csv",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/015RL.RLFITOECOLOGIA_GEO.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/026RL.RLNAOMADEIREIRA.Table.sql",
+		"/C/Users/caioh/Dropbox/bin/arcmap.bat",
+		"/D/SIG2016/Aula2/curvas_nivel.shp.xml",
+		"/D/SIG2016/Aula2/app_nascentes.shp.xml",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/package.json",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Imagem.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
+		"/C/Users/caioh/Downloads/file (2).csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/view.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Mapa.js",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/rodaScripts2.ps1",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Collapsable.js",
+		"/C/Users/caioh/Downloads/file (1).csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/openlayers/package.json",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/index.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/featureWKT.js",
+		"/C/Users/caioh/Downloads/file.csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.jsx",
+		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/rodasScripts1.ps1",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/034RL.RLTABELA.Table.sql",
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/001RL.Numbers.Table.sql",
 		"/C/Users/caioh/Desktop/ESALQ/ips.txt",
 		"/C/Users/caioh/Desktop/ajudas.csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/query.conf.php",
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/Terminal/Default (Windows).sublime-keymap",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.gitignore",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/query.php",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tabela.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/server.js",
@@ -1136,39 +1147,7 @@
 		"/C/Users/caioh/Desktop/Novo(a) AutoHotkey Script.ahk",
 		"/C/lotofacil/D_LOTFAC.HTM",
 		"/C/Users/caioh/Desktop/dlot_fac2.txt",
-		"/C/Users/caioh/Dropbox/Scripts/buffer.py",
-		"/C/Users/caioh/Dropbox/Scripts/centroide.py",
-		"/C/Users/caioh/Dropbox/Scripts/proximidade2.py",
-		"/C/Users/caioh/Dropbox/bin/Python/correios.py",
-		"/C/Users/caioh/Dropbox/bin/correios.bat",
-		"/C/Users/caioh/Dropbox/bin/configure.bat",
-		"/C/Users/caioh/Dropbox/Scripts/proximidade.py",
-		"/C/Users/caioh/.qgis2/processing/scripts/Shortest_segment_to_closest_polygon.py",
-		"/C/Users/caioh/Dropbox/Scripts/numProc.py",
-		"/C/Users/caioh/Dropbox/Scripts/nearestPoint.py",
-		"/C/Users/caioh/Dropbox/Scripts/myscript_cut_by_ughri.py",
-		"/C/Users/caioh/Dropbox/Scripts/difference+script.py",
-		"/C/Users/caioh/Dropbox/Scripts/cut_alternative.py",
-		"/C/Users/caioh/Dropbox/Scripts/criar_linhas.py",
-		"/C/Users/caioh/Downloads/Modelo_APP_Topo_Morro.gpk",
-		"/C/Users/caioh/Downloads/Station Lines/Tool0",
-		"/C/flexlm/license.dat",
-		"/C/Users/caioh/Downloads/ESRI.ArcGIS.9.3.SLX.(Desktop.Only)DVD-3.5GB/crack/arcgis_tbe.lic",
-		"/C/Users/caioh/Desktop/9.3xLic.dat",
-		"/C/Users/caioh/AppData/Local/Temp/7zE45B662DD/9.3xLic.dat",
-		"/C/Program Files (x86)/ESRI/License/arcgis9x/arcgis_tbe.lic",
-		"/C/Program Files (x86)/ESRI/License/arcgis9x/liccrak.reg",
-		"/C/Users/caioh/Desktop/Shapefiles/ST_DNIT_Rodovias_SNV2015_03.prj",
-		"/C/Users/caioh/Desktop/Shapefiles/ST_DNIT_Rodovias_SNV2015_03.shx",
-		"/C/Users/caioh/Desktop/Shapefiles/ST_DNIT_Rodovias_SNV2015_03.qpj",
-		"/C/Users/caioh/Desktop/Shapefiles/ST_DNIT_Rodovias_SNV2015_03.cpg",
-		"/C/Users/caioh/Dropbox/bin/launchAndroid.bat",
-		"/C/Users/caioh/Desktop/python.py",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/026RL.RLNAOMADEIREIRA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/029RL.RLPARAMETRO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/031RL.RLREGRA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/025RL.RLMUNICIPIOFITO_GEO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/Scripts/Dados/021RL.RLMODELO.Table.sql"
+		"/C/Users/caioh/Dropbox/Scripts/buffer.py"
 	],
 	"find":
 	{
@@ -1204,6 +1183,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"\\t",
+			"foreach",
+			"^g.*\\n",
+			"class",
 			"GO\\nIN",
 			"desAjuda",
 			"(\\d)$",
@@ -1327,11 +1310,7 @@
 			"price",
 			"(.*?(\\(.*?\\).*?)*(\\[.*?\\].*?)*)(, |$|; |\\.$)",
 			"(.*?((\\[.*?)*\\(.*?\\)(.*?\\])*.*?)*)(, |$|; |\\.$)",
-			"(.*?(\\(.*?\\).*?)*)(, |$|; |\\.$)",
-			"(.*?(\\(.*?\\))?.*?)(, |$|; |\\.$)",
-			"(.*?(\\(.*?\\).*?)*)(, |$|; |\\.$)",
-			"(.*?(\\(.*?\\))?.*?)(, |$|; |\\.$)",
-			"Raças Médias"
+			"(.*?(\\(.*?\\).*?)*)(, |$|; |\\.$)"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1339,6 +1318,8 @@
 		"regex": true,
 		"replace_history":
 		[
+			";",
+			"$0\\n",
 			"IN",
 			"",
 			"$1 UNION ALL",
@@ -1464,9 +1445,7 @@
 			"refTerrgroup",
 			"",
 			"'FormData'",
-			"'Legend'",
-			"'LegendHelper'",
-			"'Prefs'"
+			"'Legend'"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1477,7 +1456,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1486,15 +1465,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 907,
+						"buffer_size": 1181,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								396,
-								396
+								1181,
+								1181
 							]
 						],
 						"settings":
@@ -1505,94 +1484,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/index.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 517,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								260,
-								260
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "query.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1815,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1653,
-								1653
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 255.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4924,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								979,
-								979
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 63.0,
-						"translation.y": 306.0,
+						"translation.y": 152.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
