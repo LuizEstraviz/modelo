@@ -40,6 +40,8 @@ module.exports = {
     new webpack.ProvidePlugin({
         "ReactDOM": "react-dom"}),
     new webpack.ProvidePlugin({
-        "axios": "axios"})
+        "axios": "axios"}),
+    new webpack.ProvidePlugin({
+        "classNames": "classnames"})
   ]
 }
