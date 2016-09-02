@@ -1,4 +1,4 @@
-import { Header } from '../components/Header';
+import { Header } from '../containers/Header';
 import Body from './Body'
 import { Provider } from 'react-redux';
 import {store} from '../redux/reducers.js'
