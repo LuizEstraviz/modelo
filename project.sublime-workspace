@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"compo",
+				"componentWillUnmount	Life Cycle Method"
+			],
+			[
+				"asCsv",
+				"asCsvChanged"
+			],
+			[
 				"esta",
 				"estaEntreTags〔function〕"
 			],
@@ -22,10 +30,6 @@
 			[
 				"returnDataA",
 				"returnDataAsJSON"
-			],
-			[
-				"compo",
-				"componentWillUnmount	Life Cycle Method"
 			],
 			[
 				"transition",
@@ -510,47 +514,48 @@
 			[
 				"RL",
 				"RLFCCOMBINACAO	SQL table"
-			],
-			[
-				"te_get",
-				"te_get_columns"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/components/Link.js",
+			"file": "app/redux/actions.js",
 			"settings":
 			{
-				"buffer_size": 188,
+				"buffer_size": 1400,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "import React, { Component } from 'react';\nimport { Tabela } from '../components/Tabela';\nimport { SchemaContainer } from '../containers/SchemaContainer';\nimport { connect } from 'react-redux';\nimport { addUser, setQuery } from '../redux/actions'\n\nclass Body extends Component {\n	constructor(props) {\n		super(props);\n\n		this.state = {\n			query: '',\n			header: [],\n			transicao: false,\n			opacity: 0,\n			erroOpacity: 0\n		};\n\n		this.executaQuery = this.executaQuery.bind(this);\n		this.updateQuery = this.updateQuery.bind(this);\n		this.transitionStopped = this.transitionStopped.bind(this);\n	}\n\n	executaQuery() {\n		{\n		// If there any error or table is shown hide them and transition\n		if (this.state.opacity === 1 || this.state.erroOpacity === 1)\n			this.setState({\n				transicao: true,\n				opacity: 0,\n				erroOpacity: 0,\n			});\n\n		// If asCsv then open regular as regular link for download\n		if (this.refs.asCsv.checked) {\n			window.location.replace('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + this.props.query.replace(/\\n/g, ' \\n') + '&ascsv=true');\n			return;\n		}\n		// Perform get request for query\n		axios.get('http://apoema.esalq.usp.br/~getlidar/query.php', {\n			params: {\n				query: this.props.query,\n			},\n		})\n		  .then(function(response){\n		  	// If response is simple string then it is an error\n		  	if (typeof(response.data) === 'string') {\n		  		// Set error and clean data for table\n		  		var fn = function() {\n			  		this.setState({\n			  			erro: response.data,\n			  			dados: [[]],\n						header: [],\n			  			erroOpacity: 1,\n			  		});\n			  		// Remove listener for tabela and erro\n			  		this.refs.tabela.removeEventListener('transitionend', fn, false);\n		  			this.refs.erro.removeEventListener('transitionend', fn, false);\n		  		}.bind(this);\n\n				// If is in transition wait for transitionend\n		  		if (this.state.transicao) {\n					this.refs.tabela.addEventListener('transitionend', fn, false); 	\n			  		this.refs.erro.addEventListener('transitionend', fn, false);\n		  		} \n				// If not in transition set error and clean data\n		  		else {\n					fn();\n		  		}\n		  	}\n		  	// If response is object then it is data for table\n		  	if (typeof(response.data) === 'object') {\n		  		// Set data for table\n		  		var fn = function(){\n		  			this.setState({\n					dados: response.data.dados,\n					header: response.data.campos,\n					opacity: 1,\n				});\n		  			// Remove listener for tabela and erro\n		  			this.refs.tabela.removeEventListener('transitionend', fn, false);\n		  			this.refs.erro.removeEventListener('transitionend', fn, false);\n		  		}.bind(this);\n\n		  		// If is in transition wait for transitionend\n			  	if (this.state.transicao) {\n			  		this.refs.tabela.addEventListener('transitionend', fn, false); 	\n			  		this.refs.erro.addEventListener('transitionend', fn, false);\n			  	}\n			  	// If not in transition set data for table\n			  	else {\n				    fn();\n			  	}\n			  }\n		}.bind(this))\n	}\n	}\n\n	// function to run when query textarea is updated\n	updateQuery(e) {\n		this.props.setQuery(e.target.value);\n	}\n\n\n	// When component is mount set event listener to broadcast that transition in not in progress\n	componentDidMount() {\n		this.refs.tabela.addEventListener('transitionend', this.transitionStopped);\n		this.refs.erro.addEventListener('transitionend', this.transitionStopped);\n	}\n\n	// When component will unmoun unset previous event listener\n	componentWillUnmount() {\n	 	this.refs.tabela.removeEventListener('transitionend', this.transitionStopped);\n	 	this.refs.erro.removeEventListener('transitionend', this.transitionStopped);\n	}\n\n	// When transition ends set transicao state to false\n	transitionStopped() {\n		this.setState({\n					transicao: false,\n				});\n	}\n\n\n	render() {\n		return (\n			<div className=\"jumbotron col-sm-10 text-center contents\" style={{marginTop: \"-18px\"}}>\n                <div id=\"content\">\n				<div className=\"col-sm-12 text-center\">\n					<SchemaContainer />\n				{ /* Form input with textarea and a button run sql */ }\n					<form>\n						<div className=\"form-group\">\n							<textarea  className=\"form-control\"\n							placeholder=\"Digite a consulta SQL\" \n							type=\"text\" \n							rows=\"5\" \n							ref=\"textArea\"\n							onChange={e => this.props.setQuery(e.target.value)}\n							value={this.props.query}\n							onKeyDown={function(e) {\n								var keyCode = e.keyCode || e.which;\n								if (keyCode == 9) {\n								   e.preventDefault();\n								   var that = this.refs.textArea;\n								   var s = that.selectionStart;\n            					   that.value = that.value.substring(0,that.selectionStart) + \"\\t\" + that.value.substring(that.selectionEnd);\n            					   that.selectionEnd = s+1; \n								}\n							}.bind(this)}/> \n						</div>\n						<div className=\"checkbox\">\n						  <label><input type=\"checkbox\" value=\"\" ref=\"asCsv\" /> Resultado em CSV</label>\n						</div>\n						<div className=\"form-group col-sm-4 col-sm-offset-4\">\n							<div\n							className=\"btn btn-block btn-success\" \n							onClick={this.executaQuery}>\n								Rodar\n							</div>\n						</div>\n					</form>\n					{ /* Table div */ }\n					<div className=\"col-sm-12 outer\">\n						<div className=\"tabela-div\" style={{opacity: this.state.opacity}} ref=\"tabela\">\n							<Tabela header={this.state.header} data={this.state.dados} />\n						</div>\n					</div>\n					{/* Error div */}\n					<div className=\"col-sm-12 erro alert alert-danger\" style={{opacity: this.state.erroOpacity}} ref=\"erro\">\n							{this.state.erro}\n					</div>\n					{/*<Mapa />*/}\n				</div>\n				</div>\n			</div>\n			<Tatu />\n		);\n	}\n}\n\nconst mapStateToProps = function(store) {\n	console.log(store.userState);\n  return {\n    users: store.userState,\n    query: store.query\n  };\n}\n\nfunction mapDispatchToProps(dispatch) {\n  return {\n    addUser: nome => dispatch(addUser(nome)),\n    setQuery: query => dispatch(setQuery(query))\n  };\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(Body);",
-			"file": "app/containers/Body.js",
-			"file_size": 6078,
-			"file_write_time": 131171525130770263,
+			"file": "app/redux/reducers.js",
 			"settings":
 			{
-				"buffer_size": 5895,
+				"buffer_size": 1484,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+			"file": "app/components/Results.js",
 			"settings":
 			{
-				"buffer_size": 955,
+				"buffer_size": 1490,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/cria_arquivo.py",
+			"file": "app/components/ExecQueryButton.js",
 			"settings":
 			{
-				"buffer_size": 2342,
+				"buffer_size": 781,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 913,
 				"line_ending": "Windows"
 			}
 		}
@@ -1042,16 +1047,32 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/img",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux"
 	],
 	"file_history":
 	[
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/insert_time.py",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Results.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CSVCheckBox.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/ExecQueryButton.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Header.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
+		"/C/Users/caioh/Downloads/file (5).csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/insert_datetime.py",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/cria_arquivo.py",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Link.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/SqlEditor.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/abrir.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Mapa.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tatu.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/components/Tatu.js",
+		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/insert_time.py",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.babelrc",
 		"/C/Users/caioh/Desktop/criaArquivoComNome.py",
 		"/C/Users/caioh/Dropbox/Carta apresentacao",
@@ -1060,25 +1081,19 @@
 		"/C/Users/caioh/Desktop/Dev/JWAsm/Samples/exemplo.asm",
 		"/C/Users/caioh/Desktop/UsingApi.asm",
 		"/C/Users/caioh/Desktop/Dev/JWAsm/Samples/Win32_5.asm",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Header.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
 		"/C/Users/caioh/Desktop/Dev/JWAsm/Samples/Dos1.asm",
 		"/C/Users/caioh/Desktop/Dev/JWAsm/Samples/Make.bat",
 		"/C/Users/caioh/Desktop/Dev/JWAsm/Readme.txt",
 		"/C/Users/caioh/Desktop/Dev/JWAsm/History.txt",
 		"/C/Users/caioh/Desktop/Dev/JWAsm/Samples/Readme.txt",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/SchemaContainer.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Link.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/LeftMenu.js",
 		"/C/Users/caioh/Desktop/mtoloco.htm",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.gitignore",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
 		"/C/Users/caioh/Desktop/ESALQ/R/Aula 3/desafio.R",
 		"/C/Users/caioh/Desktop/ESALQ/SIG2016/Aula3/q5.txt",
 		"/C/Users/caioh/Desktop/ESALQ/R/Aula 3/styles.css",
@@ -1163,18 +1178,7 @@
 		"/C/Users/caioh/Desktop/Temp/SATExemplo.xml",
 		"/D/MESTRADO/Disciplinas/_Semestre II/Regressão/q2.csv",
 		"/C/Users/caioh/Desktop/Temp/files8.xml",
-		"/C/Users/caioh/AppData/Roaming/Skype/My Skype Received Files/files2.xml",
-		"/C/Users/caioh/private",
-		"/C/Users/caioh/Documents/ex8.csv",
-		"/C/Users/caioh/Desktop/Temp/files2.xml",
-		"/C/Windows/System32/drivers/etc/networks",
-		"/C/Users/caioh/Documents/ex4.csv",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/NUVENS/2013/ORIG/info/CODL0002-C0006_info.txt",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/NUVENS/2013/ORIG/Catalog.csv",
-		"/C/LAStools/bin/lasview_README.txt",
-		"/C/Windows/System32/drivers/etc/hosts",
-		"/C/Users/caioh/Desktop/teste.htm",
-		"/C/Users/caioh/Desktop/Pessoal/Pendentes/Carta apresentação à Raízen.txt"
+		"/C/Users/caioh/AppData/Roaming/Skype/My Skype Received Files/files2.xml"
 	],
 	"find":
 	{
@@ -1210,6 +1214,16 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"transition",
+			"props",
+			"8",
+			"erro",
+			"props",
+			"props3",
+			"query",
+			"data",
+			"SqlEditor",
+			"Provide",
 			"Equal\\(False, ",
 			"Equal\\(True, ",
 			"\\t",
@@ -1327,17 +1341,7 @@
 			"tr",
 			"</div>",
 			"<div.*>\\n",
-			"<div.*>$",
-			"<div.*>",
-			"<div\\>.*?</div>",
-			"<div>.*?</div>",
-			"<div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>",
-			"logo",
-			"<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>\n",
-			"<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>",
-			"data:post.bod",
-			"<h3 class='post-title entry-title' itemprop='name'>",
-			"postId"
+			"<div.*>$"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1345,6 +1349,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"this.props",
 			"False(",
 			"True(",
 			"    ",
@@ -1471,8 +1476,7 @@
 			"\\1\\)",
 			"formData.data",
 			"\"",
-			"refDesc",
-			"refPropMenu"
+			"refDesc"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1483,24 +1487,84 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/components/Link.js",
+					"file": "app/redux/actions.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 188,
+						"buffer_size": 1400,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								153,
-								153
+								695,
+								695
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 408.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/redux/reducers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								917,
+								917
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/components/Results.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								606,
+								606
 							]
 						],
 						"settings":
@@ -1516,87 +1580,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/containers/Body.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5895,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5520,
-								5512
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2890.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 955,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								953,
-								953
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 153.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/cria_arquivo.py",
-					"semi_transient": false,
+					"file": "app/components/ExecQueryButton.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2342,
+						"buffer_size": 781,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								374,
-								371
+								190,
+								190
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/Python/Python.sublime-syntax",
+							"syntax": "Packages/JSX/JSX.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1604,7 +1606,36 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 913,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								674,
+								674
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

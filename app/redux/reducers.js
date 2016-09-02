@@ -1,35 +1,59 @@
-import {createStore, combineReducers} from 'redux';
-// Note that using .push() in this way isn't the
-// best approach. It's just the easiest to show
-// for this example. We'll explain why in the next section.
+import {createStore, applyMiddleware, combineReducers} from 'redux';
+import thunkMiddleware from 'redux-thunk';
 
-// The Reducer Function
-var userReducer = function(state = [], action) {
-  if (action.type === 'ADD_USER') {
-    var newState = state.concat([action.user]);
-    return newState;
-  }
-  return state;
+
+// Handlers for reducers
+const handlers = {
+  'SET_QUERY': (state, { query }) => Object.assign({}, state, { query }),
+
+  'REC_DATA': (state, { data }) => Object.assign({}, 
+        state,
+        {
+          [typeof(data) === 'string' ? 'error' : 'table']: {data}
+        },
+        {
+          [state.transition ? 'tempdata' : 'data']: data,
+          isError: state.transition ? state.isError : typeof(data) === 'string'
+        }
+        ),
+
+  'REQ_DATA': (state, action) => {
+    var newState = Object.assign({}, 
+      state, 
+      {
+        tempdata: '',
+        transition: !state.transition,
+      });
+    console.log(newState);
+    return newState},
+
+  'AS_CSV': (state, { ascsv }) => Object.assign({}, state, { ascsv }),
+
+  'TRANS_END': (state, action) => {
+    return Object.assign({}, state, 
+      { transition: false,
+        data: state.tempdata ? state.tempdata : state.data,
+        isError: typeof(state.tempdata ? state.tempdata : state.data) === 'string'
+    })}
+};
+
+
+// Reducer with handlers mapping
+const reducers = function(state={}, action) {
+  return handlers.hasOwnProperty(action.type) 
+    ? handlers[action.type](state, action)
+    : state
 }
 
-// The Widget Reducer
-const widgetReducer = function(state = {}, action) {
-  return state;
-}
-
-const queryReducer = function(state = '', action) {
-	if (action.type === 'SET_QUERY') {
-		return action.query;
-	}
-	return state;
-}
-
-// Combine Reducers
-const reducers = combineReducers({
-  userState: userReducer,
-  widgetState: widgetReducer,
-  query: queryReducer,
+// Use thunkMiddleware in store to handle function return
+var createStoreWithMiddleware = applyMiddleware(thunkMiddleware)(createStore);
+export var store = createStoreWithMiddleware(reducers, 
+// initial state
+{
+  query: '',
+  data: '',
+  tempdata: '',
+  isError: false,
+  ascsv: false,
+  transition: true,
 });
-
-// Create a store by passing in the reducer
-export var store = createStore(reducers);
