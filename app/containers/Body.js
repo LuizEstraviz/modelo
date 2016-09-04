@@ -12,9 +12,7 @@ import { store } from '../redux/reducers.js'
 class Body extends Component {
 	constructor(props) {
 		super(props);
-
 	}
-
 
 	render() {
 		return (

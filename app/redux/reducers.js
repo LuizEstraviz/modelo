@@ -1,5 +1,6 @@
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunkMiddleware from 'redux-thunk';
+import { scripts } from '../sqlscripts/scripts';
 
 
 // Handlers for reducers
@@ -34,7 +35,9 @@ const handlers = {
       { transition: false,
         data: state.tempdata ? state.tempdata : state.data,
         isError: typeof(state.tempdata ? state.tempdata : state.data) === 'string'
-    })}
+    })},
+
+    'SEL_SCRIPT': (state, { selScript }) => Object.assign({}, state, { selScript, query: scripts[selScript].script.join('\n')}),
 };
 
 
@@ -56,4 +59,5 @@ export var store = createStoreWithMiddleware(reducers,
   isError: false,
   ascsv: false,
   transition: true,
+  selScript: '',
 });

@@ -65,8 +65,15 @@ export function fetchAsCSV(query) {
 }
 
 export function transitionEnd() {
-	console.log('transition ended');
 	return {
 		type: 'TRANS_END',
+	}
+}
+
+export function selectScript(e) {
+	console.log(e);
+	return {
+		type: 'SEL_SCRIPT',
+		selScript: e
 	}
 }
