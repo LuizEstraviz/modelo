@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { setQuery } from '../redux/actions';
+import { scripts } from '../sqlscripts/scripts';
 
 const SqlEditor = (props) => (
     <div>
@@ -25,6 +26,7 @@ const SqlEditor = (props) => (
 const mapStateToProps = function(store) {
     return {
         query: store.query,
+        selScript: store.selScript
     };
 }
 

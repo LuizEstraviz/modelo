@@ -1,6 +1,8 @@
 import { connect } from 'react-redux';
 import { Tabela } from '../components/Tabela';
 import { transitionEnd } from '../redux/actions';
+import { Tabs, Tab } from 'react-bootstrap';
+import { scripts } from '../sqlscripts/scripts';
 
 class Results extends React.Component {
 	constructor(props) {
@@ -25,20 +27,31 @@ class Results extends React.Component {
 	render() {
 
 		return (
-			<div className={classNames("col-sm-12 outer results", {show: !this.props.transition})}  ref="div">
-				{
-					this.props.isError
-					? (
-						<div className="col-sm-12 erro alert alert-danger">
-								{this.props.data}
-						</div>
-					)
-					: (
-						<div className="tabela-div">
-							<Tabela header={this.props.data.campos} data={this.props.data.dados} />
-						</div>
-					)
-				}	
+			<div className="col-sm-12">
+			<Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
+			    <Tab eventKey={1} title="Resultados">
+			    	<div className={classNames("col-sm-12 outer results", {show: !this.props.transition})}  ref="div">
+						{
+							this.props.isError
+							? (
+								<div className="col-sm-12 erro alert alert-danger">
+										{this.props.data}
+								</div>
+							)
+							: (
+								<div className="tabela-div">
+									<Tabela header={this.props.data.campos} data={this.props.data.dados} />
+								</div>
+							)
+						}	
+			    	</div>
+			    </Tab>
+			    <Tab eventKey={2} title="Ajuda">
+			    	<div className="text-left">
+			    		{this.props.selScript !== '' ? scripts[this.props.selScript].desc : ''}
+			    	</div>
+			    </Tab>
+			  </Tabs>
 			</div>
 		);
     }
@@ -49,6 +62,7 @@ const mapStateToProps = function(store) {
         data: store.data,
         transition: store.transition,
         isError: store.isError,
+        selScript: store.selScript,
     };
 }
 
