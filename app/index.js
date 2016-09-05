@@ -1,8 +1,6 @@
 import {MainContainer} from './containers/MainContainer'
 
-if (__DEV__) {
-    console.log('I am in debug');
-}
+console.log(process.env);
 
 
 ReactDOM.render(

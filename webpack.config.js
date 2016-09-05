@@ -45,6 +45,16 @@ module.exports = {
         "axios": "axios"}),
     new webpack.ProvidePlugin({
         "classNames": "classnames"}),
-    new ExtractTextPlugin("[name].css")
+    new ExtractTextPlugin("[name].css"),
+    new webpack.DefinePlugin({
+      'process.env':{
+        'NODE_ENV': process.env.NODE_ENV ? JSON.stringify(process.env.NODE_ENV) : JSON.stringify('DEBUG')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress:{
+        warnings: true
+      }
+    }),
   ]
 }
