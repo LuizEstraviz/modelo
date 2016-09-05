@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Collapse, Well, Panel } from 'react-bootstrap';
+require('../styles.css');
 
 export class CollapsibleImage extends Component {
 	constructor(props) {
