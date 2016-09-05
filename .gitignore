@@ -1,6 +1,9 @@
 #
 *.conf.php
 .*.php
+dist/*
+!dist/*.php
+
 
 #linux
 *.swn
