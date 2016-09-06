@@ -10,9 +10,9 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 })
 
 module.exports = {  
-	devtool: process.env.NODE_ENV === 'production' ? 'cheap-module-source-map' : 'eval',
+	devtool: 'eval',
 	entry: [
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-dev-server/client?http://localhost:8080/webpack-dev-server',
     'webpack/hot/only-dev-server',
     './app/index.js'
   ],

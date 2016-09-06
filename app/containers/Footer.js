@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
 
 
-class Footer extends Component() {
+export class Footer extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        };
     }
 
     render() {
         return (
-            <div></div>
-        )
+            <div className="col-sm-12" style={{backgroundColor: "black", position: "fixed", bottom: 0}}>
+            	<table className="copyright">
+              <tbody>
+              <tr>
+              		<td>Grupo getLiDAR 2016</td>
+              		<td className="right">Produzido por Caio Hamamura</td>
+              </tr>
+              </tbody>
+              </table>
+         	</div>
+        );
     }
 }
-
-Footer.propTypes = {
-    
-}
-
-Footer.defaultProps = {
-    
-};
