@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { Tabela } from '../components/Tabela';
-import { transitionEnd } from '../redux/actions';
+import { transitionEnd, selectTab } from '../redux/actions';
 import { Tabs, Tab } from 'react-bootstrap';
 import { scripts } from '../sqlscripts/scripts';
 
@@ -8,10 +8,15 @@ class Results extends React.Component {
 	constructor(props) {
 		super(props);
 		this.transEnd = this.transEnd.bind(this);
+		this.selectTab = this.selectTab.bind(this);
 	}
 
 	transEnd() {
 		this.props.transitionEnd()
+	}
+
+	selectTab(e) {
+		this.props.selectTab(e);
 	}
 
 	componentDidMount() {
@@ -25,12 +30,12 @@ class Results extends React.Component {
 	}
 
 	render() {
-
+		console.log(this.props.activeTab);
 		return (
 			<div className="col-sm-12">
-			<Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
-			    <Tab eventKey={1} title="Resultados">
-			    	<div className={classNames("col-sm-12 outer results", {show: !this.props.transition})}  ref="div">
+			<Tabs activeKey={this.props.activeTab} id="uncontrolled-tab-example" onSelect={this.props.selectTab}>
+			    <Tab eventKey={1} title="Resultados" onEnter={this.transEnd}>
+			    	<div className={classNames("col-sm-12 outer results", {show: !this.props.transition})} ref="div" >
 						{
 							this.props.isError
 							? (
@@ -46,7 +51,13 @@ class Results extends React.Component {
 						}	
 			    	</div>
 			    </Tab>
-			    <Tab eventKey={2} title="Ajuda">
+			    {
+			    // <Tab eventKey={2} title="Geo">
+			    // 	<div>
+			    // 	</div>
+			    // </Tab>
+				}
+			    <Tab eventKey={3} title="Ajuda">
 			    	<div className="text-left">
 			    		{this.props.selScript !== '' ? scripts[this.props.selScript].desc : ''}
 			    	</div>
@@ -63,12 +74,14 @@ const mapStateToProps = function(store) {
         transition: store.transition,
         isError: store.isError,
         selScript: store.selScript,
+        activeTab: store.activeTab,
     };
 }
 
 function mapDispatchToProps(dispatch) {
     return {
     	transitionEnd: () => dispatch(transitionEnd()),
+    	selectTab: e => dispatch(selectTab(e)),
     };
 }
 

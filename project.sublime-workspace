@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"list-style",
+				"list-style-type"
+			],
+			[
 				"compo",
 				"componentWillUnmount	Life Cycle Method"
 			],
@@ -510,36 +514,16 @@
 			[
 				"RLMUNI",
 				"RLMUNICIPIOFITO	SQL table"
-			],
-			[
-				"RL",
-				"RLFCCOMBINACAO	SQL table"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": ".git/config",
-			"settings":
-			{
-				"buffer_size": 330,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "webpack.config.js",
-			"settings":
-			{
-				"buffer_size": 1771,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/components/CollapsibleImage.js",
 			"settings":
 			{
-				"buffer_size": 834,
+				"buffer_size": 808,
 				"line_ending": "Windows"
 			}
 		}
@@ -1029,21 +1013,28 @@
 	[
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist"
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/img"
 	],
 	"file_history":
 	[
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.gitignore",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Footer.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles.css",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.git/config",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/index.html",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/index_bundle.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts/scripts.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/SchemaContainer.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/index.html",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles.css",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts/scripts.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Results.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/SqlEditor.js",
@@ -1051,7 +1042,6 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tabela.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Link.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/LeftPanel.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/index.html",
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/cria_arquivo.py",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/desc_Ajuda/ajuda1.html",
@@ -1086,7 +1076,6 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/LeftMenu.js",
 		"/C/Users/caioh/Desktop/mtoloco.htm",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.gitignore",
 		"/C/Users/caioh/Desktop/ESALQ/R/Aula 3/desafio.R",
 		"/C/Users/caioh/Desktop/ESALQ/SIG2016/Aula3/q5.txt",
 		"/C/Users/caioh/Desktop/ESALQ/R/Aula 3/styles.css",
@@ -1157,10 +1146,7 @@
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/classSet.sublime-snippet",
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/cx.sublime-snippet",
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/wrap.sublime-snippet",
-		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/webpack.config.js",
-		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/package.json",
-		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/app/index.html",
-		"/C/Users/caioh/Desktop/Pessoal/AHK/Escape HTML com tab.ahk"
+		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/webpack.config.js"
 	],
 	"find":
 	{
@@ -1469,84 +1455,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": ".git/config",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 330,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								110,
-								110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "webpack.config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1771,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1353,
-								1353
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 17.0,
-						"translation.y": 255.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/components/CollapsibleImage.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 834,
+						"buffer_size": 808,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								300,
-								300
+								251,
+								251
 							]
 						],
 						"settings":

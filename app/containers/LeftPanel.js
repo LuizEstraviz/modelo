@@ -3,10 +3,6 @@ import { Col, Nav, Navbar, NavItem, Collapse, Well, Panel } from 'react-bootstra
 import Link from '../components/Link'
 import { scripts } from '../sqlscripts/scripts';
 
-function clica() {
-	alert('a');
-}
-
 export class LeftPanel extends Component {
 
 	render() {

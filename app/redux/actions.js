@@ -1,3 +1,10 @@
+export function selectTab(e) {
+	return {
+		type: 'SEL_TAB',
+		activeTab: e
+	}
+}
+
 export function setQuery(query) {
   return {
     type: 'SET_QUERY',

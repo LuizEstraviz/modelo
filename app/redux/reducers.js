@@ -34,10 +34,12 @@ const handlers = {
     return Object.assign({}, state, 
       { transition: false,
         data: state.tempdata ? state.tempdata : state.data,
-        isError: typeof(state.tempdata ? state.tempdata : state.data) === 'string'
+        isError: (state.tempdata ? state.tempdata : state.data) && typeof(state.tempdata ? state.tempdata : state.data) === 'string'
     })},
 
-    'SEL_SCRIPT': (state, { selScript }) => Object.assign({}, state, { selScript, query: scripts[selScript].script.join('\n')}),
+    'SEL_SCRIPT': (state, { selScript }) => Object.assign({}, state, { selScript, activeTab: 3, query: scripts[selScript].script.join('\n')}),
+
+    'SEL_TAB': (state, { activeTab }) => Object.assign({}, state, { activeTab }),
 };
 
 
@@ -60,4 +62,5 @@ export var store = createStoreWithMiddleware(reducers,
   ascsv: false,
   transition: true,
   selScript: '',
+  activeTab: 1,
 });
