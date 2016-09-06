@@ -1,6 +1,10 @@
 #
 *.conf.php
 .*.php
+dist/*
+!dist/*.php
+dist/*.conf.php
+
 
 #linux
 *.swn

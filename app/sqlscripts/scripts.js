@@ -1,5 +1,5 @@
 export var scripts = {
-	"Consulta árvore2": {
+	"Consulta árvores": {
 		script: [
 			"SELECT *", 
 			"FROM arvore"
