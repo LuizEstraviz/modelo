@@ -2,3 +2,43 @@
 	height: 200px;
 	width: 100%;
 }
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+#app {
+	height: 100%;
+}
+
+.contents {
+	height: 100%;
+}
+
+div[data-reactroot] {
+	height: 100%;
+}
+
+.copyright {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    color: #636363;
+	font-family: "Open Sans", Times, serif;
+	font-size: 12px;
+	width: 100%;
+ }
+
+ .copyright>tbody>tr>td {
+ 	padding-left: 20px;
+	padding-right: 20px;
+ }
+
+ td.right {
+ 	text-align: right;
+ }
