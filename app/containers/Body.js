@@ -16,8 +16,8 @@ class Body extends Component {
 
 	render() {
 		return (
-			<div className="col-sm-10" style={{padding: 0}}>
-			<div className="jumbotron col-sm-12 text-center contents" style={{marginTop: "-18px"}}>
+			<div className="col-sm-10 body">
+			<div className="jumbotron col-sm-12 text-center body-contents">
                 <div id="content">
 				<div className="col-sm-12 text-center">
 					<SchemaContainer />

@@ -16,7 +16,7 @@ export class CollapsibleImage extends Component {
 			<div className="col-sm-12 text-center" style={{marginBottom: 15}}>
 						{/* Imagem recolhível */}
 						<Collapse in={this.state.open}>
-							<Panel className="height200" style={{overflow: "auto", resize: "vertical"}}>
+							<Panel className="collapsible-image-height" style={{overflow: "auto", resize: "vertical"}}>
 								<img className="img-reponsive" src={ require('../img/diagrama.png') } style={{margin: 5, width: 1000}}/>
 							</Panel>
 						</Collapse>

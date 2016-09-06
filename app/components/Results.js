@@ -35,11 +35,11 @@ class Results extends React.Component {
 			<div className="col-sm-12">
 			<Tabs activeKey={this.props.activeTab} id="uncontrolled-tab-example" onSelect={this.props.selectTab}>
 			    <Tab eventKey={1} title="Resultados" onEnter={this.transEnd}>
-			    	<div className={classNames("col-sm-12 outer results", {show: !this.props.transition})} ref="div" >
+			    	<div className={classNames("col-sm-12 outer results", {"results-show": !this.props.transition})} ref="div" >
 						{
 							this.props.isError
 							? (
-								<div className="col-sm-12 erro alert alert-danger">
+								<div className="col-sm-12 results-erro alert alert-danger">
 										{this.props.data}
 								</div>
 							)

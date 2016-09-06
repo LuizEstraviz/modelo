@@ -16,7 +16,7 @@ export class Tabela extends Component {
 			}
     	);
 		return (
-			<table className="table" width="100%">
+			<table className="table-striped" width="100%">
 			<tbody>
 				<tr>
 					{
