@@ -3,6 +3,7 @@
 .*.php
 dist/*
 !dist/*.php
+!dist/*.conf
 dist/*.conf.php
 
 
