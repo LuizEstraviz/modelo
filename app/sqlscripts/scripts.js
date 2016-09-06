@@ -1,5 +1,5 @@
 export var scripts = {
-	"Consulta árvore": {
+	"Consulta árvore2": {
 		script: [
 			"SELECT *", 
 			"FROM arvore"
@@ -52,4 +52,18 @@ export var scripts = {
 			<span>Obtém as duas primeiras árvores apenas.</span>
 		)
 	},
+
+
+	"kdnwa": {
+		script: [
+			"SELECT *",
+			"FROM fazenda"
+		],
+		desc: (
+			<div>
+			<span>Dados das fazendas.</span>
+			</div>
+			)
+	}
+
 }
