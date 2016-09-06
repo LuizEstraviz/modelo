@@ -9,7 +9,8 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 	inject: 'body'
 })
 
-module.exports = {
+module.exports = {  
+  devtool: process.env.NODE_ENV === 'production' ? 'cheap-module-source-map' : 'eval',
 	entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
@@ -31,7 +32,7 @@ module.exports = {
           'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
         ]
       },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") },
+      { test: /\.css$/, loader: process.env.NODE_ENV === 'production' ? ExtractTextPlugin.extract("style-loader", "css-loader") : "style-loader!css-loader" },
   	]
   },
   plugins: [
