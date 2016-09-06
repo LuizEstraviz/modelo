@@ -52,8 +52,7 @@ class Results extends React.Component {
 			    	</div>
 			    </Tab>
 			    <Tab eventKey={2} title="Geo">
-			    	<div>
-			    	</div>
+			    	
 			    </Tab>
 			    <Tab eventKey={3} title="Ajuda">
 			    	<div className="text-left">
