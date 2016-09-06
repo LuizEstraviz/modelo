@@ -14,7 +14,6 @@ for ($i = 0; $i < $num_fields; $i++) {
 }
 pg_close();
 die;
-
 $final = array();
 $final['type'] = 'FeatureCollection';
 $final['features'] = array();
