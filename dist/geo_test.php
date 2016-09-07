@@ -13,7 +13,7 @@ for ($i = 0; $i < $num_fields; $i++) {
     echo json_encode($f);
 }
 $row = pg_fetch_row($results);
-echo json_decode($row);
+echo json_encode($row);
 pg_close();
 die;
 $final = array();
