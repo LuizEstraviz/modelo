@@ -12,7 +12,8 @@ for ($i = 0; $i < $num_fields; $i++) {
     $f = pg_field_type($results, $i);
     echo json_encode($f);
 }
-echo 'teste2';
+$row = pg_fetch_row($results);
+echo json_decode($row);
 pg_close();
 die;
 $final = array();
@@ -33,4 +34,22 @@ echo $out;
 } finally {
 pg_close();
 }
+
+
+function temGeometria($results) {
+    $num_fields = pg_num_fields($results);
+    $n = 0;
+    $index = 0;
+    for ($i = 0; $i < $num_fields; $i++) {
+        $f = pg_field_type($results, $i);
+        $index = $i;
+        if ($f == "geometry") {
+            $n++;
+        }
+    }
+    if ($n > 1) 
+        die("A consulta tem mais de uma geometria");
+    return $n;
+}
+
 ?>
