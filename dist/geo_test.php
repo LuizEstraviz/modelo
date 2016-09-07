@@ -12,6 +12,7 @@ for ($i = 0; $i < $num_fields; $i++) {
     $f = pg_field_type($results, $i);
     echo json_encode($f);
 }
+echo 'teste';
 pg_close();
 die;
 $final = array();
