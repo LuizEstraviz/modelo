@@ -6,7 +6,7 @@ if(!@($conexao=pg_connect ("host=apoema.esalq.usp.br dbname=modelo port=5432 use
         print 'Não foi possível estabelecer uma conexão com o banco de dados.';
         die;
 }
-$results = pg_query("SELECT geom FROM talhao_geo");
+$results = pg_query("SELECT id_talhao, id_fazenda, geom FROM talhao_geo");
 $num_fields = pg_num_fields($results);
 for ($i = 0; $i < $num_fields; $i++) {
     $f = pg_field_type($results, $i);
