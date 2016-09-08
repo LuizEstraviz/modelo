@@ -1,7 +1,8 @@
 {
 	"autoload": {
 	    "psr-0": {"Classes": "src/"},
-	    "psr-1": {"Test": "src/"}
+	    "psr-1": {"Test": "src/"},
+	    "psr-2": {"Services": "src/"}
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "*"
