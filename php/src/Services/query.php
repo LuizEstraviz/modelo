@@ -1,6 +1,6 @@
 <?php 
 
-use \Classes\Connection;
+use Classes\Connection;
 
 // Remove default messages
 error_reporting(E_ERROR | E_PARSE);
