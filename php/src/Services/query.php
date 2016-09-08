@@ -1,8 +1,8 @@
 <?php 
+namespace Services;
 
 require "../../vendor/autoload.php";
 use Classes\Connection;
-namespace Services;
 
 // Remove default messages
 error_reporting(E_ERROR | E_PARSE);
