@@ -43,9 +43,10 @@ function inTransition() {
 
 export function fetchQuery() {
 	return function(dispatch, getState) {
+		var url = process.env.NODE_ENV === 'DEBUG' ? 'http://apoema.esalq.usp.br/~getlidar/php/src/Services/query.php' : '/php/src/Services/query.php';
 		var state = getState();
 		dispatch(requestData());
-		return axios.get('http://apoema.esalq.usp.br/~getlidar/query.php', {
+		return axios.get(url, {
 			params: {query: state.query}
 		}).then((response) => {
 			dispatch(receiveData(response.data));

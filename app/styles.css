@@ -10,6 +10,10 @@ div[data-reactroot] {
 	height: 100%;
 }
 
+th {
+	text-align: center;
+}
+
 #app {
 	height: 100%;
 }

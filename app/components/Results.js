@@ -45,7 +45,7 @@ class Results extends React.Component {
 							)
 							: (
 								<div className="tabela-div">
-									<Tabela header={this.props.data.campos} data={this.props.data.dados} />
+									<Tabela header={this.props.data.fields} data={this.props.data.data} />
 								</div>
 							)
 						}	
