@@ -1,6 +1,7 @@
 <?php 
 
-use \Classes\Connection;
+require "vendor/autoload.php";
+use Classes\Connection;
 
 // Remove default messages
 error_reporting(E_ERROR | E_PARSE);
