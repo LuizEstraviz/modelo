@@ -58,7 +58,7 @@ if (isset($_GET['query']) and $_GET['query'] != '') {
 	
 	// Open connection or throw error
 		// Run query defined by 'query' parameter or throw error
-		$c->query($_GET['query']) or die(pg_last_error());
+		$c->query($_GET['query']);
 
 		// Check if output is csv or JSON
 		if (isset($_GET['ascsv']) and $_GET['ascsv'] == 'true')

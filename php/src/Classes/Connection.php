@@ -31,7 +31,7 @@ class Connection
 
 	function query($query)
 	{
-		$this->results = pg_query($query);
+		$this->results = pg_query($query) or die(pg_last_error());
 		$this->numFields = pg_num_fields($this->results);
 		$this->fields = $this->getFields();
 		$this->geomIndexesKey = (array_flip($this->getGeometryIndexes()));
