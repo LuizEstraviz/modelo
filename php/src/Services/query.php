@@ -1,6 +1,6 @@
 <?php 
 
-include 'query.conf.php';
+namespace Services;
 
 // Remove default messages
 error_reporting(E_ERROR | E_PARSE);
@@ -66,6 +66,7 @@ if (isset($_GET['query']) and $_GET['query'] != '') {
 		} else {
 			returnDataAsJSON($results);
    		}
+   		pg_close();
 	}
 } else {
     print 'Erro: Consulta em branco';

@@ -1,0 +1,9 @@
+{
+	"autoload": {
+	    "psr-0": {"Classes": "src/"},
+	    "psr-1": {"Test": "src/"}
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "*"
+	}
+}

@@ -13,7 +13,7 @@ for ($i = 0; $i < $num_fields; $i++) {
     echo json_encode($f);
 }
 $row = pg_fetch_row($results);
-echo json_encode($row);
+echo json_encode(array_diff_key($row, [0=>0,2=>0]));
 pg_close();
 die;
 $final = array();
@@ -47,7 +47,7 @@ function temGeometria($results) {
             $n++;
         }
     }
-    if ($n > 1) 
+    if ($n > 1)
         die("A consulta tem mais de uma geometria");
     return $n;
 }
