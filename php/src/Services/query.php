@@ -1,5 +1,6 @@
 <?php 
 
+require_once "vendor/autoload.php";
 use Classes\Connection;
 
 // Remove default messages
@@ -69,4 +70,3 @@ if (isset($_GET['query']) and $_GET['query'] != '') {
 } else {
     print 'Erro: Consulta em branco';
 }
-?>
