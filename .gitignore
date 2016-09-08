@@ -2,7 +2,9 @@
 *.conf.php
 .*.php
 dist/*
-*vendor/
+/php/vendor/*
+!/php/vendor/composer
+!php/vendor/autoload.php
 *.lock
 
 
