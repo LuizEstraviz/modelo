@@ -1,7 +1,9 @@
 <?php
 
-namespace Classes;
+require "../../vendor/autoload.php";
 use Classes\Helpers;
+
+namespace Classes;
 
 class Connection
 {

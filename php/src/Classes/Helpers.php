@@ -1,5 +1,6 @@
 <?php 
 
+require "../../vendor/autoload.php";
 namespace Classes;
 
 class Helpers {
