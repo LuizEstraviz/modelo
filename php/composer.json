@@ -1,9 +1,9 @@
 {
 	"autoload": {
-	    "psr-0": {
-	    	"Classes": "src/",
-	    	"Test": "src/",
-	    	"Services": "src/"
+	    "psr-4": {
+	    	"Classes\\": "src/",
+	    	"Test\\": "src/",
+	    	"Services\\": "src/"
 	    }		
 	},
 	"require-dev" : {
