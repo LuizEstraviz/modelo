@@ -6,4 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Classes\\Connection' => $baseDir . '/src/Classes/Connection.php',
+    'Classes\\Helpers' => $baseDir . '/src/Classes/Helpers.php',
+    'Services\\Settings' => $baseDir . '/src/Services/Settings.php',
 );

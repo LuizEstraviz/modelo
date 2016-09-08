@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Test' => array($baseDir . '/src'),
+    'Services' => array($baseDir . '/src'),
+    'Classes' => array($baseDir . '/src'),
 );
