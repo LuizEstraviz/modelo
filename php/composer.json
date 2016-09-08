@@ -8,5 +8,6 @@
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "*"
-	}
+	},
+	"include-path": ["/home/getlidar/dev/php/"]
 }
