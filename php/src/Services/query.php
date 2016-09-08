@@ -1,6 +1,5 @@
 <?php 
 
-namespace Services;
 use Classes\Connection;
 
 // Remove default messages
