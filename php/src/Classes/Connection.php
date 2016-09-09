@@ -140,7 +140,7 @@ class Connection
 	}
 
 	private function convertGeomAsGeoJSON($geom) {
-		$results = pg_query("SELECT ST_asGeoJson(ST_Transform('$geom', 3857))");
+		$results = pg_query("SELECT ST_asGeoJson(ST_Transform('$geom'::geometry, 3857))");
 		$geoJson = pg_fetch_row($results)[0];
 		$feat = '{';
 		$feat .= '"type":"Feature",';
@@ -165,7 +165,7 @@ class Connection
 	}
 
 	function getAll() {
-		header("Content-type: application/json");
+		header("Content-type: application/csv");
 		$result = '{"fields":';
 		$result .= json_encode(array_values($this->getFieldsNotGeometry())) . ',';
 		$result .= '"data":';
