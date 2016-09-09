@@ -140,7 +140,7 @@ class Connection
 	}
 
 	private function convertGeomAsGeoJSON($geom) {
-		$results = pg_query("SELECT ST_asGeoJson('$geom')");
+		$results = pg_query("SELECT ST_asGeoJson(ST_Transform('$geom', 3857))");
 		$geoJson = pg_fetch_row($results)[0];
 		$feat = '{';
 		$feat .= '"type":"Feature",';
