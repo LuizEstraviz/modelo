@@ -165,6 +165,7 @@ class Connection
 	}
 
 	function getAll() {
+		header("Content-type: application/json");
 		$result = '{"fields":';
 		$result .= json_encode(array_values($this->getFieldsNotGeometry())) . ',';
 		$result .= '"data":';
