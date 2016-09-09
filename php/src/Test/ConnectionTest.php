@@ -23,7 +23,7 @@ class ConnectionTest extends TestCase
     }
 
     public function testHasGeometryTrue() {
-		$this->c->query("SELECT 'POINT(0 0)'::geometry geom");
+		$this->c->query("SELECT ST_PointFromText('POINT(0 0)', 3857) geom");
 		$this->assertTrue($this->c->hasGeometry());
     }
 
@@ -48,22 +48,22 @@ class ConnectionTest extends TestCase
     }
 
     public function testGetFieldsNotGeometrySingleGeometry() {
-    	$this->c->query("SELECT 1 tatu, 'POINT(1 1)'::geometry sai, 2 bola");
+    	$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(1 1)', 3857) sai, 2 bola");
     	$this->assertEquals([0=>"tatu", 2=>"bola"], $this->c->getFieldsNotGeometry());	
     }
 
     public function testGetFieldsNotGeometryMultiGeometry() {
-    	$this->c->query("SELECT 1 tatu, 'POINT(1 1)'::geometry sai, 'POINT(1 1)'::geometry sai2, 2 bola");
+    	$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(1 1)', 3857) sai, ST_PointFromText('POINT(1 1)', 3857) sai2, 2 bola");
     	$this->assertEquals([0=>"tatu", 3=>"bola"], $this->c->getFieldsNotGeometry());
     }
 
     public function testGetFieldsGeometrySingleGeometry() {
-    	$this->c->query("SELECT 1 tatu, 'POINT(1 1)'::geometry geom, 2 bola");
+    	$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(1 1)', 3857) geom, 2 bola");
     	$this->assertEquals([1=>"geom"], $this->c->getFieldsGeometry());	
     }
 
     public function testGetFieldsGeometryMultiGeometry() {
-    	$this->c->query("SELECT 1 tatu, 'POINT(1 1)'::geometry geom, 2 bola, 'POINT(1 2)'::geometry geom2");
+    	$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(1 1)', 3857) geom, 2 bola, ST_PointFromText('POINT(1 2)', 3857) geom2");
     	$this->assertEquals([1=>"geom", 3=>"geom2"], $this->c->getFieldsGeometry());	
     }
 
@@ -83,12 +83,12 @@ class ConnectionTest extends TestCase
 	}
 
 	public function testGetNextRowNotGeometrySingleGeom() {
-		$this->c->query("SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola");
+		$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola");
 		$this->assertEquals([0=>1,2=>2], $this->c->getNextRowNotGeometry());
 	}
 
 	public function testGetNextRowNotGeometryMultiGeom() {
-		$this->c->query("SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola");
+		$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola");
 		$this->assertEquals([0=>1,2=>2], $this->c->getNextRowNotGeometry());
 	}
 
@@ -98,47 +98,47 @@ class ConnectionTest extends TestCase
 	}
 
 	public function testGetNextRowGeometrySingleGeom() {
-		$this->c->query("SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola");
-		$this->assertEquals([1=>'010100000000000000000000000000000000000000'], $this->c->getNextRowGeometry());
+		$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola");
+		$this->assertEquals([1=>'0101000020110F000000000000000000000000000000000000'], $this->c->getNextRowGeometry());
 	}
 
 	public function testGetNextRowGeometryMultiGeom() {
-		$this->c->query("SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola,'POINT(0 0)'::geometry geom2");
-		$this->assertEquals([1=>'010100000000000000000000000000000000000000', 3=>'010100000000000000000000000000000000000000'], $this->c->getNextRowGeometry());
+		$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola,ST_PointFromText('POINT(0 0)', 3857) geom2");
+		$this->assertEquals([1=>'0101000020110F000000000000000000000000000000000000', 3=>'0101000020110F000000000000000000000000000000000000'], $this->c->getNextRowGeometry());
 	}
 
 	public function testGetNextAsGeoJSONExists() {	
-		$this->c->query("SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola");
+		$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola");
 		$this->c->getNextAsGeoJSON();
 	}
 
 	public function testGetNextAsGeoJSONSingleGeom() {	
-		$this->c->query("SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola");
+		$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola");
 		$this->assertEquals(['{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":0}}'], $this->c->getNextAsGeoJSON());
 	}
 
 	public function testGetNextAsGeoJSONMultiGeom() {	
-		$this->c->query("SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola,'POINT(0 0)'::geometry geom2");
+		$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola,ST_PointFromText('POINT(0 0)', 3857) geom2");
 		$this->assertEquals(['{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":0}}','{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":0}}'], $this->c->getNextAsGeoJSON());
 	}
 
 	public function testGetAllGeoJSON() {	
-		$this->c->query("SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola UNION ALL SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola");
+		$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola UNION ALL SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola");
 		$this->assertEquals(['{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":0}}','{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":1}}'], $this->c->getAllGeoJSON());
 	}
 
 	public function testGetAllGeoJSONMulti() {	
-		$this->c->query("SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola,'POINT(0 0)'::geometry geom2 UNION ALL SELECT 6 tatu, 'POINT(0 1)'::geometry geom, 2 bola, 'POINT(0 1)'::geometry geom2");
+		$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola,ST_PointFromText('POINT(0 0)', 3857) geom2 UNION ALL SELECT 6 tatu, ST_PointFromText('POINT(0 1)', 3857) geom, 2 bola, ST_PointFromText('POINT(0 1)', 3857) geom2");
 		$this->assertEquals(['{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":0}}','{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":0}}','{"type":"Feature","geometry":{"type":"Point","coordinates":[0,1]},"properties":{"row":1}}','{"type":"Feature","geometry":{"type":"Point","coordinates":[0,1]},"properties":{"row":1}}'], $this->c->getAllGeoJSON());
 	}
 
 	public function testGetAll(){
-		$this->c->query("SELECT 1 tatu, 'POINT(0 0)'::geometry geom, 2 bola,'POINT(0 0)'::geometry geom2 UNION ALL SELECT 6 tatu, 'POINT(0 1)'::geometry geom, 2 bola, 'POINT(0 1)'::geometry geom2");
+		$this->c->query("SELECT 1 tatu, ST_PointFromText('POINT(0 0)', 3857) geom, 2 bola,ST_PointFromText('POINT(0 0)', 3857) geom2 UNION ALL SELECT 6 tatu, ST_PointFromText('POINT(0 1)', 3857) geom, 2 bola, ST_PointFromText('POINT(0 1)', 3857) geom2");
 		$this->assertEquals('{"fields":["tatu","bola"],"data":[[1,2],[6,2]],"geo":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[0,1]},"properties":{"row":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[0,1]},"properties":{"row":1}}]}}', $this->c->getAll());	
 	}
 
 	public function testGetAllOnlyFeature(){
-		$this->c->query("SELECT 'POINT(0 0)'::geometry geom, 'POINT(0 0)'::geometry geom2 UNION ALL SELECT 'POINT(0 1)'::geometry geom, 'POINT(0 1)'::geometry geom2");
+		$this->c->query("SELECT ST_PointFromText('POINT(0 0)', 3857) geom, ST_PointFromText('POINT(0 0)', 3857) geom2 UNION ALL SELECT ST_PointFromText('POINT(0 1)', 3857) geom, ST_PointFromText('POINT(0 1)', 3857) geom2");
 		$this->assertEquals('{"fields":[],"data":[[],[]],"geo":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[0,1]},"properties":{"row":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[0,1]},"properties":{"row":1}}]}}', $this->c->getAll());	
 	}
 

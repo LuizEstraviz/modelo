@@ -1,8 +1,6 @@
 <?php 
 namespace Classes;
 
-require "../../vendor/autoload.php";
-
 class Helpers {
 	public static function convertArrayToKeyArray($arr) {
 		$keyArr = [];

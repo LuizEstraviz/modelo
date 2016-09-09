@@ -1,7 +1,6 @@
 <?php
 namespace Classes;
 
-require "../../vendor/autoload.php";
 use Classes\Helpers;
 
 class Connection
@@ -141,6 +140,8 @@ class Connection
 
 	private function convertGeomAsGeoJSON($geom) {
 		$results = pg_query("SELECT ST_asGeoJson(ST_Transform('$geom'::geometry, 3857))");
+		if (!$results) 
+			return false;
 		$geoJson = pg_fetch_row($results)[0];
 		$feat = '{';
 		$feat .= '"type":"Feature",';
@@ -165,7 +166,8 @@ class Connection
 	}
 
 	function getAll() {
-		header("Content-type: application/csv");
+		if (!headers_sent())
+			header("Content-type: application/json");
 		$result = '{"fields":';
 		$result .= json_encode(array_values($this->getFieldsNotGeometry())) . ',';
 		$result .= '"data":';
