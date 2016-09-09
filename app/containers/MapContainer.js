@@ -15,7 +15,7 @@ class MapContainer extends Component {
     }
 
     onFeatureSelect(feature) {
-
+      console.log(this.props.data[feature.get('row')]);
     }
 
     onFeatureUnselect(feature) {
@@ -52,11 +52,9 @@ class MapContainer extends Component {
         map.addInteraction(select);
         window.select = select;
         select.getFeatures().on('change:length', function(e) {
-        if (e.target.getArray().length === 0) {
-            alert("no selected feature");
-        } else {
+        if (e.target.getArray().length > 0) {
             var feature = e.target.item(0);
-            alert(this.props.data[feature.get('row')]);
+            this.onFeatureSelect(feature);
         }
     }.bind(this));
     }
