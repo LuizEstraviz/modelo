@@ -54,6 +54,7 @@ export function fetchQuery() {
 			setTimeout(() => dispatch(inTransition()), 500);
 		}).catch(e => {
 			console.warn('Erro na resposta do servidor');
+			console.warn(e);
 		});
 	}
 }
@@ -69,6 +70,7 @@ export function fetchAsCSV(query) {
 			setTimeout(() => dispatch(inTransition()), 500);
 		}).catch(e => {
 			console.warn('Erro na resposta do servidor');
+			console.warn(e);
 		});
 	}
 }

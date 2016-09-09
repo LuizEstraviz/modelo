@@ -4,8 +4,16 @@
 		"selected_items":
 		[
 			[
+				"onFe",
+				"onFeatureSelect"
+			],
+			[
+				"onFeat",
+				"onFeatureUnselect"
+			],
+			[
 				"compo",
-				"componentDidMount	Life Cycle Method"
+				"componentWillUpdate	Life Cycle Method"
 			],
 			[
 				"text-",
@@ -506,27 +514,11 @@
 			[
 				"vi",
 				"viewParams"
-			],
-			[
-				"nf",
-				"ng-if	AngularJS"
-			],
-			[
-				"ser",
-				"service	AngularJS"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"contents": "{\n  \"fields\": [\n    \"ogr_fid\",\n    \"objectid\",\n    \"id_talhao\",\n    \"id_fazenda\",\n    \"area\"\n  ],\n  \"data\": [\n    [\n      2,\n      67355,\n      104,\n      1,\n      19.94\n    ],\n    [\n      4,\n      67373,\n      203,\n      1,\n      55.77\n    ]\n  ],\n  \"geo\": {\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": [],\n        \"properties\": {\n          \"row\": 0\n        }\n      },\n      {\n        \"type\": \"Feature\",\n        \"geometry\": [],\n        \"properties\": {\n          \"row\": 1\n        }\n      }\n    ]\n  }\n}",
-			"settings":
-			{
-				"buffer_size": 562,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -1062,9 +1054,7 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes",
@@ -1072,22 +1062,28 @@
 	],
 	"file_history":
 	[
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/ExecQueryButton.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles.css",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MapContainer.js",
+		"/C/Users/caioh/Downloads/file (2).csv",
+		"/C/Users/caioh/Downloads/file (1).csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Connection.php",
+		"/C/Users/caioh/Downloads/file.csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Results.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/test/ConnectionTest.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/composer.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Test/ConnectionTest.php",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Connection.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Helpers.php",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.php",
 		"/C/Users/caioh/Desktop/test.csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.conf",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MapContainer.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Footer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/OlMap.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles.css",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/vendor/autoload.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.gitignore",
@@ -1119,8 +1115,6 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/LeftPanel.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/passwords.txt",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/ExecQueryButton.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.git/config",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/index.html",
@@ -1186,20 +1180,16 @@
 		"/D/SIG2016/Aula2/app_nascentes.shp.xml",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/package.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Imagem.js",
-		"/C/Users/caioh/Downloads/file (2).csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/view.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Mapa.js",
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/rodaScripts2.ps1",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Collapsable.js",
-		"/C/Users/caioh/Downloads/file (1).csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/openlayers/package.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/index.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/featureWKT.js",
-		"/C/Users/caioh/Downloads/file.csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.jsx",
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/rodasScripts1.ps1",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/034RL.RLTABELA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/001RL.Numbers.Table.sql"
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/034RL.RLTABELA.Table.sql"
 	],
 	"find":
 	{
@@ -1235,6 +1225,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"getView",
+			"Sele",
+			"url",
+			"selectTab",
 			"01010000000000",
 			"('POINT\\(.*?\\)')::geometry",
 			"geometry",
@@ -1358,11 +1352,7 @@
 			"arcview",
 			"  ",
 			"\"",
-			"  ",
-			"'",
-			"CAIO",
-			"CAIO HAMAMURA",
-			"(([a-z])([A-Z])|([A-Z])([A-Z][a-z]))"
+			"  "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1508,37 +1498,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 562,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								535,
-								535
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

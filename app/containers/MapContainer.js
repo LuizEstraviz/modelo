@@ -10,6 +10,16 @@ class MapContainer extends Component {
         this.state = {
           map: null
         };
+        this.onFeatureSelect = this.onFeatureSelect.bind(this);
+        this.onFeatureUnselect = this.onFeatureUnselect.bind(this);
+    }
+
+    onFeatureSelect(feature) {
+
+    }
+
+    onFeatureUnselect(feature) {
+
     }
 
     componentDidMount() {
@@ -30,22 +40,37 @@ class MapContainer extends Component {
         this.setState({
           map: map
         });
+
+        // set current view to data when entering Geo tab 
         map.on('change:size', function(){
-          if (this.props.geo && this.props.geo.features.length > 0)
+          if (this.props.geo && this.props.geo.features.length > 0) {
             map.getView().fit(vecSource.getExtent(), map.getSize());
+          }
         }.bind(this));
-        window.map = map;
+
+        var select = new ol.interaction.Select();
+        map.addInteraction(select);
+        window.select = select;
+        select.getFeatures().on('change:length', function(e) {
+        if (e.target.getArray().length === 0) {
+            alert("no selected feature");
+        } else {
+            var feature = e.target.item(0);
+            alert(this.props.data[feature.get('row')]);
+        }
+    }.bind(this));
     }
 
     componentDidUpdate(prevProps, prevState) {
 
       vecSource.clear();
-      this.state.map.getView().setZoom(1);
-      this.state.map.getView().setCenter([0,0]);
+      var view = this.state.map.getView();
+      view.setZoom(1);
+      view.setCenter([0,0]);
       if (this.props.geo && this.props.geo.features.length > 0) {
         vecSource.addFeatures((new ol.format.GeoJSON()).readFeatures(this.props.geo));
         this.state.map.getLayers().getArray()[1].setSource(vecSource);
-        map.getView().fit(vecSource.getExtent(), map.getSize());
+        view.fit(vecSource.getExtent(), this.state.map.getSize());
       }    
     }
 
@@ -59,6 +84,7 @@ class MapContainer extends Component {
 const mapStateToProps = function(store) {
     return {
         geo: store.data.geo,
+        data: store.data.data,
     };
 }
 
