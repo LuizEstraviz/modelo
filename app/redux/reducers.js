@@ -1,40 +1,48 @@
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import { scripts } from '../sqlscripts/scripts';
+import ol from 'openlayers';
 
+
+const getExtentFromGeoJSON = function(geoJSON) {
+  var vec = new ol.source.Vector({});
+  vec.addFeatures((new ol.format.GeoJSON()).readFeatures(geoJSON));
+  return vec.getExtent();
+}
 
 // Handlers for reducers
 const handlers = {
   'SET_QUERY': (state, { query }) => Object.assign({}, state, { query }),
 
-  'REC_DATA': (state, { data }) => Object.assign({}, 
+  'REC_DATA': (state, { data }) => {
+    console.log(data);
+    return Object.assign({}, 
         state,
         {
-          [typeof(data) === 'string' ? 'error' : 'table']: {data}
-        },
-        {
-          [state.transition ? 'tempdata' : 'data']: data,
-          isError: state.transition ? state.isError : typeof(data) === 'string'
+          [state.transition === false || (data.geo && data.geo.length > 0) ? 'data' : 'tempdata']: data,
+          isError: state.transition ? state.isError : typeof(data) === 'string',
+          activeTab: (data.geo ? data.geo.features.length : 0) > 0 ? 2 : 1,
         }
-        ),
+        )},
 
   'REQ_DATA': (state, action) => {
     var newState = Object.assign({}, 
       state, 
       {
         tempdata: '',
-        transition: !state.transition,
+        transition: state.activeTab === 1 ? !state.transition : false,
       });
-    console.log(newState);
     return newState},
 
   'AS_CSV': (state, { ascsv }) => Object.assign({}, state, { ascsv }),
 
   'TRANS_END': (state, action) => {
+    console.log((state.tempdata ? state.tempdata : state.data) && typeof(state.tempdata ? state.tempdata : state.data) === 'string');
     return Object.assign({}, state, 
-      { transition: false,
+      { 
+        transition: false,
         data: state.tempdata ? state.tempdata : state.data,
-        isError: (state.tempdata ? state.tempdata : state.data) && typeof(state.tempdata ? state.tempdata : state.data) === 'string'
+        isError: (state.tempdata ? state.tempdata : state.data) && typeof(state.tempdata ? state.tempdata : state.data) === 'string',
     })},
 
     'SEL_SCRIPT': (state, { selScript }) => Object.assign({}, state, { selScript, activeTab: 3, query: scripts[selScript].script.join('\n')}),

@@ -12,7 +12,7 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {  
 	devtool: 'eval',
 	entry: [
-    'webpack-dev-server/client?http://localhost:8080/webpack-dev-server',
+    'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     './app/index.js'
   ],
@@ -50,7 +50,8 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env':{
         'NODE_ENV': process.env.NODE_ENV ? JSON.stringify(process.env.NODE_ENV) : JSON.stringify('DEBUG')
-      }
+      },
+      'queryUrl': JSON.stringify(process.env.NODE_ENV ? '/php/src/Services/query.php' : 'http://apoema.esalq.usp.br/~getlidar/php/src/Services/query.php')
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress:{

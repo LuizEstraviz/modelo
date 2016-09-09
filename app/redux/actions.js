@@ -1,3 +1,5 @@
+
+
 export function selectTab(e) {
 	return {
 		type: 'SEL_TAB',
@@ -43,10 +45,9 @@ function inTransition() {
 
 export function fetchQuery() {
 	return function(dispatch, getState) {
-		var url = process.env.NODE_ENV === 'DEBUG' ? 'http://apoema.esalq.usp.br/~getlidar/php/src/Services/query.php' : '/php/src/Services/query.php';
 		var state = getState();
 		dispatch(requestData());
-		return axios.get(url, {
+		return axios.get(queryUrl, {
 			params: {query: state.query}
 		}).then((response) => {
 			dispatch(receiveData(response.data));
@@ -61,7 +62,7 @@ export function fetchAsCSV(query) {
 	return function(dispatch, getState) {
 		var state = getState();
 		dispatch(requestData());
-		return axios.get('http://apoema.esalq.usp.br/~getlidar/query.php', {
+		return axios.get(queryUrl, {
 			params: {query: state.query}
 		}).then((response) => {
 			dispatch(receiveData(response.data));

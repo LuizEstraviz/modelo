@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"compo",
+				"componentDidMount	Life Cycle Method"
+			],
+			[
 				"text-",
 				"text-align"
 			],
@@ -70,10 +74,6 @@
 			[
 				"list-style",
 				"list-style-type"
-			],
-			[
-				"compo",
-				"componentWillUnmount	Life Cycle Method"
 			],
 			[
 				"asCsv",
@@ -520,42 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "php/composer.json",
+			"contents": "{\n  \"fields\": [\n    \"ogr_fid\",\n    \"objectid\",\n    \"id_talhao\",\n    \"id_fazenda\",\n    \"area\"\n  ],\n  \"data\": [\n    [\n      2,\n      67355,\n      104,\n      1,\n      19.94\n    ],\n    [\n      4,\n      67373,\n      203,\n      1,\n      55.77\n    ]\n  ],\n  \"geo\": {\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": [],\n        \"properties\": {\n          \"row\": 0\n        }\n      },\n      {\n        \"type\": \"Feature\",\n        \"geometry\": [],\n        \"properties\": {\n          \"row\": 1\n        }\n      }\n    ]\n  }\n}",
 			"settings":
 			{
-				"buffer_size": 238,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/index.js",
-			"settings":
-			{
-				"buffer_size": 131,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/redux/actions.js",
-			"settings":
-			{
-				"buffer_size": 1652,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/components/Results.js",
-			"settings":
-			{
-				"buffer_size": 2346,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles.css",
-			"settings":
-			{
-				"buffer_size": 1311,
+				"buffer_size": 562,
 				"line_ending": "Windows"
 			}
 		}
@@ -567,12 +535,20 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 384.0,
 		"last_filter": "prett",
 		"selected_items":
 		[
 			[
 				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"p",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pretty",
 				"Pretty JSON: Format (Pretty Print) JSON"
 			],
 			[
@@ -792,10 +768,6 @@
 				"Git: Custom Command"
 			],
 			[
-				"pretty",
-				"Pretty JSON: Format (Pretty Print) JSON"
-			],
-			[
 				"Json",
 				"Pretty JSON: Format (Pretty Print) JSON"
 			],
@@ -972,7 +944,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 405.0
+		"width": 432.0
 	},
 	"console":
 	{
@@ -1089,22 +1061,36 @@
 	[
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Test",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/vendor"
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services"
 	],
 	"file_history":
 	[
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.php",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/vendor/autoload.php",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Helpers.php",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Connection.php",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.gitignore",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Results.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/composer.json",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Test/ConnectionTest.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Connection.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Helpers.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.php",
+		"/C/Users/caioh/Desktop/test.csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.conf",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MapContainer.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Footer.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/OlMap.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles.css",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/vendor/autoload.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.gitignore",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/geo_test.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Classes/Connection.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Test/ConnectionTest.php",
@@ -1129,25 +1115,18 @@
 		"/C/Users/caioh/Dropbox/bin/bfg.bat",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/Autoload.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/TestResultReader",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Footer.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Results.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tabela.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles.css",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/LeftPanel.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/passwords.txt",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/ExecQueryButton.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.git/config",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/index.html",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/index_bundle.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts/scripts.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/SchemaContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/SqlEditor.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/RightPanel.js",
@@ -1220,12 +1199,7 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.jsx",
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/rodasScripts1.ps1",
 		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/034RL.RLTABELA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/001RL.Numbers.Table.sql",
-		"/C/Users/caioh/Desktop/ESALQ/ips.txt",
-		"/C/Users/caioh/Desktop/ajudas.csv",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/query.conf.php",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings"
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/001RL.Numbers.Table.sql"
 	],
 	"find":
 	{
@@ -1261,6 +1235,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"01010000000000",
+			"('POINT\\(.*?\\)')::geometry",
+			"geometry",
 			"nextRow",
 			"getRowNo",
 			"tatu",
@@ -1385,10 +1362,7 @@
 			"'",
 			"CAIO",
 			"CAIO HAMAMURA",
-			"(([a-z])([A-Z])|([A-Z])([A-Z][a-z]))",
-			"(([a-z])([A-Z])|([A-Z])([A-Z])([A-Z][a-z]))",
-			"(\\u+|\\u?\\l+)(\\u)",
-			"(\\u+|\\u?\\l+)(\\u"
+			"(([a-z])([A-Z])|([A-Z])([A-Z][a-z]))"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1396,6 +1370,12 @@
 		"regex": true,
 		"replace_history":
 		[
+			"0101000020110F00000000",
+			"010100002011F000000000",
+			"0101002011F00000000000",
+			"010100000000002011F000000000",
+			"010100002011F0",
+			"ST_PointFromText(\\1, 3857)",
 			"",
 			"LeftPanel",
 			"this.props",
@@ -1517,13 +1497,7 @@
 			"$1$3console.log('$2')$3",
 			"$1$3",
 			"$1$3console.log('$2')$3",
-			"$1\\nconsole.log('$2')",
-			"$1console.log('$2');",
-			"\"",
-			"'\\1',",
-			"\\1\\2\\1transform",
-			"\\1\\)",
-			"formData.data"
+			"$1\\nconsole.log('$2')"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1539,148 +1513,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "php/composer.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 238,
+						"buffer_size": 562,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								191,
-								191
+								535,
+								535
 							]
 						],
 						"settings":
 						{
 							"auto_complete": true,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 153.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "app/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 131,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								56,
-								56
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JSX/JSX.tmLanguage"
-						},
-						"translation.x": 8.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/redux/actions.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1652,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								816,
-								816
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JSX/JSX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 612.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/components/Results.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2346,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1531,
-								1531
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 337.0,
-						"translation.y": 561.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/styles.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1311,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								115,
-								115
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1709,18 +1559,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -2276,7 +2119,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

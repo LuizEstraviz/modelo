@@ -26,6 +26,7 @@ th {
 .body-contents {
 	height: 100%;
 	margin-top: -18px;
+	padding-bottom: 18px;
 }
 
 .footer {

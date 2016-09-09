@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import MapContainer from '../containers/MapContainer.js'
 import { Tabela } from '../components/Tabela';
 import { transitionEnd, selectTab } from '../redux/actions';
 import { Tabs, Tab } from 'react-bootstrap';
@@ -9,10 +10,17 @@ class Results extends React.Component {
 		super(props);
 		this.transEnd = this.transEnd.bind(this);
 		this.selectTab = this.selectTab.bind(this);
+		this.geoStart = this.geoStart.bind(this);
+	}
+
+	geoStart() {
+		window.dispatchEvent(new Event('resize'));
+		this.props.transitionEnd();
 	}
 
 	transEnd() {
-		this.props.transitionEnd()
+		if (this.props.transition)
+			this.props.transitionEnd();
 	}
 
 	selectTab(e) {
@@ -30,7 +38,6 @@ class Results extends React.Component {
 	}
 
 	render() {
-		console.log(this.props.activeTab);
 		return (
 			<div className="col-sm-12">
 			<Tabs activeKey={this.props.activeTab} id="uncontrolled-tab-example" onSelect={this.props.selectTab}>
@@ -51,8 +58,8 @@ class Results extends React.Component {
 						}	
 			    	</div>
 			    </Tab>
-			    <Tab eventKey={2} title="Geo">
-			    	
+			    <Tab eventKey={2} title="Geo" onEnter={this.geoStart}>
+			    	<MapContainer />
 			    </Tab>
 			    <Tab eventKey={3} title="Ajuda">
 			    	<div className="text-left">

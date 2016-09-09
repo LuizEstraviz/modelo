@@ -6,10 +6,9 @@ const ExecQueryButton = (props) => (
 	    className="btn btn-block btn-success" 
 		onClick={() => {
             if (props.ascsv)
-                window.location.replace('http://apoema.esalq.usp.br/~getlidar/query.php?query=' + props.query.replace(/\n/g, ' \n') + '&ascsv=true');
+                window.location.replace(queryUrl + '?query=' + props.query.replace(/\n/g, ' \n') + '&ascsv=true');
             else
             {
-                props.selectTab();
                 props.fetchQuery();
             }
         }}>
@@ -27,7 +26,7 @@ const mapStateToProps = function(store) {
 function mapDispatchToProps(dispatch, props) {
     return {
         fetchQuery: () => {dispatch(fetchQuery())},
-        selectTab: () => {dispatch(selectTab(1))},
+        selectTab: (e) => {dispatch(selectTab(e ? 2 : 1))},
     };
 }
 

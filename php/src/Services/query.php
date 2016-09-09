@@ -63,7 +63,7 @@ if (isset($_GET['query']) and $_GET['query'] != '') {
 		// Check if output is csv or JSON
 		if (isset($_GET['ascsv']) and $_GET['ascsv'] == 'true')
 		{
-			returnDataAsCSV($results);
+			returnDataAsCSV($c->results);
 		} else {
 			print $c->getAll($results);
    		}
