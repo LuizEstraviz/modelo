@@ -139,9 +139,9 @@ class Connection
 	}
 
 	private function convertGeomAsGeoJSON($geom) {
+		if (!$geom) return false;
 		$results = pg_query("SELECT ST_asGeoJson(ST_Transform('$geom'::geometry, 3857))");
-		if (!$results) 
-			return false;
+
 		$geoJson = pg_fetch_row($results)[0];
 		$feat = '{';
 		$feat .= '"type":"Feature",';
@@ -179,7 +179,8 @@ class Connection
 			$data[] = array_values($this->getRowNotGeometry());
 			foreach ($this->getRowAsGeoJSON() as $geom) 
 			{
-				$feats[] = $geom;
+				if ($geom)
+					$feats[] = $geom;
 			}
 		}
 		$result .= json_encode($data, JSON_NUMERIC_CHECK) . ',';

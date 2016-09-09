@@ -147,5 +147,16 @@ class ConnectionTest extends TestCase
 		$this->assertEquals('{"fields":["tatu","bola"],"data":[[1,2],[6,2]],"geo":{"type":"FeatureCollection","features":[]}}', $this->c->getAll());	
 	}
 
+	public function testGetAllNullGeom(){
+		$this->c->query("SELECT ST_PointFromText(null, 3857) geom");
+		$this->assertEquals('{"fields":[],"data":[[]],"geo":{"type":"FeatureCollection","features":[]}}', $this->c->getAll());	
+	}
+
+	public function testGetAllSomeNullGeom(){
+		$this->c->query("SELECT ST_PointFromText(null, 3857) geom UNION ALL SELECT ST_PointFromText('POINT(0 0)', 3857)");
+		$this->assertEquals('{"fields":[],"data":[[],[]],"geo":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":1}}]}}', $this->c->getAll());	
+	}
+
+
 
 }
