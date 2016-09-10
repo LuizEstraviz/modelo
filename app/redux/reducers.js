@@ -1,14 +1,6 @@
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import { scripts } from '../sqlscripts/scripts';
-import ol from 'openlayers';
-
-
-const getExtentFromGeoJSON = function(geoJSON) {
-  var vec = new ol.source.Vector({});
-  vec.addFeatures((new ol.format.GeoJSON()).readFeatures(geoJSON));
-  return vec.getExtent();
-}
 
 // Handlers for reducers
 const handlers = {

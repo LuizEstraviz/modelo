@@ -1,25 +1,15 @@
-import React, { Component } from 'react';
+import ol from 'openlayers';
+import { Info } from '../components/Info.js'
 import { connect } from 'react-redux';
-import ol from 'openlayers'
 
 var vecSource = new ol.source.Vector({}); 
 
-class MapContainer extends Component {
+class MapContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          map: null
+          map: null,
         };
-        this.onFeatureSelect = this.onFeatureSelect.bind(this);
-        this.onFeatureUnselect = this.onFeatureUnselect.bind(this);
-    }
-
-    onFeatureSelect(feature) {
-      console.log(this.props.data[feature.get('row')]);
-    }
-
-    onFeatureUnselect(feature) {
-
     }
 
     componentDidMount() {
@@ -30,7 +20,7 @@ class MapContainer extends Component {
               }),
               new ol.layer.Vector(vecSource),
             ],
-            target: 'map',
+            target: this.refs.map,
             view: new ol.View({
               projection: 'EPSG:3857',
               center: [0, 0],
@@ -54,7 +44,6 @@ class MapContainer extends Component {
         select.getFeatures().on('change:length', function(e) {
         if (e.target.getArray().length > 0) {
             var feature = e.target.item(0);
-            this.onFeatureSelect(feature);
         }
     }.bind(this));
     }
@@ -74,7 +63,9 @@ class MapContainer extends Component {
 
     render() {      
         return (
-            <div id="map" className="map" style={{height:500, width: "100%",}}></div>
+            <div id="map" className="map" style={{height:500, width: "100%",}} ref="map">
+              <Info map={this.state.map} fields={this.props.fields} data={this.props.data}/>
+            </div>
         );
     }
 }
@@ -83,6 +74,7 @@ const mapStateToProps = function(store) {
     return {
         geo: store.data.geo,
         data: store.data.data,
+        fields: store.data.fields,
     };
 }
 

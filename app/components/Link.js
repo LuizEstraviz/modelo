@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { selectScript } from '../redux/actions';
 
-class Link extends Component {
+class Link extends React.Component {
 	constructor(props) {
 		super(props);
 

@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-
-export class Tabela extends Component {
+export class Tabela extends React.Component {
 	constructor(props) {
 	    super(props);
   	}

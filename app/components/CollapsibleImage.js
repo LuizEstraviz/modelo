@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
 import { Collapse, Well, Panel } from 'react-bootstrap';
 
 require('../styles.css');
 
-export class CollapsibleImage extends Component {
+export class CollapsibleImage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
