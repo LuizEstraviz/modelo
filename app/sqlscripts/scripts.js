@@ -1,5 +1,5 @@
 export var scripts = {
-	"Consulta árvores2": {
+	"Consulta A": {
 		script: [
 			"SELECT *", 
 			"FROM arvore"
@@ -42,7 +42,7 @@ export var scripts = {
 				</div>
 			),
 	},
-	"Consulta limitada": {
+	"Consulta B": {
 		script: [
 			"SELECT *",
 			"FROM arvore",
@@ -54,7 +54,7 @@ export var scripts = {
 	},
 
 
-	"kdnwa": {
+	"Consulta C": {
 		script: [
 			"SELECT *",
 			"FROM fazenda"
