@@ -1,0 +1,13 @@
+{
+	"autoload": {
+	    "psr-4": {
+	    	"Classes\\": "src/Classes",
+	    	"Test\\": "src/Test",
+	    	"Services\\": "src/Services"
+	    }		
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "*"
+	},
+	"include-path": ["/home/getlidar/dev/php/"]
+}

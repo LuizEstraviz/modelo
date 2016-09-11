@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
 import { CollapsibleImage } from '../components/CollapsibleImage';
 
-export class SchemaContainer extends Component {
+export class SchemaContainer extends React.Component {
 	render() {
 		return (
 			<CollapsibleImage text="Mostrar esquema" />	

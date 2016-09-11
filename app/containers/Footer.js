@@ -1,19 +1,16 @@
-import React, { Component } from 'react';
-
-
-export class Footer extends Component {
+export class Footer extends React.Component {
     constructor(props) {
         super(props);
     }
 
     render() {
         return (
-            <div className="col-sm-12" style={{backgroundColor: "black", position: "fixed", bottom: 0}}>
-            	<table className="copyright">
+            <div className="footer">
+            	<table className="footer-copyright">
               <tbody>
               <tr>
-              		<td>Grupo getLiDAR 2016</td>
-              		<td className="right">Produzido por Caio Hamamura</td>
+              		<td>GET-LiDAR</td>
+              		<td className="footer-right">Produzido por Caio Hamamura (2016)</td>
               </tr>
               </tbody>
               </table>

@@ -1,13 +1,8 @@
-import React, { Component } from 'react';
 import { Col, Nav, Navbar, NavItem, Collapse, Well, Panel } from 'react-bootstrap';
 import Link from '../components/Link'
 import { scripts } from '../sqlscripts/scripts';
 
-function clica() {
-	alert('a');
-}
-
-export class LeftPanel extends Component {
+export class LeftPanel extends React.Component {
 
 	render() {
 		return (

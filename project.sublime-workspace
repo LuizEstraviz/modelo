@@ -4,8 +4,84 @@
 		"selected_items":
 		[
 			[
+				"onFe",
+				"onFeatureSelect"
+			],
+			[
+				"onFeat",
+				"onFeatureUnselect"
+			],
+			[
 				"compo",
-				"componentWillUnmount	Life Cycle Method"
+				"componentWillUpdate	Life Cycle Method"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"Feature",
+				"FeatureCollection	(geo_test.php)"
+			],
+			[
+				"get",
+				"getRowAsGeoJSON〔function〕"
+			],
+			[
+				"getNext",
+				"getNextRowNotGeometry"
+			],
+			[
+				"getRow",
+				"getRowNotGeometry〔function〕"
+			],
+			[
+				"next",
+				"nextRow"
+			],
+			[
+				"getFiel",
+				"getFieldsNotGeometry"
+			],
+			[
+				"getFi",
+				"getFieldsNotGeometry"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"connectio",
+				"connectionString"
+			],
+			[
+				"has",
+				"hasSingleGeometry〔function〕"
+			],
+			[
+				"pg_fie",
+				"pg_field_name"
+			],
+			[
+				"conn",
+				"connectionString"
+			],
+			[
+				"class",
+				"class	class …"
+			],
+			[
+				"clas",
+				"class	class …"
+			],
+			[
+				"sele",
+				"selectTab"
+			],
+			[
+				"list-style",
+				"list-style-type"
 			],
 			[
 				"asCsv",
@@ -38,10 +114,6 @@
 			[
 				"rc",
 				"rcc	React: class component"
-			],
-			[
-				"get",
-				"getElementById〔function〕"
 			],
 			[
 				"HtmlWebpackPluginC",
@@ -180,10 +252,6 @@
 				"background	Style CSS"
 			],
 			[
-				"has",
-				"hashHistory"
-			],
-			[
 				"requ",
 				"require〔function〕"
 			],
@@ -282,10 +350,6 @@
 			[
 				"cluste",
 				"clusterStat"
-			],
-			[
-				"sele",
-				"selectedFeatures"
 			],
 			[
 				"var",
@@ -404,10 +468,6 @@
 				"background-color"
 			],
 			[
-				"for",
-				"for	for (…) {…} (Improved Native For-Loop)"
-			],
-			[
 				"legen",
 				"legendParams"
 			],
@@ -454,92 +514,16 @@
 			[
 				"vi",
 				"viewParams"
-			],
-			[
-				"nf",
-				"ng-if	AngularJS"
-			],
-			[
-				"ser",
-				"service	AngularJS"
-			],
-			[
-				"val",
-				"value	AngularJS"
-			],
-			[
-				"provider",
-				"$routeProvider	AngularJS"
-			],
-			[
-				"facto",
-				"factory	AngularJS"
-			],
-			[
-				"nav",
-				"navigationItems〔argument〕"
-			],
-			[
-				"selecte",
-				"selectedIndex〔variable〕"
-			],
-			[
-				"id",
-				"idCombCarroChefePossivel	Table column"
-			],
-			[
-				"v",
-				"vRLCombinacaoCarroChefe	SQL table"
-			],
-			[
-				"MUNIC",
-				"MUNICIPIOMF	SQL table"
-			],
-			[
-				"pyo",
-				"pyodbc〔module〕"
-			],
-			[
-				"schema",
-				"schemaname"
-			],
-			[
-				"rlm",
-				"RLMADEIREIRA	SQL table"
-			],
-			[
-				"RLMUNI",
-				"RLMUNICIPIOFITO	SQL table"
-			],
-			[
-				"RL",
-				"RLFCCOMBINACAO	SQL table"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": ".git/config",
+			"file": "app/containers/MapContainer.js",
 			"settings":
 			{
-				"buffer_size": 330,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "webpack.config.js",
-			"settings":
-			{
-				"buffer_size": 1771,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/components/CollapsibleImage.js",
-			"settings":
-			{
-				"buffer_size": 834,
+				"buffer_size": 2557,
 				"line_ending": "Windows"
 			}
 		}
@@ -551,10 +535,82 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "Install",
+		"height": 384.0,
+		"last_filter": "prett",
 		"selected_items":
 		[
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"p",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"Prettty",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"Pretty",
+				"Pretty JSON: Validate"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"phpunit",
+				"Set Syntax: PHPUnit TextRunner"
+			],
+			[
+				"set synta php",
+				"Set Syntax: PHP"
+			],
+			[
+				"PHPUni",
+				"Set Syntax: PHPUnit TextRunner"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git quic",
+				"Git: Quick Commit"
+			],
+			[
+				"quick comm",
+				"Git: Quick Commit"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git com",
+				"Git: Quick Commit"
+			],
 			[
 				"Install",
 				"Package Control: Install Package"
@@ -572,10 +628,6 @@
 				"Snippet: React: component skeleton"
 			],
 			[
-				"prett",
-				"Pretty JSON: Format (Pretty Print) JSON"
-			],
-			[
 				"json",
 				"Pretty JSON: Minify (compress) JSON"
 			],
@@ -590,10 +642,6 @@
 			[
 				"prettr",
 				"Pretty JSON: Minify (compress) JSON"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"Syntax",
@@ -648,10 +696,6 @@
 				"Snippet: React: render: fn() { return ... }"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
 				"unins",
 				"npm: Remove/Uninstall Package"
 			],
@@ -684,10 +728,6 @@
 				"Git: Commit"
 			],
 			[
-				"git push",
-				"Git: Push"
-			],
-			[
 				"PRETT",
 				"Pretty JSON: Format (Pretty Print) JSON"
 			],
@@ -712,10 +752,6 @@
 				"Git: Add All"
 			],
 			[
-				"git com",
-				"Git: Commit"
-			],
-			[
 				"commit",
 				"Git: Commit"
 			],
@@ -730,10 +766,6 @@
 			[
 				"git common",
 				"Git: Custom Command"
-			],
-			[
-				"pretty",
-				"Pretty JSON: Format (Pretty Print) JSON"
 			],
 			[
 				"Json",
@@ -912,7 +944,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 528.0
+		"width": 432.0
 	},
 	"console":
 	{
@@ -1029,29 +1061,79 @@
 	[
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist"
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services"
 	],
 	"file_history":
 	[
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/SchemaContainer.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/index.html",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles.css",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts/scripts.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Results.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/ExecQueryButton.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles.css",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MapContainer.js",
+		"/C/Users/caioh/Downloads/file (2).csv",
+		"/C/Users/caioh/Downloads/file (1).csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Connection.php",
+		"/C/Users/caioh/Downloads/file.csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Results.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/test/ConnectionTest.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/composer.json",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Test/ConnectionTest.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Helpers.php",
+		"/C/Users/caioh/Desktop/test.csv",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.conf",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Footer.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/OlMap.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/vendor/autoload.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.gitignore",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/geo_test.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Classes/Connection.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Test/ConnectionTest.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Classes/Helpers.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/Settings.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/ConnectionTest.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/composer.json",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/Connection.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/Helpers.php",
+		"/C/Program Files/PostgreSQL/9.5/data/pg_hba.conf",
+		"/C/OSGeo4W64/apps/Python27/Lib/site-packages/pywatch/watcher.py",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/query.conf.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/query.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/query.conf",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/ResultReader.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/src/Services/ResultReaderTest.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/geo_test.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/query.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/vendor/autoload.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/ResultReader.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/ResultReaderTest.php",
+		"/C/Users/caioh/Dropbox/bin/bfg.bat",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/Autoload.php",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/TestResultReader",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tabela.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/LeftPanel.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/passwords.txt",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.git/config",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/index.html",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/index_bundle.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts/scripts.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/SchemaContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/SqlEditor.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/RightPanel.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tabela.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Link.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/LeftPanel.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/index.html",
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/cria_arquivo.py",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/desc_Ajuda/ajuda1.html",
@@ -1060,7 +1142,6 @@
 		"/C/Users/caioh/AppData/Local/Temp/scp46017/home/getlidar/public_html/4fd8793910ca271b692bf8adca9b53c0.png",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Header.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CSVCheckBox.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/ExecQueryButton.js",
 		"/C/Users/caioh/Downloads/file (5).csv",
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/insert_datetime.py",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/abrir.js",
@@ -1086,7 +1167,6 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/LeftMenu.js",
 		"/C/Users/caioh/Desktop/mtoloco.htm",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.gitignore",
 		"/C/Users/caioh/Desktop/ESALQ/R/Aula 3/desafio.R",
 		"/C/Users/caioh/Desktop/ESALQ/SIG2016/Aula3/q5.txt",
 		"/C/Users/caioh/Desktop/ESALQ/R/Aula 3/styles.css",
@@ -1109,58 +1189,16 @@
 		"/D/SIG2016/Aula2/app_nascentes.shp.xml",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/package.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Imagem.js",
-		"/C/Users/caioh/Downloads/file (2).csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/view.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Mapa.js",
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/rodaScripts2.ps1",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Collapsable.js",
-		"/C/Users/caioh/Downloads/file (1).csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/openlayers/package.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/index.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/featureWKT.js",
-		"/C/Users/caioh/Downloads/file.csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.jsx",
 		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/rodasScripts1.ps1",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/034RL.RLTABELA.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/001RL.Numbers.Table.sql",
-		"/C/Users/caioh/Desktop/ESALQ/ips.txt",
-		"/C/Users/caioh/Desktop/ajudas.csv",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/query.conf.php",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/Terminal/Default (Windows).sublime-keymap",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/server.js",
-		"/C/Users/caioh/Desktop/Pessoal/ESALQ/R/Aula 2/desafio.csv",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/bootstrap.css",
-		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/app/components/Results.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/bootstrap.min.css",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_component_class.sublime-snippet",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/boostrap.min.css",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Counter.js",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/JSX.sublime-settings",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Installed Packages/ReactJS/snippets/coffee/react_component.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Installed Packages/ReactJS.sublime-package",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Installed Packages/All Autocomplete.sublime-package",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Installed Packages/0_package_control_loader.sublime-package",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Installed Packages/ReactJS/snippets/js/react_component.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/react_component.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/React/RequireContainer.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/React.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/React/ReactLocationQuery.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/React/ReactLocation.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/coffee/react_component.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/rre.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/rr2teste.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/routeParams.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/ReactRouter.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/coffee/render.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/classSet.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/cx.sublime-snippet",
-		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/ReactJS/snippets/js/wrap.sublime-snippet",
-		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/webpack.config.js",
-		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/package.json",
-		"/C/Users/caioh/Desktop/Dev/reacts/github-battle/app/index.html",
-		"/C/Users/caioh/Desktop/Pessoal/AHK/Escape HTML com tab.ahk"
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/034RL.RLTABELA.Table.sql"
 	],
 	"find":
 	{
@@ -1196,6 +1234,28 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"getView",
+			"Sele",
+			"url",
+			"selectTab",
+			"01010000000000",
+			"('POINT\\(.*?\\)')::geometry",
+			"geometry",
+			"nextRow",
+			"getRowNo",
+			"tatu",
+			"getGeometr",
+			"geomIndexes",
+			"Not",
+			"hasGeometry",
+			"hasSingleGeometry",
+			"hasSingl",
+			"hasSin",
+			"getGeometryIndex",
+			"files",
+			".table",
+			"transitionEnd",
+			"trans",
 			"file",
 			"';\n",
 			"Header",
@@ -1301,29 +1361,7 @@
 			"arcview",
 			"  ",
 			"\"",
-			"  ",
-			"'",
-			"CAIO",
-			"CAIO HAMAMURA",
-			"(([a-z])([A-Z])|([A-Z])([A-Z][a-z]))",
-			"(([a-z])([A-Z])|([A-Z])([A-Z])([A-Z][a-z]))",
-			"(\\u+|\\u?\\l+)(\\u)",
-			"(\\u+|\\u?\\l+)(\\u",
-			"(\\u+|\\u?\\l+)",
-			"\\u+|\\u?\\l+",
-			"((\\u+|\\u?\\l+)*)",
-			"(\\u?\\l+)((\\u+|\\u\\l+)*)",
-			"(\\u?\\l+)((\\u|\\u\\l)*)",
-			"(\\u?\\l+)(\\u|\\u\\l)*",
-			"(\\u?\\l)+(\\u+|\\u\\l)*",
-			"CAST\\((.*?) AS SmallDateTime\\)",
-			"CAST\\((.*?) AS DateTime\\)",
-			"CAST(N'2015-06-19 19:00:01.033' AS DateTime)",
-			"CAST\\((.*?) AS DateTime\\)",
-			"<td>10<",
-			"<td>10",
-			"h2",
-			"<tr>"
+			"  "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1331,6 +1369,13 @@
 		"regex": true,
 		"replace_history":
 		[
+			"0101000020110F00000000",
+			"010100002011F000000000",
+			"0101002011F00000000000",
+			"010100000000002011F000000000",
+			"010100002011F0",
+			"ST_PointFromText(\\1, 3857)",
+			"",
 			"LeftPanel",
 			"this.props",
 			"False(",
@@ -1451,14 +1496,7 @@
 			"$1$3console.log('$2')$3",
 			"$1$3",
 			"$1$3console.log('$2')$3",
-			"$1\\nconsole.log('$2')",
-			"$1console.log('$2');",
-			"\"",
-			"'\\1',",
-			"\\1\\2\\1transform",
-			"\\1\\)",
-			"formData.data",
-			"\""
+			"$1\\nconsole.log('$2')"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1469,53 +1507,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": ".git/config",
+					"file": "app/containers/MapContainer.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 330,
+						"buffer_size": 2557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								110,
-								110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "webpack.config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1771,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1353,
-								1353
+								1542,
+								1542
 							]
 						],
 						"settings":
@@ -1525,38 +1534,8 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 17.0,
-						"translation.y": 255.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/components/CollapsibleImage.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 834,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								300,
-								300
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 663.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

@@ -2,7 +2,7 @@ export var scripts = {
 	"Consulta A": {
 		script: [
 			"SELECT *", 
-			"FROM arvore"
+			"FROM talhao_geo LIMIT 5"
 		],
 		desc: (
 			<div>

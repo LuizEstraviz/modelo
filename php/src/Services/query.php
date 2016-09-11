@@ -1,6 +1,8 @@
 <?php 
+namespace Services;
 
-include 'query.conf.php';
+require __DIR__ . "/../../vendor/autoload.php";
+use Classes\Connection;
 
 // Remove default messages
 error_reporting(E_ERROR | E_PARSE);
@@ -52,22 +54,20 @@ function returnDataAsJSON($queryResult) {
 }
 
 if (isset($_GET['query']) and $_GET['query'] != '') {
+	$c = new Connection('host=127.0.0.1 dbname=modelo port=5432 user=getlidar');
+	
 	// Open connection or throw error
-	if(!@($conexao=pg_connect ("host=apoema.esalq.usp.br dbname=modelo port=5432 user=$usr password=$pwd"))) {
-		print 'Não foi possível estabelecer uma conexão com o banco de dados.';
-	} else {
 		// Run query defined by 'query' parameter or throw error
-		$results = pg_query($_GET['query']) or die(pg_last_error());
+		$c->query($_GET['query']);
 
 		// Check if output is csv or JSON
 		if (isset($_GET['ascsv']) and $_GET['ascsv'] == 'true')
 		{
-			returnDataAsCSV($results);
+			returnDataAsCSV($c->results);
 		} else {
-			returnDataAsJSON($results);
+			print $c->getAll($results);
    		}
-	}
+   		pg_close();
 } else {
     print 'Erro: Consulta em branco';
 }
-?>

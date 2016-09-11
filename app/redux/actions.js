@@ -1,3 +1,12 @@
+
+
+export function selectTab(e) {
+	return {
+		type: 'SEL_TAB',
+		activeTab: e
+	}
+}
+
 export function setQuery(query) {
   return {
     type: 'SET_QUERY',
@@ -38,13 +47,14 @@ export function fetchQuery() {
 	return function(dispatch, getState) {
 		var state = getState();
 		dispatch(requestData());
-		return axios.get('http://apoema.esalq.usp.br/~getlidar/query.php', {
+		return axios.get(queryUrl, {
 			params: {query: state.query}
 		}).then((response) => {
 			dispatch(receiveData(response.data));
 			setTimeout(() => dispatch(inTransition()), 500);
 		}).catch(e => {
 			console.warn('Erro na resposta do servidor');
+			console.warn(e);
 		});
 	}
 }
@@ -53,13 +63,14 @@ export function fetchAsCSV(query) {
 	return function(dispatch, getState) {
 		var state = getState();
 		dispatch(requestData());
-		return axios.get('http://apoema.esalq.usp.br/~getlidar/query.php', {
+		return axios.get(queryUrl, {
 			params: {query: state.query}
 		}).then((response) => {
 			dispatch(receiveData(response.data));
 			setTimeout(() => dispatch(inTransition()), 500);
 		}).catch(e => {
 			console.warn('Erro na resposta do servidor');
+			console.warn(e);
 		});
 	}
 }
