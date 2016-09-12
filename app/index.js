@@ -1,7 +1,9 @@
-import {MainContainer} from './containers/MainContainer'
+import {MainContainer} from './containers/MainContainer';
+import { Provider } from 'react-redux';
+import {store} from './redux/reducers.js'
 
 
 ReactDOM.render(
-	<MainContainer />,
+	<Provider store={store}><MainContainer /></Provider>,
 	document.getElementById('app')
 	);

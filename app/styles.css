@@ -86,6 +86,11 @@ th {
 	position: relative;
 	opacity: 0;
 }
+
+.ReactCodeMirror {
+  text-align: left;
+}
+
 .results-erro {
 	-webkit-transition: opacity .5s;
 	transition: opacity .5s;

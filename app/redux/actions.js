@@ -47,7 +47,7 @@ export function fetchQuery() {
 	return function(dispatch, getState) {
 		var state = getState();
 		dispatch(requestData());
-		return axios.get(queryUrl, {
+		return axios.get(servUrl + 'query.php', {
 			params: {query: state.query}
 		}).then((response) => {
 			dispatch(receiveData(response.data));
@@ -63,7 +63,7 @@ export function fetchAsCSV(query) {
 	return function(dispatch, getState) {
 		var state = getState();
 		dispatch(requestData());
-		return axios.get(queryUrl, {
+		return axios.get(servUrl + 'query.php', {
 			params: {query: state.query}
 		}).then((response) => {
 			dispatch(receiveData(response.data));
@@ -87,4 +87,24 @@ export function selectScript(e) {
 		type: 'SEL_SCRIPT',
 		selScript: e
 	}
+}
+
+function setSchema(e) {
+	return {
+		type: 'SET_SCHEMA',
+		schema: e
+	}
+}
+
+export function getSchema() {
+	return function(dispatch, getState) {
+		var state = getState();
+		dispatch(requestData());
+		return axios.get(servUrl + 'tables.php').then((response) => {
+			dispatch(setSchema(response.data));
+		}).catch(e => {
+			console.warn('Erro na resposta do servidor');
+			console.warn(e);
+		});
+	}	
 }

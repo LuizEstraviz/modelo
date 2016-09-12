@@ -6,11 +6,6 @@ export class Info extends React.Component {
         super(props);
         this.state = {
         	addedPopup: null,
-			popup: new ol.Overlay({
-				  element: this.refs.info,
-				  positioning: 'bottom-center',
-				  stopEvent: false
-				}),
             show: false,
             feature: null,
             position: [0,0]
@@ -25,8 +20,8 @@ export class Info extends React.Component {
                 return feature;
               });
           if (feature) {
-            console.log(feature);
-            this.setState({show: true, position: [evt.originalEvent.layerX-15, evt.originalEvent.layerY], feature: feature});
+            this.state.popup.setPosition(evt.coordinate);
+            this.setState({show: true, feature: feature});
           } else {
             this.setState({show: false});
           }
@@ -34,21 +29,31 @@ export class Info extends React.Component {
 
     componentDidUpdate() {
     	// Add popup
-		if (this.props.map && this.state.addedPopup === null) {
+        if (this.props.map && this.state.addedPopup === null) {
+            this.setState({
+                addedPopup: true
+            });
 			this.props.map.addOverlay(this.state.popup);
-			this.setState({addedPopup: true});
+			
 
             //addListener
             this.props.map.on('click', this.openPopup);
 		}
+    }
 
-
+    componentDidMount() {
+        this.setState({
+            popup: new ol.Overlay({
+                  element: this.refs.info,
+                  positioning: 'bottom-center',
+                  stopEvent: false
+            })});
     }
 
     render() {
         return (
-            <div ref="info">
-                {this.state.show ? (<Popover id="popover" placement="top" ref="popover" positionLeft={this.state.position[0]} positionTop={this.state.position[1]}>
+            <div ref="info" style={{marginLeft: 100}}>
+                {this.state.show ? (<Popover id="popover" placement="bottom" ref="popover">
                     {this.props.fields.map((e, i) => <div key={i}>{e}: {this.props.data[this.state.feature.get('row')][i]}<br/></div>)}
                 </Popover>): null}
             </div>

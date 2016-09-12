@@ -52,7 +52,6 @@ class SqlEditor extends React.Component {
     			    extraKeys: {
     			    	'Ctrl-Space': "autocomplete"
     			    },
-    			    tables: "arvore"
     			}} />
 								
 		    </div>

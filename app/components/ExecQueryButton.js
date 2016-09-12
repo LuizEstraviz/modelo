@@ -6,7 +6,7 @@ const ExecQueryButton = (props) => (
 	    className="btn btn-block btn-success" 
 		onClick={() => {
             if (props.ascsv)
-                window.location.replace(queryUrl + '?query=' + props.query.replace(/\n/g, ' \n') + '&ascsv=true');
+                window.location.replace(servUrl + 'query.php' + '?query=' + props.query.replace(/\n/g, ' \n') + '&ascsv=true');
             else
             {
                 props.fetchQuery();
