@@ -157,6 +157,11 @@ class ConnectionTest extends TestCase
 		$this->assertEquals('{"fields":[],"data":[[],[]],"geo":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]},"properties":{"row":1}}]}}', $this->c->getAll());	
 	}
 
+	public function testGetSingleResult() {
+		$this->c->query("SELECT '{\"Teste\":\"momo\"}'");
+		$this->assertEquals('{"Teste":"momo"}', $this->c->getSingleResult());
+	}
+
 
 
 }

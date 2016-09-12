@@ -189,4 +189,8 @@ class Connection
 		return $result;
 	}
 
+	function getSingleResult() {
+		return $this->getNextRow()[0];	
+	}
+
 }

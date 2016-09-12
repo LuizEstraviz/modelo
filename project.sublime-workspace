@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"fo",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
 				"onFe",
 				"onFeatureSelect"
 			],
@@ -46,10 +54,6 @@
 			[
 				"getFi",
 				"getFieldsNotGeometry"
-			],
-			[
-				"for",
-				"for	for …"
 			],
 			[
 				"connectio",
@@ -510,10 +514,6 @@
 			[
 				"bind",
 				"bindingOptions	(toolbar.html)"
-			],
-			[
-				"vi",
-				"viewParams"
 			]
 		]
 	},
@@ -523,7 +523,23 @@
 			"file": "app/containers/MapContainer.js",
 			"settings":
 			{
-				"buffer_size": 2557,
+				"buffer_size": 2417,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/Info.js",
+			"settings":
+			{
+				"buffer_size": 1663,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/sqlscripts/scripts.js",
+			"settings":
+			{
+				"buffer_size": 1351,
 				"line_ending": "Windows"
 			}
 		}
@@ -1064,6 +1080,7 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes",
@@ -1071,17 +1088,25 @@
 	],
 	"file_history":
 	[
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Info.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Link.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tabela.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Footer.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/LeftPanel.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/SchemaContainer.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MapContainer.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Info.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/ExecQueryButton.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles.css",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MapContainer.js",
 		"/C/Users/caioh/Downloads/file (2).csv",
 		"/C/Users/caioh/Downloads/file (1).csv",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Connection.php",
 		"/C/Users/caioh/Downloads/file.csv",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Results.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/test/ConnectionTest.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/composer.json",
@@ -1091,7 +1116,6 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services/query.conf",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Footer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/OlMap.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/vendor/autoload.php",
@@ -1120,9 +1144,6 @@
 		"/C/Users/caioh/Dropbox/bin/bfg.bat",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/Autoload.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/TestResultReader",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tabela.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/LeftPanel.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/passwords.txt",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/.git/config",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
@@ -1130,10 +1151,8 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist/index_bundle.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts/scripts.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/SchemaContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/SqlEditor.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/RightPanel.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Link.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/index.html",
 		"/C/Users/caioh/AppData/Roaming/Sublime Text 3/Packages/User/cria_arquivo.py",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/desc_Ajuda/ajuda1.html",
@@ -1196,9 +1215,7 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/openlayers/package.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/index.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/ol-react/src/featureWKT.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.jsx",
-		"/C/Users/caioh/Desktop/ATRIUM/2016/PortalRL/rodasScripts1.ps1",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/034RL.RLTABELA.Table.sql"
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.jsx"
 	],
 	"find":
 	{
@@ -1209,6 +1226,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"<open folders>",
 			"C:\\Users\\caioh\\Desktop\\ATRIUM\\2016\\PortalRL\\Scripts\\Dados",
 			"C:\\Users\\caioh\\Desktop\\ATRIUM\\2016\\PortalRL\\Scripts\\Data",
 			"C:\\Users\\caioh\\Desktop\\Atrium\\2016\\PortalRL\\Scripts\\Data",
@@ -1234,6 +1252,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"onFeat",
+			"ol.",
+			"from 'openlayers'",
 			"getView",
 			"Sele",
 			"url",
@@ -1358,10 +1379,7 @@
 			"     ",
 			"                    ",
 			"M001 ck=",
-			"arcview",
-			"  ",
-			"\"",
-			"  "
+			"arcview"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1507,7 +1525,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1516,15 +1534,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2557,
+						"buffer_size": 2417,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1542,
-								1542
+								2051,
+								2051
 							]
 						],
 						"settings":
@@ -1535,10 +1553,71 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 663.0,
+						"translation.y": 833.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/components/Info.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1573,
+								1573
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 407.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/sqlscripts/scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
