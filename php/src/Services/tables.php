@@ -14,5 +14,5 @@ $c = new Connection('host=127.0.0.1 dbname=modelo port=5432 user=getlidar');
 	$c->query('SELECT tables_json FROM v_tables');
 
 	// Check if output is csv or JSON
-	print $c->getAll($results);
+	print $c->getSingleResult($results);
 		pg_close();
