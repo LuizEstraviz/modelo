@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Loading from '../components/Loading.js'
 import CSVCheckBox from '../components/CSVCheckBox';
 import Results from '../components/Results.js'
 import ExecQueryButton from '../components/ExecQueryButton.js'
@@ -17,6 +18,7 @@ class Body extends Component {
 	render() {
 		return (
 			<div className="col-sm-10 body">
+			<Loading />
 			<div className="jumbotron col-sm-12 text-center body-contents">
                 <div id="content">
 				<div className="col-sm-12 text-center">

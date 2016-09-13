@@ -18,6 +18,11 @@ th {
 	height: 100%;
 }
 
+.modal-dialog {
+	width: 150px;
+	padding-left: 30px;
+}
+
 .body {
 	margin-bottom: 50px;
 	padding: 0;

@@ -16,7 +16,6 @@ export function setQuery(query) {
 
 
 export function requestData() {
-	console.log('requestData');
   return {
     type: 'REQ_DATA'
   };
@@ -30,7 +29,6 @@ function receiveData(data) {
 }
 
 export function asCsvChanged(e) {
-	console.log(e);
 	return {
 		type: 'AS_CSV',
 		ascsv: e
@@ -82,7 +80,6 @@ export function transitionEnd() {
 }
 
 export function selectScript(e) {
-	console.log(e);
 	return {
 		type: 'SEL_SCRIPT',
 		selScript: e

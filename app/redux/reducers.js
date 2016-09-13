@@ -9,6 +9,7 @@ const handlers = {
   'REC_DATA': (state, { data }) => Object.assign({}, 
         state,
         {
+          loading: false,
           [state.transition === false || (data.geo && data.geo.length > 0) ? 'data' : 'tempdata']: data,
           isError: state.transition ? state.isError : typeof(data) === 'string',
           activeTab: (data.geo ? data.geo.features.length : 0) > 0 ? 2 : 1,
@@ -19,6 +20,7 @@ const handlers = {
     var newState = Object.assign({}, 
       state, 
       {
+        loading: true,
         tempdata: '',
         transition: state.activeTab === 1 ? !state.transition : false,
       });
@@ -26,14 +28,13 @@ const handlers = {
 
   'AS_CSV': (state, { ascsv }) => Object.assign({}, state, { ascsv }),
 
-  'TRANS_END': (state, action) => {
-    console.log((state.tempdata ? state.tempdata : state.data) && typeof(state.tempdata ? state.tempdata : state.data) === 'string');
-    return Object.assign({}, state, 
+  'TRANS_END': (state, action) => 
+    Object.assign({}, state, 
       { 
         transition: false,
         data: state.tempdata ? state.tempdata : state.data,
         isError: (state.tempdata ? state.tempdata : state.data) && typeof(state.tempdata ? state.tempdata : state.data) === 'string',
-    })},
+    }),
 
     'SEL_SCRIPT': (state, { selScript }) => Object.assign({}, state, { selScript, activeTab: 3, query: scripts[selScript].script.join('\n')}),
 
@@ -61,4 +62,5 @@ export var store = createStoreWithMiddleware(reducers,
   transition: true,
   selScript: '',
   activeTab: 1,
+  loading: false,
 });
