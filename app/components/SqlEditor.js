@@ -1,27 +1,45 @@
 import { connect } from 'react-redux';
-import { setQuery } from '../redux/actions';
+import { setQuery, fetchQuery } from '../redux/actions';
 import { scripts } from '../sqlscripts/scripts';
 import Codemirror from 'react-codemirror';
+import CodeMirror from 'codemirror';
 
 require('codemirror/mode/sql/sql');
 require('codemirror/addon/hint/sql-hint.js');
-
+require('codemirror/addon/hint/show-hint');
 
 
 class SqlEditor extends React.Component {
     constructor(props) {
         super(props);
+
+        this.change = this.change.bind(this);
+    }
+
+    change(e) {
+        this.props.setQuery(e);
     }
 
     componentDidMount() {
-    	var editor = this.refs['CodeMirror'].getCodeMirrorInstance();
-    	let showHint = require('codemirror/addon/hint/show-hint');
-    	showHint(editor, { 
-        tables: {
-            "table1": [ "col_A", "col_B", "col_C" ],
-            "table2": [ "other_columns1", "other_columns2" ]
+        var editor = this.refs['CodeMirror'].getCodeMirrorInstance();
+        var editor2 = this.refs['CodeMirror'].getCodeMirror();
+        editor2.on("keyup", function (cm, event) {
+        if (!cm.state.completionActive && /*Enables keyboard navigation in autocomplete list*/
+            (event.keyCode > 47 && event.keyCode <= 90) 
+            || event.keyCode === 190 
+            || event.keyCode === 32) {        /*Enter - do not open autocomplete list just after item has been selected in it*/ 
+            editor.commands.autocomplete(cm, null, {completeSingle: false});
         }
-    } );
+        if (event.keyCode === 13 && event.ctrlKey)
+            this.props.fetchQuery();
+    }.bind(this));
+        axios.get(servUrl + 'tables.php').then((response) => {
+            CodeMirror.commands.autocomplete = function(cm) {
+                CodeMirror.showHint(cm, CodeMirror.hint.sql, { 
+                    tables: response.data
+                });
+            }
+        });
     }
 
     render() {
@@ -46,7 +64,7 @@ class SqlEditor extends React.Component {
 									}.bind(this)} /> 
     		
     		*/}
-    			<Codemirror  ref="CodeMirror" value={this.props.query} onChange={this.props.setQuery} options={{
+    			<Codemirror  ref="CodeMirror" value={this.props.query} onChange={this.change} options={{
     			    mode: 'text/x-pgsql',
     			    lineNumbers: true,
     			    extraKeys: {
@@ -71,7 +89,8 @@ const mapStateToProps = function(store) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        setQuery: query => dispatch(setQuery(query))
+        setQuery: query => dispatch(setQuery(query)),
+        fetchQuery: () => {dispatch(fetchQuery())},
     };
 }
 
