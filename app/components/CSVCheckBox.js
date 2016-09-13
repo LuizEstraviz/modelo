@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { asCsvChanged } from '../redux/actions';
 
 const CSVCheckBox = (props) => (
-    <div className="checkbox">
+    <div className="col-sm-12 checkbox">
 	  <label><input type="checkbox" value="" onClick={e => props.asCsvChanged(e.target.checked)} />Resultado em CSV</label>
 	</div>
 );

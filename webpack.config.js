@@ -10,10 +10,8 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 })
 
 module.exports = {  
-	devtool: 'eval',
+	devtool: process.env.NODE_ENV === 'production' ? 'cheap-module-source-map' : 'eval',
 	entry: [
-    'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/only-dev-server',
     './app/index.js'
   ],
   output: {
@@ -28,15 +26,17 @@ module.exports = {
       {
         test: /.*\.(gif|png|jpe?g|svg)$/i,
         loaders: [
-          'file?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
+          'file?name=[path][name].[ext]'
         ]
       },
-      { test: /\.css$/, loader: process.env.NODE_ENV === 'production' ? ExtractTextPlugin.extract("style-loader", "css-loader") : "style-loader!css-loader" },
+      { 
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader"),
+        include: path.join(__dirname, 'app/styles')
+      },
   	]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
   	HtmlWebpackPluginConfig,
   	new webpack.ProvidePlugin({
             "React": "react"}),
@@ -59,4 +59,10 @@ module.exports = {
       }
     }),
   ]
+}
+
+if (process.env.NODE_ENV !== 'production') {
+  module.exports.plugins.push(new webpack.HotModuleReplacementPlugin());
+  module.exports.entry = module.exports.entry.concat(['webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/only-dev-server']);
 }

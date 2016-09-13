@@ -3,6 +3,10 @@ import { setQuery, fetchQuery } from '../redux/actions';
 import { scripts } from '../sqlscripts/scripts';
 import Codemirror from 'react-codemirror';
 import CodeMirror from 'codemirror';
+import jQuery from 'jquery';
+window.jQuery = jQuery;
+require('jquery-resizable');
+delete window.jQuery;
 
 require('codemirror/mode/sql/sql');
 require('codemirror/addon/hint/sql-hint.js');
@@ -24,21 +28,25 @@ class SqlEditor extends React.Component {
         var editor = this.refs['CodeMirror'].getCodeMirrorInstance();
         var editor2 = this.refs['CodeMirror'].getCodeMirror();
         editor2.on("keyup", function (cm, event) {
-        if (!cm.state.completionActive && /*Enables keyboard navigation in autocomplete list*/
-            (event.keyCode > 47 && event.keyCode <= 90) 
-            || event.keyCode === 190 
-            || event.keyCode === 32) {        /*Enter - do not open autocomplete list just after item has been selected in it*/ 
-            editor.commands.autocomplete(cm, null, {completeSingle: false});
-        }
-        if (event.keyCode === 13 && event.ctrlKey)
-            this.props.fetchQuery();
-    }.bind(this));
+            if (!cm.state.completionActive && /*Enables keyboard navigation in autocomplete list*/
+                (event.keyCode > 47 && event.keyCode <= 90) 
+                || event.keyCode === 190 
+                || event.keyCode === 32) {        /*Enter - do not open autocomplete list just after item has been selected in it*/ 
+                editor.commands.autocomplete(cm, null, {completeSingle: false});
+            }
+            if (event.keyCode === 13 && event.ctrlKey)
+                this.props.fetchQuery();
+        }.bind(this));
         axios.get(servUrl + 'tables.php').then((response) => {
             CodeMirror.commands.autocomplete = function(cm) {
                 CodeMirror.showHint(cm, CodeMirror.hint.sql, { 
                     tables: response.data
                 });
             }
+        });
+        jQuery('.CodeMirror').resizable({
+            handles: 's',
+            direction: 'bottom',
         });
     }
 
@@ -64,14 +72,13 @@ class SqlEditor extends React.Component {
 									}.bind(this)} /> 
     		
     		*/}
-    			<Codemirror  ref="CodeMirror" value={this.props.query} onChange={this.change} options={{
+    			<Codemirror ref="CodeMirror" value={this.props.query} onChange={this.change} options={{
     			    mode: 'text/x-pgsql',
     			    lineNumbers: true,
     			    extraKeys: {
     			    	'Ctrl-Space': "autocomplete"
     			    },
     			}} />
-								
 		    </div>
 	    );
     }

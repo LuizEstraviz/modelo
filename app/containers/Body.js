@@ -20,17 +20,21 @@ class Body extends Component {
 			<div className="jumbotron col-sm-12 text-center body-contents">
                 <div id="content">
 				<div className="col-sm-12 text-center">
-					<SchemaContainer />
+					<div className="col-sm-12">
+						<SchemaContainer />
+					</div>
 				{ /* Form input with textarea and a button run sql */ }
+					<div className="col-sm-12">
 					<form>
 						<div className="form-group">
 							<SqlEditor />
-						</div>
-						<CSVCheckBox />
-						<div className="form-group col-sm-4 col-sm-offset-4">
-							<ExecQueryButton />
+							<CSVCheckBox />
+							<div className="form-group col-sm-4 col-sm-offset-4">
+								<ExecQueryButton />
+							</div>
 						</div>
 					</form>
+					</div>
 				</div>
 				</div>
 			</div>
