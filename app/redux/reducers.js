@@ -6,16 +6,14 @@ import { scripts } from '../sqlscripts/scripts';
 const handlers = {
   'SET_QUERY': (state, { query }) => Object.assign({}, state, { query }),
 
-  'REC_DATA': (state, { data }) => {
-    console.log(data);
-    return Object.assign({}, 
+  'REC_DATA': (state, { data }) => Object.assign({}, 
         state,
         {
           [state.transition === false || (data.geo && data.geo.length > 0) ? 'data' : 'tempdata']: data,
           isError: state.transition ? state.isError : typeof(data) === 'string',
           activeTab: (data.geo ? data.geo.features.length : 0) > 0 ? 2 : 1,
         }
-        )},
+        ),
 
   'REQ_DATA': (state, action) => {
     var newState = Object.assign({}, 

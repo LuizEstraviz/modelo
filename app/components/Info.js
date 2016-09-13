@@ -52,7 +52,7 @@ export class Info extends React.Component {
 
     render() {
         return (
-            <div ref="info" style={{marginLeft: 100}}>
+            <div ref="info" style={{marginLeft: 125}}>
                 {this.state.show ? (<Popover id="popover" placement="bottom" ref="popover">
                     {this.props.fields.map((e, i) => <div key={i}>{e}: {this.props.data[this.state.feature.get('row')][i]}<br/></div>)}
                 </Popover>): null}
