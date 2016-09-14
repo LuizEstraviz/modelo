@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"clear",
+				"clearInterval〔function〕"
+			],
+			[
+				"compo",
+				"componentWillUpdate	Life Cycle Method"
+			],
+			[
 				"backg",
 				"background-position"
 			],
@@ -14,10 +26,6 @@
 			[
 				"auto",
 				"autocomplete"
-			],
-			[
-				"compo",
-				"componentDidMount	Life Cycle Method"
 			],
 			[
 				"fo",
@@ -186,10 +194,6 @@
 			[
 				"head",
 				"heading	(UserDetails.js)"
-			],
-			[
-				"padding",
-				"paddingBottom	Style CSS"
 			],
 			[
 				"fn",
@@ -510,20 +514,24 @@
 			[
 				"navi",
 				"navigationItems"
-			],
-			[
-				"sidr",
-				"sidrDiv"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/index.js",
+			"file": "app/components/Loading.js",
 			"settings":
 			{
-				"buffer_size": 431,
+				"buffer_size": 1168,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/styles.css",
+			"settings":
+			{
+				"buffer_size": 1664,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +539,23 @@
 			"file": "app/redux/reducers.js",
 			"settings":
 			{
-				"buffer_size": 2143,
+				"buffer_size": 2067,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/redux/actions.js",
+			"settings":
+			{
+				"buffer_size": 1875,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "webpack.config.js",
+			"settings":
+			{
+				"buffer_size": 2024,
 				"line_ending": "Windows"
 			}
 		}
@@ -1070,6 +1094,7 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles",
@@ -1082,17 +1107,19 @@
 	],
 	"file_history":
 	[
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles/styles.css",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Loading.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Info.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/SqlEditor.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CSVCheckBox.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles/codemirror.css",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/react-bootstrap/package.json",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.html",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles/resizable.css",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles.css",
@@ -1109,7 +1136,6 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts/scripts.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/codemirror/addon/hint/show-hint.css",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MapContainer.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Link.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tabela.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Footer.js",
@@ -1208,8 +1234,7 @@
 		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/015RL.RLFITOECOLOGIA_GEO.Table.sql",
 		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/026RL.RLNAOMADEIREIRA.Table.sql",
 		"/C/Users/caioh/Dropbox/bin/arcmap.bat",
-		"/D/SIG2016/Aula2/curvas_nivel.shp.xml",
-		"/D/SIG2016/Aula2/app_nascentes.shp.xml"
+		"/D/SIG2016/Aula2/curvas_nivel.shp.xml"
 	],
 	"find":
 	{
@@ -1246,6 +1271,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"console.l",
+			"console",
 			"100",
 			"png",
 			"200",
@@ -1371,9 +1398,7 @@
 			"NumberOfPages: ",
 			"\\t",
 			"<\\/?span>",
-			"</span>",
-			"<\\/?span>",
-			"é"
+			"</span>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1519,24 +1544,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/index.js",
+					"file": "app/components/Loading.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 431,
+						"buffer_size": 1168,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								275,
-								275
+								907,
+								907
 							]
 						],
 						"settings":
@@ -1545,27 +1570,56 @@
 							"syntax": "Packages/JSX/JSX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 306.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/redux/reducers.js",
+					"file": "app/styles/styles.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2143,
+						"buffer_size": 1664,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								556,
-								556
+								191,
+								190
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/redux/reducers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2067,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								498,
+								498
 							]
 						],
 						"settings":
@@ -1576,10 +1630,71 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": -0.0,
+						"translation.y": 33.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/redux/actions.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1387,
+								1387
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1088.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "webpack.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2024,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1690,
+								1690
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 459.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

@@ -1,7 +1,8 @@
 import ol from 'openlayers';
 import { Overlay, Popover } from 'react-bootstrap';
+import { connect } from 'react-redux';
 
-export class Info extends React.Component {
+class Info extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -53,10 +54,25 @@ export class Info extends React.Component {
     render() {
         return (
             <div ref="info" style={{marginLeft: 125}}>
-                {this.state.show ? (<Popover id="popover" placement="bottom" ref="popover">
+                {this.state.show && this.props.data[0].length === this.props.fields.length ? (<Popover id="popover" placement="bottom" ref="popover">
                     {this.props.fields.map((e, i) => <div key={i}>{e}: {this.props.data[this.state.feature.get('row')][i]}<br/></div>)}
                 </Popover>): null}
             </div>
         )
     }
 }
+
+const mapStateToProps = function(store) {
+    return {
+        geo: store.data.geo,
+        data: store.data.data,
+        fields: store.data.fields,
+    };
+}
+
+function mapDispatchToProps(dispatch, props) {
+    return {
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Info);

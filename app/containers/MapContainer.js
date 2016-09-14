@@ -1,5 +1,5 @@
 import ol from 'openlayers';
-import { Info } from '../components/Info.js'
+import Info from '../components/Info.js'
 import { connect } from 'react-redux';
 
 var vecSource = new ol.source.Vector({}); 
@@ -64,7 +64,7 @@ class MapContainer extends React.Component {
     render() {      
         return (
             <div id="map" className="map" style={{height:500, width: "100%",}} ref="map">
-              <Info map={this.state.map} fields={this.props.fields} data={this.props.data}/>
+              <Info map={this.state.map}/>
             </div>
         );
     }
