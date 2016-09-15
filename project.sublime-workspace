@@ -528,26 +528,27 @@
 			}
 		},
 		{
+			"contents": "strRequest = \"<S:Envelope \" +\n\"xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'>\" +\n\" <S:Body>\" +\n\"<ns2:getGreeting xmlns:ns2='http://wsServer.myfirst.com/'><arg0>Caio</arg0></ns2:getGreeting>\";\n        strRequest = strRequest + \"</soap:Body>\";\n        strRequest = strRequest + \"</soap:Envelope>\";",
+			"settings":
+			{
+				"buffer_size": 304,
+				"line_ending": "Windows",
+				"name": "strRequest = \"<S:Envelope \" +"
+			}
+		},
+		{
+			"file": "/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev.bfg-report/node_modules/sophist/deps/sophia.cc/sophia.cc",
+			"settings":
+			{
+				"buffer_size": 11774,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/styles/styles.css",
 			"settings":
 			{
 				"buffer_size": 1664,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/redux/reducers.js",
-			"settings":
-			{
-				"buffer_size": 2067,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/redux/actions.js",
-			"settings":
-			{
-				"buffer_size": 1875,
 				"line_ending": "Windows"
 			}
 		},
@@ -1095,25 +1096,22 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Services",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/test"
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/dist"
 	],
 	"file_history":
 	[
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Info.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MapContainer.js",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles/styles.css",
+		"/C/Users/caioh/Dropbox/bin/atrium.bat",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Loading.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/webpack.config.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Info.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/SqlEditor.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/package.json",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/CollapsibleImage.js",
@@ -1127,7 +1125,6 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MainContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/codemirror/addon/hint/sql-hint.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/codemirror/addon/hint/show-hint.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/codemirror/mode/sql/sql.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/ExecQueryButton.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/test/ConnectionTest.php",
@@ -1135,7 +1132,6 @@
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/php/src/Classes/Connection.php",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/sqlscripts/scripts.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/node_modules/codemirror/addon/hint/show-hint.css",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MapContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Link.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Tabela.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Footer.js",
@@ -1233,8 +1229,7 @@
 		"/C/Users/caioh/Downloads/file (3).csv",
 		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/015RL.RLFITOECOLOGIA_GEO.Table.sql",
 		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/026RL.RLNAOMADEIREIRA.Table.sql",
-		"/C/Users/caioh/Dropbox/bin/arcmap.bat",
-		"/D/SIG2016/Aula2/curvas_nivel.shp.xml"
+		"/C/Users/caioh/Dropbox/bin/arcmap.bat"
 	],
 	"find":
 	{
@@ -1271,6 +1266,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"ClearKe",
+			"size_t",
+			"console",
+			"fields",
 			"console.l",
 			"console",
 			"100",
@@ -1394,11 +1393,7 @@
 			"Consulte",
 			"<Signature>.*</Signature>",
 			"ns1",
-			"nse",
-			"NumberOfPages: ",
-			"\\t",
-			"<\\/?span>",
-			"</span>"
+			"nse"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1560,8 +1555,8 @@
 						"selection":
 						[
 							[
-								907,
-								907
+								886,
+								886
 							]
 						],
 						"settings":
@@ -1578,25 +1573,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/styles/styles.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1664,
+						"buffer_size": 304,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								191,
-								190
+								304,
+								304
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"auto_name": "strRequest = \"<S:Envelope \" +",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1607,30 +1601,27 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/redux/reducers.js",
+					"file": "/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev.bfg-report/node_modules/sophist/deps/sophia.cc/sophia.cc",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2067,
+						"buffer_size": 11774,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								498,
-								498
+								4407,
+								4407
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 33.0,
+						"translation.y": 3997.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1638,29 +1629,28 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/redux/actions.js",
-					"semi_transient": false,
+					"file": "app/styles/styles.css",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1875,
+						"buffer_size": 1664,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1387,
-								1387
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1088.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1690,7 +1680,7 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
+						"translation.x": 0.0,
 						"translation.y": 459.0,
 						"zoom_level": 1.0
 					},

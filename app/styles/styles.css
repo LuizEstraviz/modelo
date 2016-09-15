@@ -39,6 +39,7 @@ th {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	z-index: 1000;
 }
 
 .footer-copyright {
@@ -106,6 +107,9 @@ th {
 	background: #eee url(../img/ptos.png) 100% 100% no-repeat;
 	background-position: center;
 	border: lightgrey 1px solid;
+	width: calc(100% - 12px);
+	width: -moz-calc(100% - 12px);
+	width: -webkit-calc(100% - 12px);
 }
 
 .ReactCodeMirror {
