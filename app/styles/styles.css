@@ -108,8 +108,8 @@ th {
 	background-position: center;
 	border: lightgrey 1px solid;
 	width: calc(100% - 18px);
-	width: -moz-calc(100% - 18px);
-	width: -webkit-calc(100% - 18px);
+	-moz-width: -moz-calc(100% - 18px);
+	-webkit-width: -webkit-calc(100% - 18px);
 }
 
 .ReactCodeMirror {
