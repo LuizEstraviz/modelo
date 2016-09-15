@@ -101,7 +101,7 @@ th {
 	height: 200px;
 }
 
-.resizable-b {
+.resizable .resizable-b {
 	z-index: 3;
 	margin-left: -5px;
 	background: #eee url(../img/ptos.png) 100% 100% no-repeat;
