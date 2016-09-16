@@ -102,14 +102,22 @@ th {
 }
 
 .resizable .resizable-b {
-	z-index: 3;
+	z-index: 4;
 	margin-left: -5px;
 	background: #eee url(../img/ptos.png) 100% 100% no-repeat;
 	background-position: center;
 	border: lightgrey 1px solid;
+	width: 100%;
+}
+
+.CodeMirror-vscrollbar[style="bottom: 0px; display: block;"] + div + div + div + div + .resizable-handle {
 	width: calc(100% - 18px);
 	-moz-width: -moz-calc(100% - 18px);
 	-webkit-width: -webkit-calc(100% - 18px);
+}
+
+.CodeMirror-scroll + .resizable-handle {
+
 }
 
 .ReactCodeMirror {
