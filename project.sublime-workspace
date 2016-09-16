@@ -528,31 +528,6 @@
 			}
 		},
 		{
-			"contents": "strRequest = \"<S:Envelope \" +\n\"xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'>\" +\n\" <S:Body>\" +\n\"<ns2:getGreeting xmlns:ns2='http://wsServer.myfirst.com/'><arg0>Caio</arg0></ns2:getGreeting>\";\n        strRequest = strRequest + \"</soap:Body>\";\n        strRequest = strRequest + \"</soap:Envelope>\";",
-			"settings":
-			{
-				"buffer_size": 304,
-				"line_ending": "Windows",
-				"name": "strRequest = \"<S:Envelope \" +"
-			}
-		},
-		{
-			"file": "/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev.bfg-report/node_modules/sophist/deps/sophia.cc/sophia.cc",
-			"settings":
-			{
-				"buffer_size": 11774,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/styles.css",
-			"settings":
-			{
-				"buffer_size": 1664,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "webpack.config.js",
 			"settings":
 			{
@@ -1102,11 +1077,13 @@
 	],
 	"file_history":
 	[
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev.bfg-report/node_modules/sophist/deps/sophia.cc/sophia.cc",
+		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles/styles.css",
+		"/C/Users/caioh/AppData/Local/Temp/7zO0504A61F/HOWTO.txt",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/reducers.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/components/Info.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/MapContainer.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/redux/actions.js",
-		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/styles/styles.css",
 		"/C/Users/caioh/Dropbox/bin/atrium.bat",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/index.js",
 		"/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev/app/containers/Body.js",
@@ -1227,9 +1204,7 @@
 		"/C/Users/caioh/Desktop/ESALQ/SIG2016/Aula2/Tupi_2002.JPG.xml",
 		"/C/Users/caioh/Downloads/file (4).csv",
 		"/C/Users/caioh/Downloads/file (3).csv",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/015RL.RLFITOECOLOGIA_GEO.Table.sql",
-		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/026RL.RLNAOMADEIREIRA.Table.sql",
-		"/C/Users/caioh/Dropbox/bin/arcmap.bat"
+		"/C/Users/caioh/Desktop/ATRIUM/2014/SIGAM/SigamDac/Scripts/Post-Deployment/RL/015RL.RLFITOECOLOGIA_GEO.Table.sql"
 	],
 	"find":
 	{
@@ -1266,6 +1241,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			".resizable",
 			"ClearKe",
 			"size_t",
 			"console",
@@ -1392,8 +1368,7 @@
 			"Envelope",
 			"Consulte",
 			"<Signature>.*</Signature>",
-			"ns1",
-			"nse"
+			"ns1"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1539,7 +1514,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1568,96 +1543,11 @@
 						"translation.y": 306.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 304,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								304,
-								304
-							]
-						],
-						"settings":
-						{
-							"auto_name": "strRequest = \"<S:Envelope \" +",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/caioh/Desktop/PROFISSIONAL/PAGeF2016/Dev.bfg-report/node_modules/sophist/deps/sophia.cc/sophia.cc",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11774,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4407,
-								4407
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3997.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/styles/styles.css",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1664,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 1,
 					"file": "webpack.config.js",
 					"semi_transient": false,
 					"settings":
@@ -1684,7 +1574,7 @@
 						"translation.y": 459.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
