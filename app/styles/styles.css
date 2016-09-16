@@ -110,7 +110,7 @@ th {
 	width: 100%;
 }
 
-.CodeMirror-vscrollbar[style="bottom: 0px; display: block;"] + div + div + div + div + .resizable-handle {
+.CodeMirror-vscrollbar[style*="display: block;"] + div + div + div + div + .resizable-handle {
 	width: calc(100% - 18px);
 	-moz-width: -moz-calc(100% - 18px);
 	-webkit-width: -webkit-calc(100% - 18px);
