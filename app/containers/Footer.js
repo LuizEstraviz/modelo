@@ -10,7 +10,7 @@ export class Footer extends React.Component {
               <tbody>
               <tr>
               		<td>GET-LiDAR</td>
-              		<td className="footer-right">Produzido por Caio Hamamura (2016)</td>
+              		<td className="footer-right">Produzido por Caio Hamamura, Luiz Estraviz (2017)</td>
               </tr>
               </tbody>
               </table>
